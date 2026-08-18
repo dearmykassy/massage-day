@@ -9,6 +9,9 @@ import {
   getBreadcrumbs,
   getDirectChildren,
   getParentNode,
+  getRegionHeadingLabel,
+  getRootNode,
+  shortenRegionSearchName,
 } from "@/lib/regions";
 
 export type RegionRenderedCopyClassification =
@@ -39,9 +42,11 @@ export type RegionPageModel = {
   scene: {
     index: string;
     name: string;
+    heading: string;
     caption: string;
     indexCopyId: string;
     nameCopyId: string;
+    headingCopyId: string;
     captionCopyId: string;
   };
   gallery: {
@@ -148,16 +153,29 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
     throw new Error(`MASSAGE_DAY_REGION_COPY_SHAPE_INVALID:${node.path}`);
   }
 
-  const breadcrumbs = getBreadcrumbs(node).map((crumb, index) => ({
-    ...crumb,
-    copyId: `breadcrumb:${index}`,
-  }));
   const children = getDirectChildren(node);
   const parent = getParentNode(node);
+  const headingName = getRegionHeadingLabel(node);
+  const rawBreadcrumbs = getBreadcrumbs(node);
+  const breadcrumbs = rawBreadcrumbs.map((crumb, index) => ({
+    ...crumb,
+    name:
+      content.detailMode === "broad" && index > 0
+        ? index === rawBreadcrumbs.length - 1
+          ? headingName
+          : index === 1
+            ? getRegionHeadingLabel(getRootNode(node.rootKey))
+            : shortenRegionSearchName(crumb.name)
+        : crumb.name,
+    copyId: `breadcrumb:${index}`,
+  }));
   const galleryItems = children.map((child, index) => ({
     path: child.path,
     number: String(index + 1).padStart(2, "0"),
-    name: child.name,
+    name:
+      content.detailMode === "broad"
+        ? shortenRegionSearchName(child.name)
+        : child.name,
     countLabel: `${child.representativeCount}개 안내 지역`,
     numberCopyId: `gallery:item:${index}:number`,
     nameCopyId: `gallery:item:${index}:name`,
@@ -165,8 +183,8 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
   }));
   const galleryHeading =
     children.length > 0
-      ? `${node.displayName} 다음 주소 단계`
-      : `${node.displayName} 상세 주소 전화 메모`;
+      ? `${headingName} 다음 주소 단계`
+      : `${headingName} 상세 주소 전화 메모`;
   const gallerySummary =
     children.length > 0
       ? `연결된 지역 ${children.length}개`
@@ -176,6 +194,7 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
     .toString()
     .padStart(2, "0")}`;
   const sceneCaption = "주소 계층을 고른 뒤 날짜와 희망 시각을 메모합니다.";
+  const sceneHeading = `${headingName} 이용 전 확인 항목`;
   const movements = content.sections.slice(0, -1).map((section, index) => {
     const number = String(index + 1).padStart(2, "0");
     return {
@@ -231,7 +250,8 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
     entry("opening:action:primary", content.ctaLabels[0], "owned-copy"),
     entry("opening:action:score", content.ctaLabels[1], "owned-copy"),
     entry("scene:index", sceneIndex, "decorative"),
-    entry("scene:name", node.displayName, "geography"),
+    entry("scene:name", headingName, "geography"),
+    entry("scene:heading", sceneHeading, "owned-copy"),
     entry("scene:caption", sceneCaption, "owned-copy"),
     entry("gallery:index", "ADDRESS DIRECTORY", "decorative"),
     entry("gallery:heading", galleryHeading, "navigation-fact"),
@@ -295,10 +315,12 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
     },
     scene: {
       index: sceneIndex,
-      name: node.displayName,
+      name: headingName,
+      heading: sceneHeading,
       caption: sceneCaption,
       indexCopyId: "scene:index",
       nameCopyId: "scene:name",
+      headingCopyId: "scene:heading",
       captionCopyId: "scene:caption",
     },
     gallery: {

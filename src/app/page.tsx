@@ -29,7 +29,7 @@ export default function Home() {
     return {
       key,
       shortName: ROOT_LABELS[key].short,
-      name: ROOT_LABELS[key].full,
+      name: ROOT_LABELS[key].short,
       scope: ROOT_LABELS[key].scope,
       path: `${node.path}/`,
       count: node.records.length,

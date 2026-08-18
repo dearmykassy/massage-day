@@ -1,10 +1,12 @@
 import {
   getDirectChildren,
+  getRegionHeadingLabel,
   getKeywordRegionLabel,
   getParentNode,
   getRegionOrdinal,
   getSearchRegionLabel,
   shortenRegionSearchName,
+  usesConciseRegionHeading,
   type RegionChild,
   type RegionNode,
 } from "@/lib/regions";
@@ -67,7 +69,7 @@ export type RegionContent = {
 
 /** The owner-approved broad boundary resolves to exactly 41 active routes. */
 export function isBroadDetailRegion(node: RegionNode): boolean {
-  return node.kind === "root" || /시$/u.test(node.displayName);
+  return usesConciseRegionHeading(node);
 }
 
 type NamePattern = (name: string) => string;
@@ -152,6 +154,26 @@ function siblingContext(node: RegionNode): {
   return { parent, siblings, index: Math.max(0, index) };
 }
 
+function visibleDisplayName(pageNode: RegionNode, targetNode: RegionNode): string {
+  return isBroadDetailRegion(pageNode)
+    ? shortenRegionSearchName(targetNode.displayName)
+    : targetNode.displayName;
+}
+
+function visibleQualifiedName(pageNode: RegionNode, targetNode: RegionNode): string {
+  if (!isBroadDetailRegion(pageNode)) return targetNode.qualifiedName;
+  if (pageNode.path === targetNode.path || targetNode.kind === "root") {
+    return getRegionHeadingLabel(targetNode);
+  }
+  return shortenRegionSearchName(targetNode.qualifiedName);
+}
+
+function visibleChildName(pageNode: RegionNode, child: RegionChild): string {
+  return isBroadDetailRegion(pageNode)
+    ? shortenRegionSearchName(child.name)
+    : child.name;
+}
+
 /**
  * Each paragraph starts with a truthful address relationship. Seven forms are
  * distributed by sibling position; the largest set is 31, so normalized reuse
@@ -160,61 +182,74 @@ function siblingContext(node: RegionNode): {
 function addressContext(node: RegionNode, slot: number): string {
   const children = getDirectChildren(node);
   const { parent, index } = siblingContext(node);
+  const displayName = visibleDisplayName(node, node);
   if (!parent) {
-    const anchors = children.slice(0, 3).map((child) => child.name).join("·");
+    const anchors = children
+      .slice(0, 3)
+      .map((child) => visibleChildName(node, child))
+      .join("·");
     const variants = [
-      `최상위 주소 ${node.displayName} 아래에는 직접 연결된 주소 항목 ${children.length}개가 있습니다${anchors ? `: ${anchors}` : ""}.`,
-      `${node.displayName} 주소 안내는 ${children.length}개 바로 아래 단계로 나뉩니다${anchors ? `: ${anchors}` : ""}.`,
-      `현재 주소 계층의 첫 단계는 ${node.displayName}, 다음 단계 수는 ${children.length}개입니다${anchors ? `: ${anchors}` : ""}.`,
-      `${node.displayName} 페이지에서 확인하는 직계 주소 목록은 ${children.length}개입니다${anchors ? `: ${anchors}` : ""}.`,
-      `주소 경로는 ${node.displayName} 단계에서 시작하고 ${children.length}개 하위 항목으로 이어집니다${anchors ? `: ${anchors}` : ""}.`,
-      `${node.displayName} 최상위 항목에는 ${children.length}개 다음 주소가 연결됩니다${anchors ? `: ${anchors}` : ""}.`,
-      `현재 선택한 최상위 주소: ${node.displayName}. 직계 하위 항목은 ${children.length}개입니다${anchors ? `: ${anchors}` : ""}.`,
+      `최상위 주소 ${displayName} 아래에는 직접 연결된 주소 항목 ${children.length}개가 있습니다${anchors ? `: ${anchors}` : ""}.`,
+      `${displayName} 주소 안내는 ${children.length}개 바로 아래 단계로 나뉩니다${anchors ? `: ${anchors}` : ""}.`,
+      `현재 주소 계층의 첫 단계는 ${displayName}, 다음 단계 수는 ${children.length}개입니다${anchors ? `: ${anchors}` : ""}.`,
+      `${displayName} 페이지에서 확인하는 직계 주소 목록은 ${children.length}개입니다${anchors ? `: ${anchors}` : ""}.`,
+      `주소 경로는 ${displayName} 단계에서 시작하고 ${children.length}개 하위 항목으로 이어집니다${anchors ? `: ${anchors}` : ""}.`,
+      `${displayName} 최상위 항목에는 ${children.length}개 다음 주소가 연결됩니다${anchors ? `: ${anchors}` : ""}.`,
+      `현재 선택한 최상위 주소: ${displayName}. 직계 하위 항목은 ${children.length}개입니다${anchors ? `: ${anchors}` : ""}.`,
     ];
     return variants[slot % variants.length];
   }
 
+  const parentQualifiedName = visibleQualifiedName(node, parent);
   const variants = [
-    `상위 주소는 ${parent.qualifiedName}, 현재 단계는 ${node.displayName}입니다.`,
-    `${node.displayName} 페이지는 ${parent.qualifiedName} 아래 주소 단계입니다.`,
-    `주소 경로에서 ${parent.qualifiedName} 다음 단계가 ${node.displayName}입니다.`,
-    `현재 주소 단계: ${parent.qualifiedName} → ${node.displayName}.`,
-    `${parent.qualifiedName} 하위 목록에 ${node.displayName} 항목이 연결됩니다.`,
-    `확인한 주소 계층은 ${parent.qualifiedName}, ${node.displayName} 순서입니다.`,
-    `${node.displayName} 항목의 상위 주소는 ${parent.qualifiedName}입니다.`,
+    `상위 주소는 ${parentQualifiedName}, 현재 단계는 ${displayName}입니다.`,
+    `${displayName} 페이지는 ${parentQualifiedName} 아래 주소 단계입니다.`,
+    `주소 경로에서 ${parentQualifiedName} 다음 단계가 ${displayName}입니다.`,
+    `현재 주소 단계: ${parentQualifiedName} → ${displayName}.`,
+    `${parentQualifiedName} 하위 목록에 ${displayName} 항목이 연결됩니다.`,
+    `확인한 주소 계층은 ${parentQualifiedName}, ${displayName} 순서입니다.`,
+    `${displayName} 항목의 상위 주소는 ${parentQualifiedName}입니다.`,
   ];
   return variants[(index + slot * 3) % variants.length];
 }
 
 function directBranchFact(node: RegionNode): string {
   const children = getDirectChildren(node);
+  const qualifiedName = visibleQualifiedName(node, node);
   if (children.length === 0) {
-    return `${node.qualifiedName} 다음에는 별도 지역 카드가 없으므로 도로명과 건물명을 전화로 확인합니다.`;
+    return `${qualifiedName} 다음에는 별도 지역 카드가 없으므로 도로명과 건물명을 전화로 확인합니다.`;
   }
-  const names = children.slice(0, 5).map((child) => child.name).join("·");
-  return `${node.qualifiedName} 직계 하위 주소는 ${children.length}개이며 ${names}${children.length > 5 ? " 외 항목" : ""}으로 이어집니다.`;
+  const names = children
+    .slice(0, 5)
+    .map((child) => visibleChildName(node, child))
+    .join("·");
+  return `${qualifiedName} 직계 하위 주소는 ${children.length}개이며 ${names}${children.length > 5 ? " 외 항목" : ""}으로 이어집니다.`;
 }
 
 function relatedAddressFact(node: RegionNode): string {
   const children = getDirectChildren(node);
+  const qualifiedName = visibleQualifiedName(node, node);
   if (children.length > 0) {
-    const names = children.slice(0, 5).map((child) => child.name).join("·");
-    return `${node.qualifiedName} 다음 주소 ${children.length}개 중 ${names}${children.length > 5 ? " 외 항목" : ""}을 목록에서 확인합니다.`;
+    const names = children
+      .slice(0, 5)
+      .map((child) => visibleChildName(node, child))
+      .join("·");
+    return `${qualifiedName} 다음 주소 ${children.length}개 중 ${names}${children.length > 5 ? " 외 항목" : ""}을 목록에서 확인합니다.`;
   }
 
   const aliases = node.representative?.sourceNames ?? [];
   const additionalAliases = aliases.filter((name) => name !== node.displayName);
   if (additionalAliases.length > 0) {
-    return `${node.qualifiedName} 페이지에는 ${additionalAliases.slice(0, 5).join("·")} 주소 명칭도 함께 연결됩니다.`;
+    return `${qualifiedName} 페이지에는 ${additionalAliases.slice(0, 5).join("·")} 주소 명칭도 함께 연결됩니다.`;
   }
 
   const { parent, siblings, index } = siblingContext(node);
   if (!parent || siblings.length <= 1) {
-    return `${node.qualifiedName} 뒤의 상세 위치는 도로명과 건물명으로 이어서 확인합니다.`;
+    return `${qualifiedName} 뒤의 상세 위치는 도로명과 건물명으로 이어서 확인합니다.`;
   }
   const previous = siblings[(index - 1 + siblings.length) % siblings.length];
   const next = siblings[(index + 1) % siblings.length];
-  return `같은 상위 주소 ${parent.qualifiedName}에서 ${previous.name}·${next.name} 항목도 ${node.displayName} 항목과 같은 단계에 놓입니다.`;
+  return `같은 상위 주소 ${visibleQualifiedName(node, parent)}에서 ${visibleChildName(node, previous)}·${visibleChildName(node, next)} 항목도 ${visibleDisplayName(node, node)} 항목과 같은 단계에 놓입니다.`;
 }
 
 function homonymFact(node: RegionNode): string {
@@ -258,7 +293,7 @@ function metadataGeographyFact(node: RegionNode): string {
 }
 
 function broadSections(node: RegionNode): ContentSection[] {
-  const name = node.qualifiedName;
+  const name = getRegionHeadingLabel(node);
   return [
     section(
       "boundary-basis",
@@ -399,7 +434,7 @@ export function createRegionContent(node: RegionNode): RegionContent {
   const ordinal = getRegionOrdinal(node);
   const keywordLabel = getKeywordRegionLabel(node);
   const searchName = getSearchRegionLabel(node);
-  const officialName = node.qualifiedName;
+  const headingName = getRegionHeadingLabel(node);
   const broad = isBroadDetailRegion(node);
   const geography = metadataGeographyFact(node);
 
@@ -409,7 +444,7 @@ export function createRegionContent(node: RegionNode): RegionContent {
       (ordinal * 5 + 2) % DESCRIPTION_PATTERNS.length
     ](searchName, geography),
     keywords: REGION_KEYWORD_SUFFIXES.map((suffix) => `${keywordLabel}${suffix}`),
-    h1: H1_PATTERNS[(ordinal * 11 + 5) % H1_PATTERNS.length](officialName),
+    h1: H1_PATTERNS[(ordinal * 11 + 5) % H1_PATTERNS.length](headingName),
     eyebrow: "마사지데이 · 주소 확인",
     hooks: [
       `${addressContext(node, 30)} 받을 도로명과 건물명, 날짜·시각, 인원, 코스를 전화 전에 준비합니다.`,

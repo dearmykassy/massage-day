@@ -14,9 +14,11 @@ import {
   ACTIVE_REGION_NODES,
   ACTIVE_ROOT_KEYS,
   getDirectChildren,
+  getRegionHeadingLabel,
   getKeywordRegionLabel,
   getSearchRegionLabel,
   shortenRegionSearchName,
+  usesConciseRegionHeading,
 } from "@/lib/regions";
 
 const FORBIDDEN_BRANDS = [
@@ -79,8 +81,10 @@ function normalizeRegionalCopy(
   const labels = [
     node.qualifiedName,
     node.displayName,
+    getRegionHeadingLabel(node),
     getSearchRegionLabel(node),
     getKeywordRegionLabel(node),
+    shortenRegionSearchName(node.qualifiedName),
   ]
     .filter(
       (label, index, all) =>
@@ -264,8 +268,11 @@ describe("Massage Day regional copy", () => {
       const conciseDisplayName = shortenRegionSearchName(node.displayName);
       expect(searchLabel).toBe(
         (conciseDisplayFrequency.get(conciseDisplayName) ?? 0) > 1 &&
-          node.qualifiedName !== node.displayName
-          ? shortenRegionSearchName(node.qualifiedName)
+          usesConciseRegionHeading(node)
+          ? getRegionHeadingLabel(node)
+          : (conciseDisplayFrequency.get(conciseDisplayName) ?? 0) > 1 &&
+              node.qualifiedName !== node.displayName
+            ? shortenRegionSearchName(node.qualifiedName)
           : conciseDisplayName,
       );
       expect(content.title).toContain(searchLabel);
@@ -274,7 +281,126 @@ describe("Massage Day regional copy", () => {
         content.keywords.every((keyword) => keyword.startsWith(keywordLabel)),
       ).toBe(true);
       expect(metaSurface).not.toMatch(forbiddenBeforeService);
-      expect(content.h1).toContain(node.qualifiedName);
+      expect(content.h1).toContain(getRegionHeadingLabel(node));
+    }
+  });
+
+  it("uses concise names in every H1/H2 surface for all 41 root and city routes", () => {
+    const conciseRoutes = records.filter(({ node }) =>
+      usesConciseRegionHeading(node),
+    );
+    expect(conciseRoutes).toHaveLength(41);
+
+    const examples = new Map([
+      ["서울특별시", "서울"],
+      ["인천광역시", "인천"],
+      ["경기도", "경기"],
+      ["수원시", "수원"],
+      ["천안시", "천안"],
+      ["아산시", "아산"],
+      ["구미시", "구미"],
+      ["부산광역시", "부산"],
+      ["서귀포시", "서귀포"],
+    ]);
+    for (const [official, concise] of examples) {
+      const node = ACTIVE_REGION_NODES.find(
+        (candidate) => candidate.displayName === official,
+      );
+      expect(node, official).toBeDefined();
+      expect(getRegionHeadingLabel(node!), official).toBe(concise);
+    }
+
+    const jejuRoot = ACTIVE_REGION_NODES.find(
+      (candidate) => candidate.path === "/areas/jeju",
+    );
+    const jejuCity = ACTIVE_REGION_NODES.find(
+      (candidate) => candidate.path === "/areas/jeju/%EC%A0%9C%EC%A3%BC%EC%8B%9C",
+    );
+    expect(jejuRoot).toBeDefined();
+    expect(jejuCity).toBeDefined();
+    expect(getSearchRegionLabel(jejuRoot!)).toBe("제주 전역");
+    expect(getSearchRegionLabel(jejuCity!)).toBe("제주");
+
+    const forbiddenAdministrativeToken =
+      /(?:특별자치도|특별자치시|특별시|광역시)/u;
+    for (const { node, content } of conciseRoutes) {
+      const model = createRegionPageModel(node);
+      const headingName = getRegionHeadingLabel(node);
+      const headings = [
+        content.h1,
+        model.scene.heading,
+        model.gallery.heading,
+        ...content.sections.map((item) => item.heading),
+      ];
+      expect(headings.every((heading) => heading.startsWith(headingName))).toBe(
+        true,
+      );
+      expect(headings.join("\n")).not.toMatch(forbiddenAdministrativeToken);
+      if (node.displayName !== headingName) {
+        expect(headings.join("\n")).not.toContain(node.displayName);
+      }
+    }
+  });
+
+  it("keeps district and neighborhood leaf suffixes in heading labels", () => {
+    for (const suffix of ["구", "동"] as const) {
+      const node = ACTIVE_REGION_NODES.find(
+        (candidate) =>
+          !usesConciseRegionHeading(candidate) &&
+          candidate.displayName.endsWith(suffix),
+      );
+      expect(node, suffix).toBeDefined();
+      expect(getRegionHeadingLabel(node!)).toBe(node!.qualifiedName);
+      expect(getRegionHeadingLabel(node!)).toContain(node!.displayName);
+    }
+  });
+
+  it("removes long administrative names from every broad visible surface", () => {
+    const broadNodes = ACTIVE_REGION_NODES.filter(usesConciseRegionHeading);
+    const officialBroadNames = broadNodes
+      .map((node) => node.displayName)
+      .filter((name) => name !== shortenRegionSearchName(name));
+    const hookValues = broadNodes.flatMap(
+      (node) => createRegionContent(node).hooks,
+    );
+    const paragraphValues = broadNodes.flatMap((node) =>
+      createRegionContent(node).sections.flatMap((item) => item.paragraphs),
+    );
+    const breadcrumbValues = broadNodes.flatMap((node) =>
+      createRegionPageModel(node).breadcrumbs.slice(1).map((crumb) => crumb.name),
+    );
+    const cityChildPairs = broadNodes.flatMap((node) => {
+      const sourceChildren = getDirectChildren(node);
+      const renderedChildren = createRegionPageModel(node).gallery.items;
+      return sourceChildren.flatMap((child, index) =>
+        /시$/u.test(child.name)
+          ? [{ source: child.name, rendered: renderedChildren[index].name }]
+          : [],
+      );
+    });
+
+    expect(hookValues).toHaveLength(82);
+    expect(paragraphValues).toHaveLength(902);
+    expect(breadcrumbValues).toHaveLength(71);
+    expect(cityChildPairs).toHaveLength(30);
+    for (const pair of cityChildPairs) {
+      expect(pair.rendered).toBe(shortenRegionSearchName(pair.source));
+    }
+
+    const visible = broadNodes
+      .flatMap((node) =>
+        createRegionPageModel(node).renderedSurface.map((copy) => copy.value),
+      )
+      .join("\n");
+    const broadMeta = broadNodes
+      .map((node) => {
+        const content = createRegionContent(node);
+        return [content.title, content.description, ...content.keywords].join("\n");
+      })
+      .join("\n");
+    expect(`${visible}\n${broadMeta}`).not.toContain("제주 제주");
+    for (const officialName of officialBroadNames) {
+      expect(`${visible}\n${broadMeta}`, officialName).not.toContain(officialName);
     }
   });
 
@@ -318,7 +444,11 @@ describe("Massage Day regional copy", () => {
     expect(new Set(paragraphs).size).toBe(paragraphs.length);
     for (const { node, content } of records) {
       for (const paragraph of content.sections.flatMap((item) => item.paragraphs)) {
-        expect(paragraph).toContain(node.displayName);
+        expect(paragraph).toContain(
+          usesConciseRegionHeading(node)
+            ? shortenRegionSearchName(node.displayName)
+            : node.displayName,
+        );
       }
     }
   });

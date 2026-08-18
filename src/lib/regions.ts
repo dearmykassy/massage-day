@@ -273,10 +273,44 @@ const SEARCH_NAME_FREQUENCY = ACTIVE_REGION_NODES.reduce((counts, node) => {
 
 export function getSearchRegionLabel(node: RegionNode): string {
   const conciseDisplayName = shortenRegionSearchName(node.displayName);
+  if (
+    (SEARCH_NAME_FREQUENCY.get(conciseDisplayName) ?? 0) > 1 &&
+    usesConciseRegionHeading(node)
+  ) {
+    return getRegionHeadingLabel(node);
+  }
   return (SEARCH_NAME_FREQUENCY.get(conciseDisplayName) ?? 0) > 1 &&
     node.qualifiedName !== node.displayName
     ? shortenRegionSearchName(node.qualifiedName)
     : conciseDisplayName;
+}
+
+/**
+ * Customer-facing H1/H2 copy uses short names only for province/root and
+ * city-level routes. Lower address levels keep their qualified administrative
+ * context so identical district and neighborhood names remain distinguishable.
+ */
+export function usesConciseRegionHeading(node: RegionNode): boolean {
+  return node.kind === "root" || /시$/u.test(node.displayName);
+}
+
+const CONCISE_HEADING_NAME_FREQUENCY = ACTIVE_REGION_NODES.reduce(
+  (counts, node) => {
+    if (!usesConciseRegionHeading(node)) return counts;
+    const label = shortenRegionSearchName(node.displayName);
+    counts.set(label, (counts.get(label) ?? 0) + 1);
+    return counts;
+  },
+  new Map<string, number>(),
+);
+
+export function getRegionHeadingLabel(node: RegionNode): string {
+  if (!usesConciseRegionHeading(node)) return node.qualifiedName;
+  const concise = shortenRegionSearchName(node.displayName);
+  return node.kind === "root" &&
+    (CONCISE_HEADING_NAME_FREQUENCY.get(concise) ?? 0) > 1
+    ? `${concise} 전역`
+    : concise;
 }
 
 export function getKeywordRegionLabel(node: RegionNode): string {

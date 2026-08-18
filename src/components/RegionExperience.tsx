@@ -35,7 +35,7 @@ export function RegionExperience({ node }: { node: RegionNode }) {
             <div className={styles.hooks}>{content.hooks.map((hook, index) => <p key={hook} data-region-copy-id={model.opening.hookCopyIds[index]}>{hook}</p>)}</div>
             <div className={styles.actions}><a href={PHONE_HREF} data-region-copy-id={model.opening.primaryActionCopyId}>{content.ctaLabels[0]}</a><Link href="/pricing/" data-region-copy-id={model.opening.scoreActionCopyId}>{content.ctaLabels[1]}</Link></div>
           </div>
-          <div className={styles.heroVisual} role="img" aria-label={`${node.displayName} 지역 안내 배너`} style={heroStyle} />
+          <div className={styles.heroVisual} role="img" aria-label={`${model.scene.name} 지역 안내 배너`} style={heroStyle} />
           <div className={styles.heroStats} aria-label="지역 안내 요약">
             <div><span data-region-copy-id={model.scene.indexCopyId}>{model.scene.index}</span><strong data-region-copy-id={model.scene.nameCopyId}>{model.scene.name}</strong></div>
             <div><span>안내 구성</span><strong>{content.detailMode === "broad" ? "광역 상세" : "주소 상세"}</strong></div>
@@ -44,7 +44,7 @@ export function RegionExperience({ node }: { node: RegionNode }) {
         </section>
 
         <section className={styles.information} aria-labelledby="local-check-title">
-          <header className={styles.sectionHeading}><div><p>LOCAL CHECKPOINTS</p><h2 id="local-check-title">{node.displayName} 이용 전 확인 항목</h2><span data-region-copy-id={model.scene.captionCopyId}>{model.scene.caption}</span></div></header>
+          <header className={styles.sectionHeading}><div><p>LOCAL CHECKPOINTS</p><h2 id="local-check-title" data-region-copy-id={model.scene.headingCopyId}>{model.scene.heading}</h2><span data-region-copy-id={model.scene.captionCopyId}>{model.scene.caption}</span></div></header>
           <div className={styles.detailGrid}>
             {model.movements.map((movement) => (
               <article className={styles.detailCard} id={movement.section.id} key={movement.section.id}>

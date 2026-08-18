@@ -16,8 +16,10 @@ import {
 } from "../src/lib/content.ts";
 import {
   ACTIVE_REGION_NODES,
+  getRegionHeadingLabel,
   getKeywordRegionLabel,
   getSearchRegionLabel,
+  shortenRegionSearchName,
 } from "../src/lib/regions.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -107,8 +109,10 @@ const ALL_REGION_LABELS = [
     ACTIVE_REGION_NODES.flatMap((node) => [
       node.qualifiedName,
       node.displayName,
+      getRegionHeadingLabel(node),
       getSearchRegionLabel(node),
       getKeywordRegionLabel(node),
+      shortenRegionSearchName(node.qualifiedName),
       ...(node.representative?.sourceNames ?? []),
     ]).filter((value) => value.length >= 2),
   ),
@@ -136,8 +140,10 @@ function normalizeRegional(value, node) {
   const labels = [
     node.qualifiedName,
     node.displayName,
+    getRegionHeadingLabel(node),
     getSearchRegionLabel(node),
     getKeywordRegionLabel(node),
+    shortenRegionSearchName(node.qualifiedName),
   ]
     .filter(
       (label, index, all) =>
@@ -267,6 +273,7 @@ function genericRuntimeCode() {
     'const substantive = (value) => (value.match(/[가-힣]/gu) ?? []).length >= 12;',
     'function normalize(value, node) {',
     '  const labels = [node.qualifiedName, node.displayName,',
+    '    typeof regionLibrary.getRegionHeadingLabel === "function" ? regionLibrary.getRegionHeadingLabel(node) : "",',
     '    typeof regionLibrary.getSearchRegionLabel === "function" ? regionLibrary.getSearchRegionLabel(node) : "",',
     '    typeof regionLibrary.getKeywordRegionLabel === "function" ? regionLibrary.getKeywordRegionLabel(node) : ""]',
     '    .filter((label, index, all) => label && all.indexOf(label) === index)',
