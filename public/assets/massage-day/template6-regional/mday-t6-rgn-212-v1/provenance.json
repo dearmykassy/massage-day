@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "massage-day-template6-regional-image-provenance/v1",
+  "status": "ROOT_APPROVED_RELEASED",
+  "platformKey": "massage-day",
+  "assetId": "mday-t6-rgn-212-v1",
+  "sourceClass": "new",
+  "source": {
+    "relativePath": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-212-v1.png",
+    "sha256": "9bbb60ca93e54231338cb6abba7c65cc6ed534f1c2d4d9da5d1283ccda87f930",
+    "generationReceipt": {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-212-v1.json",
+      "sha256": "2acf958a8aab22d12820916b117abf64120f2b94d86c5026d29213ed851503c8"
+    }
+  },
+  "campaign": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/campaign.v1.json",
+    "sha256": "2cf8705049bd4856b2ac60f0509615cd1d7f43227e390abb4e62798d25bff160"
+  },
+  "inventory": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/inventory.v1.json",
+    "sha256": "b484f3218df01bc649c14f3e5b0dc7e80247f8ebd22a1dd279de7f1ffa24ea8c"
+  },
+  "rootReview": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/reviews/root-review.receipt.v1.json",
+    "sha256": "6f6f49894982d8b159b1596c62b5bd06747613d0bf75f59599858f329de663f4",
+    "reviewer": "root",
+    "sourceDecision": "ACCEPT",
+    "responsiveCropsAuthorized": true
+  },
+  "focalPoint": {
+    "xPermille": 500,
+    "yPermille": 500,
+    "reviewStatus": "PENDING_ROOT_REVIEW",
+    "source": {
+      "relativePath": "src/data/regional-image-focal-points.template6.json",
+      "sha256": "5fb69d5679502bed1018c8d789ffe16912fce3d6827cc5a22c69acf9718f12ae"
+    }
+  },
+  "plannedRouteUses": 6,
+  "derivatives": {
+    "desktop": {
+      "relativePath": "public/assets/massage-day/template6-regional/mday-t6-rgn-212-v1/desktop.webp",
+      "sha256": "fbb244cdc113c717bd3031f7302ea1b10a2c021a0b9b30611a0a3b1c3e7f6bd9",
+      "width": 1600,
+      "height": 900,
+      "format": "webp"
+    },
+    "tablet": {
+      "relativePath": "public/assets/massage-day/template6-regional/mday-t6-rgn-212-v1/tablet.webp",
+      "sha256": "ef372cda40b6c434516a833e484109768c36e5b385f06b7d380b9f147fd00210",
+      "width": 1200,
+      "height": 675,
+      "format": "webp"
+    },
+    "mobile": {
+      "relativePath": "public/assets/massage-day/template6-regional/mday-t6-rgn-212-v1/mobile.webp",
+      "sha256": "1603af162b9b53d5ba2e410e5d65f9b481bfc36f3e6c8bda5355770894d355ee",
+      "width": 768,
+      "height": 600,
+      "format": "webp"
+    }
+  }
+}

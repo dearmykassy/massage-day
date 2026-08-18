@@ -1,0 +1,754 @@
+{
+  "schemaVersion": "massage-day-template6-reuse-substitution-selection/v2",
+  "status": "READY_FOR_ROOT_VISUAL_REVIEW",
+  "platformKey": "massage-day",
+  "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT",
+  "counts": {
+    "substituted": 24,
+    "accepted": 24,
+    "rejected": 0
+  },
+  "existingOriginalsPreserved": true,
+  "reuseRights": {
+    "license": "OWNER_CONTROLLED_CROSS_PLATFORM_REUSE",
+    "ownerApproval": {
+      "type": "explicit-owner-authorization",
+      "grantedDateKst": "2026-08-18",
+      "scope": "The owner explicitly authorized reuse of previously approved platform photographs for approximately one third of 마사지데이 regional image assignments."
+    }
+  },
+  "visualReview": {
+    "method": "direct-contact-sheet-review",
+    "reviewer": "codex-image-qa",
+    "criteria": [
+      "adult Korean woman",
+      "mirror selfie with a visible phone and coherent reflection",
+      "fully clothed",
+      "no text, logo, watermark, explicit sexual staging, minor appearance, anatomical defect, or duplicate person"
+    ],
+    "accepted": 24,
+    "rejected": 0
+  },
+  "substitutions": [
+    {
+      "logicalAssetId": "mday-t6-rgn-001-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-001-v1/desktop.webp",
+        "sha256": "b5a6815f408e4193a67958763563bb76d64222cb9a2fadafbd23b771d3fa3375",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-001-v1.webp",
+        "sha256": "b5a6815f408e4193a67958763563bb76d64222cb9a2fadafbd23b771d3fa3375",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-002-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-002-v1/desktop.webp",
+        "sha256": "736501a9e9ae4673d964f795d3150c0a7a2bec14ece0edf4beffd3bb1ee4fa8e",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-002-v1.webp",
+        "sha256": "736501a9e9ae4673d964f795d3150c0a7a2bec14ece0edf4beffd3bb1ee4fa8e",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-003-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-003-v1/desktop.webp",
+        "sha256": "7221dd655b32c1520afffb21aa2866712ba77101f00ed51457af300be86f5d6f",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-003-v1.webp",
+        "sha256": "7221dd655b32c1520afffb21aa2866712ba77101f00ed51457af300be86f5d6f",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-004-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-004-v1/desktop.webp",
+        "sha256": "4280243c17af65cc6734769f0905d06d3a2e3c918fe6da33bd7abe3d0e0193d6",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-004-v1.webp",
+        "sha256": "4280243c17af65cc6734769f0905d06d3a2e3c918fe6da33bd7abe3d0e0193d6",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-005-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-005-v1/desktop.webp",
+        "sha256": "d40140dbf39218372ed0145123bc2382912e827142a50fd243db15db89dfbd72",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-005-v1.webp",
+        "sha256": "d40140dbf39218372ed0145123bc2382912e827142a50fd243db15db89dfbd72",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-006-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-006-v1/desktop.webp",
+        "sha256": "3027e334a4f1464026dfffce7e6acccf77a7201e962cfe3cbd572fdc0aaff8ef",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-006-v1.webp",
+        "sha256": "3027e334a4f1464026dfffce7e6acccf77a7201e962cfe3cbd572fdc0aaff8ef",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-007-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-007-v1/desktop.webp",
+        "sha256": "0eda61dcb5a43139e2e94e9450170e0cd943b0a876a19f15b4fffcc39c0a06b0",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-007-v1.webp",
+        "sha256": "0eda61dcb5a43139e2e94e9450170e0cd943b0a876a19f15b4fffcc39c0a06b0",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-008-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-008-v1/desktop.webp",
+        "sha256": "d224b66274f5b6003e3db10051fdb4eea5fa0513a85d84dc5db5392beccdd0d2",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-008-v1.webp",
+        "sha256": "d224b66274f5b6003e3db10051fdb4eea5fa0513a85d84dc5db5392beccdd0d2",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-009-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-009-v1/desktop.webp",
+        "sha256": "580e41a90ed576a9d75e3efae9bb541a5649440d49a9a20e21ff8f1926a682f5",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-009-v1.webp",
+        "sha256": "580e41a90ed576a9d75e3efae9bb541a5649440d49a9a20e21ff8f1926a682f5",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-010-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-010-v1/desktop.webp",
+        "sha256": "03de5bc35aff8a025f9bf85e6799ac8916e189a0a4a28a0acab38c4a6d3ad6a1",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-010-v1.webp",
+        "sha256": "03de5bc35aff8a025f9bf85e6799ac8916e189a0a4a28a0acab38c4a6d3ad6a1",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-011-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-011-v1/desktop.webp",
+        "sha256": "82c1737bb42f46243b4182842a1625fc94062e44cc59de35de1ff1c5488a760a",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-011-v1.webp",
+        "sha256": "82c1737bb42f46243b4182842a1625fc94062e44cc59de35de1ff1c5488a760a",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-012-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-012-v1/desktop.webp",
+        "sha256": "c2a3e041db45bfab3c7ed582c55efb12ab6ce5a29643cb61e431f25a045a5894",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-012-v1.webp",
+        "sha256": "c2a3e041db45bfab3c7ed582c55efb12ab6ce5a29643cb61e431f25a045a5894",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-013-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-013-v1/desktop.webp",
+        "sha256": "a8ad601a91731729c76e5de997382303a3eea71ec9bfddf6b73bc6a6757764a1",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-013-v1.webp",
+        "sha256": "a8ad601a91731729c76e5de997382303a3eea71ec9bfddf6b73bc6a6757764a1",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-014-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-014-v1/desktop.webp",
+        "sha256": "fe4e9fafe9823f5e86697633b8878aaf6f4cefe5e18af95d01991858ac0cc0fb",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-014-v1.webp",
+        "sha256": "fe4e9fafe9823f5e86697633b8878aaf6f4cefe5e18af95d01991858ac0cc0fb",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-015-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-015-v1/desktop.webp",
+        "sha256": "fd003dc0b06636e1c513cf62dab5f4c2a0f348e5ce0df398581f7fa278a6c358",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-015-v1.webp",
+        "sha256": "fd003dc0b06636e1c513cf62dab5f4c2a0f348e5ce0df398581f7fa278a6c358",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-016-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-016-v1/desktop.webp",
+        "sha256": "4328672498e0c62b451c64c9dd77fdadd18f8efec2bb2872985ff2ca3556c151",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-016-v1.webp",
+        "sha256": "4328672498e0c62b451c64c9dd77fdadd18f8efec2bb2872985ff2ca3556c151",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-017-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-017-v1/desktop.webp",
+        "sha256": "11433dffbf7b0f6e60cbfae375b49e1fa5608420782ac5f83949fd42c0a060c3",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-017-v1.webp",
+        "sha256": "11433dffbf7b0f6e60cbfae375b49e1fa5608420782ac5f83949fd42c0a060c3",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-018-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-018-v1/desktop.webp",
+        "sha256": "9637e24497c9b70d0dd462bcdfcea633f647ec77767f6a700d936d5601f488fe",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-018-v1.webp",
+        "sha256": "9637e24497c9b70d0dd462bcdfcea633f647ec77767f6a700d936d5601f488fe",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-019-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-019-v1/desktop.webp",
+        "sha256": "308ac733867d4a71301f4324ae2f3311dadb7a5c2078b35beaaaaa22410a386c",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-019-v1.webp",
+        "sha256": "308ac733867d4a71301f4324ae2f3311dadb7a5c2078b35beaaaaa22410a386c",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-020-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-020-v1/desktop.webp",
+        "sha256": "1c8722269597e7c22667e02dffd86bec406a72f472c6863e92832bb2fafdd1d7",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-020-v1.webp",
+        "sha256": "1c8722269597e7c22667e02dffd86bec406a72f472c6863e92832bb2fafdd1d7",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-021-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-021-v1/desktop.webp",
+        "sha256": "1ff07d8e7d8e9b6384b31711f79269df880849a50a8d71c55b9423055b984983",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-021-v1.webp",
+        "sha256": "1ff07d8e7d8e9b6384b31711f79269df880849a50a8d71c55b9423055b984983",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-022-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-022-v1/desktop.webp",
+        "sha256": "15353cdd0b179704303b7f56e5d8b4d72e94ba1f2080aee3de58641a2bd19f65",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-022-v1.webp",
+        "sha256": "15353cdd0b179704303b7f56e5d8b4d72e94ba1f2080aee3de58641a2bd19f65",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-023-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-023-v1/desktop.webp",
+        "sha256": "5c985c7143a415b2a157014f0ebdd354f0742e7ea4dc81dead3d5603d800887f",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-023-v1.webp",
+        "sha256": "5c985c7143a415b2a157014f0ebdd354f0742e7ea4dc81dead3d5603d800887f",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-024-v1",
+      "selectedSourcePlatform": "feeling-hometai",
+      "source": {
+        "relativePath": "public/assets/feeling-hometai/template3-regional/rng-t3-rgn-024-v1/desktop.webp",
+        "sha256": "49c1f00333c6d60f4dc59b71707419598fe71c1960665961eb9a896069be0688",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused-v2/mday-t6-rgn-024-v1.webp",
+        "sha256": "49c1f00333c6d60f4dc59b71707419598fe71c1960665961eb9a896069be0688",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/template3-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "e407f981eaf2b629a395fe51290f0932b707c4ce95996b8591246d3448a588e7"
+        },
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/feeling-hometai-template3-regional-release.v1.json",
+          "sha256": "772bc95710bcd955918ddd4e89366f8699dbf46e495b84311298592667e8111c"
+        }
+      },
+      "decision": "ACCEPT",
+      "reason": "MIRROR_SELFIE_CONCEPT_ALIGNMENT"
+    }
+  ]
+}

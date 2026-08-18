@@ -1,0 +1,864 @@
+{
+  "schemaVersion": "massage-day-template6-regional-replacement-selection/v1",
+  "status": "READY_FOR_ROOT_VISUAL_REVIEW",
+  "platformKey": "massage-day",
+  "campaign": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/campaign.v1.json",
+    "sha256": "2cf8705049bd4856b2ac60f0509615cd1d7f43227e390abb4e62798d25bff160"
+  },
+  "policy": {
+    "originalV1Preserved": true,
+    "replacementVersions": {
+      "v2": 13,
+      "v3": 13,
+      "v4": 1
+    },
+    "oneBuiltInImagegenCallPerReplacement": true,
+    "rootReviewStillRequired": true
+  },
+  "counts": {
+    "rejectedV1": 27,
+    "selectedV2": 13,
+    "selectedV3": 13,
+    "selectedV4": 1
+  },
+  "replacements": [
+    {
+      "logicalAssetId": "mday-t6-rgn-084-v1",
+      "selectedAssetId": "mday-t6-rgn-084-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-084-v2.png",
+        "sha256": "597069e38382e66764222ce38d992d815a91df59dfa48410d7ef296d26e70d2d",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-084-v2.txt",
+        "sha256": "94e889398653d9e936995a3d7f3bd5a0cf676889121345d4ce55bedad9d540de"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-084-v2.json",
+        "sha256": "47cd0bf7c52be17d523ba9bba17c2a7e2117dadd5bc4dba679a577c78a86bea9"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-084-v2.json",
+        "sha256": "84527164ac1a14f6734545747e23b2c3c86a55ec30eaa329c60cf316e4b1963f"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-084-v1.json",
+        "sha256": "dbacd433821067994a11fc6995a972cfe63c1f8ba05ac2d8fd7d9a66db22b38c"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-085-v1",
+      "selectedAssetId": "mday-t6-rgn-085-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-085-v3.png",
+        "sha256": "fa1b6305ac569301b818e34af2a717e212f7ee73cef0a33cca85b49c193bb5e8",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-085-v3.txt",
+        "sha256": "11149019893dc136ba2276ef2dbb3e1083e1c497684a53b8168b4b2b176f487e"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-085-v3.json",
+        "sha256": "05d3d80d5ae0fc586eadbc920e510f13e3c251e38a6dbad6197d9345beb3eaa9"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-085-v3.json",
+        "sha256": "23beede42c7bc375cc061a944a956bc1bfcdac99602d2dbef9f855681c7d06bf"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-085-v1.json",
+        "sha256": "1d34519987f880d04717829eae7296c89d362369f1df1ad29eeea8121b019942"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-086-v1",
+      "selectedAssetId": "mday-t6-rgn-086-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-086-v2.png",
+        "sha256": "840db62ce4da8a3c3f6cb0d75eea9891be733de5258c31b1da6627e5103fc2ca",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-086-v2.txt",
+        "sha256": "03016ed85b7f280ad128e1de7f99fa4822dcd7a4e1b9d614838a8ef1e80e8c86"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-086-v2.json",
+        "sha256": "1143e758065aa5d47f77d11bda6679bfe5c43cca3b6763baaf980cc49909e4e4"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-086-v2.json",
+        "sha256": "283a8adc0c6f95715a6bda0cf48bcd97fa85ab10cfa548348fce9ad5bbea7b9b"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-086-v1.json",
+        "sha256": "2188f098b749f2e3ef44c44f4d2688029976defc13c30e721a5d845c93d599a8"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-087-v1",
+      "selectedAssetId": "mday-t6-rgn-087-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-087-v2.png",
+        "sha256": "3397119a9477318f5e6ac924da9c523bb7638144ec9901f2510f962a5ab616c5",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-087-v2.txt",
+        "sha256": "a82158e8d94e38234d1aab589c86235387d2d2245c3ce4ceafc249a04718c4ea"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-087-v2.json",
+        "sha256": "db3eedf46e1b19baadc8636fa595861a2a0502cf3080330fac718dc96dbc84d4"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-087-v2.json",
+        "sha256": "20df349ea872bd67e926236225c5ed0393643d8ef2eded71e024399e50de3356"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-087-v1.json",
+        "sha256": "6ac150985639a2ef0c166216ebd35c6a45aa3f67bec413d2504779e060686c7e"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-089-v1",
+      "selectedAssetId": "mday-t6-rgn-089-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-089-v2.png",
+        "sha256": "ed58825fc86b9fee9342343e88668dc6c5ec4afe0e55d3ae5ff4fbaf3bfd3223",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-089-v2.txt",
+        "sha256": "f8e05ba02777172756fe25d34cbe9c657217a6fc002327012e369f99610bc23c"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-089-v2.json",
+        "sha256": "de032291aa9c86d55b77f05d5b46453220b4a5221b121a5fc5dbf2a2a48cee41"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-089-v2.json",
+        "sha256": "d8d5dae23b2823df0e854eb1623bec2f6554ff7ee05cf71db653dd29db42114f"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-089-v1.json",
+        "sha256": "781913c5b94bbee8ed9e03cfa6452f6ada125a85976b35b394e52a875e4da5a2"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-091-v1",
+      "selectedAssetId": "mday-t6-rgn-091-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-091-v3.png",
+        "sha256": "1150b4c5101b59c0d4814a15d5f464105ad2cdacf7555f7c63af508a48c0fc41",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-091-v3.txt",
+        "sha256": "19fc7b8ed9e9e64b005e6f770e9409dfa096be8c21e33f8cb7060940e411e65b"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-091-v3.json",
+        "sha256": "4bafa28281cf34d29416a14078f472f11d1c2b47f027241050db472cc77ed63c"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-091-v3.json",
+        "sha256": "c548f3715c8113c62a3b1effdd60988bd08a3fbcc1feee987a96d424f97bbb51"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-091-v1.json",
+        "sha256": "2b63ca5193b8f20b0fc79a27c97c09e673be4dc73a13452df56dcfa85a744f06"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-093-v1",
+      "selectedAssetId": "mday-t6-rgn-093-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-093-v3.png",
+        "sha256": "21afaa1e032425a57904f5494b06c1ce0d31b2ce67687368551b3f82fa6f59c5",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-093-v3.txt",
+        "sha256": "7d8e7b943167022e722b31b66aaaffd4882681633bcac93b86cc36f9652c6db1"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-093-v3.json",
+        "sha256": "5595be929d68e60890c7b90ff392864b83c29f057c154fc61fa02af50ed008af"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-093-v3.json",
+        "sha256": "a166032ccfae95f040d8b37c4cb52ddadd01bf1a7bf92214288bef831fcef354"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-093-v1.json",
+        "sha256": "a1b208a06cf509f934046f768dc3dae2fea0b65c4e8f57d8eb54338eb66c5e4c"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-095-v1",
+      "selectedAssetId": "mday-t6-rgn-095-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-095-v2.png",
+        "sha256": "0e1138569d304a661885a7739c3e7515e00df19f62fd9bee4081597a785a469d",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-095-v2.txt",
+        "sha256": "6aee7b58dd3930bd2d2e03d38555042ce635d2c301b448d6dd9034cbfe4d0c75"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-095-v2.json",
+        "sha256": "266bbe11785b0326d1e4441bc61fad7f1572d23886c2da01380ca30cd8597b79"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-095-v2.json",
+        "sha256": "f7b1b65a860e17b5d8aeb3b52ad64cd4655a05c7d9d6ca38fa76140b165ae18e"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-095-v1.json",
+        "sha256": "6b5252a817d516f7197ccefdf04ded5cdad527856ba975561c4f6dc436c8507a"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-096-v1",
+      "selectedAssetId": "mday-t6-rgn-096-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-096-v2.png",
+        "sha256": "519e8d167d7f0381b63ee6969e8121f6ed26fc3da87656b5cecd72fbc461bb95",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-096-v2.txt",
+        "sha256": "fb63b470d8255c62e36f04c979ef042efdd7d59d3e08f7677d603499ddfa4062"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-096-v2.json",
+        "sha256": "fc18ed30258077ab82d06a0c9ed58698d27cf66b2ba3902fde40b61049218418"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-096-v2.json",
+        "sha256": "33fdfd75d214fa515e9dfd019b3e102b06a4b10341a52cf39b0882c7ae59bf41"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-096-v1.json",
+        "sha256": "7d1eb08a7681b58ef275068608591edce2444d309e28bc5c7577d81578d18442"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-097-v1",
+      "selectedAssetId": "mday-t6-rgn-097-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-097-v3.png",
+        "sha256": "42166f44815713bb10a48e192f77be5e109b4fda7afea6f2d3a8f7ebdb90d218",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-097-v3.txt",
+        "sha256": "3bb8a6961a35cf393f7ea73cb746d16139dc4345dbbae1823901a8057054dd43"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-097-v3.json",
+        "sha256": "8a7c5aca32e4278322298516182346418ca2028ef0fd9de1a6f03d0517a77d6c"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-097-v3.json",
+        "sha256": "863b580c654a388095bf815f2894df7e3578dde15861c9c2ae3a302ae91e3d7e"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-097-v1.json",
+        "sha256": "b54988ad22f929b801d06ed4bc6f0d64cf7b44cddcebe5c19a99a353d1f672bf"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-098-v1",
+      "selectedAssetId": "mday-t6-rgn-098-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-098-v3.png",
+        "sha256": "a897af43f5259388b607fc2ee36ddcfc199df0613f5abf61d1a2629eda460e94",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-098-v3.txt",
+        "sha256": "9b0ea99418889c74e2848f30bf870b463de9e5dc1f15d1318c32943694d92fa7"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-098-v3.json",
+        "sha256": "a1789102ec66749ad62c07288a4f45b79163a7d786245e590a570bb3bd6a211e"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-098-v3.json",
+        "sha256": "dce6129e1aa5d10f527f9cfa6709f7b094436f8bab8ff74f1305de066ef7586b"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-098-v1.json",
+        "sha256": "6c14018f0248ffa585479bcd4cc8ed1e8deb89638e6e86a75ef54e67297cc356"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-099-v1",
+      "selectedAssetId": "mday-t6-rgn-099-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-099-v2.png",
+        "sha256": "b04eaada8a8f2d18133eaada6b1c04e97f286ba9839a85ae8860e21b7a64589a",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-099-v2.txt",
+        "sha256": "85900aa1335ce1b6f3a7b83c4160c60f6fb988914e89b331d92a68178ab8f486"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-099-v2.json",
+        "sha256": "55e714850ef2cffa4ac5238d0b0fbfbe1d76938717eb4b3bf457d35023cbb01c"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-099-v2.json",
+        "sha256": "6d7a3b5230e7de0703d9a4e434a17a7348d8fa12f0851f94f0cb7f25bee9a58a"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-099-v1.json",
+        "sha256": "6a2e39e7b506d1c4ea147c471af30d1b21bd37131f5de50e018b410551e6f61c"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-101-v1",
+      "selectedAssetId": "mday-t6-rgn-101-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-101-v3.png",
+        "sha256": "5d248e3b856ac82c6d5e89ab147c42daa58846ef2f85c674d85135184bf4690a",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-101-v3.txt",
+        "sha256": "45de30af09bb57eac49f7d3ffd1264b11dab0ec67e0cad9549000dabec0dbf51"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-101-v3.json",
+        "sha256": "83e98a792389c1c168ed19d377274faf1917bd41d6e187f9c018a7fa5c027771"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-101-v3.json",
+        "sha256": "856f25efe1ca6aae96c980313c940d4924ae6c5e3a0984a64c64b7855d1243c1"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-101-v1.json",
+        "sha256": "131bfe068db1968bc432c3666503da279b54505e0bd7e8dce3a18b5190ff8859"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-105-v1",
+      "selectedAssetId": "mday-t6-rgn-105-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-105-v2.png",
+        "sha256": "020a28b31a1e0c5806fddc567f3e8345c2037e18d1a42da628d3755500b5690d",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-105-v2.txt",
+        "sha256": "f494285a6b1ac2b393fea3873f3079b2da24a65c9195f9e6f2e4ab9a7c4ccda0"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-105-v2.json",
+        "sha256": "e4cd97c847f99da6dbf5e3f2b8b2d3a98de7ff88fc65d304f14da013406a2228"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-105-v2.json",
+        "sha256": "37557e26c6f8c1aa57ecd4613c66751cf3f76f3aa6873b73384fdad30c768d6c"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-105-v1.json",
+        "sha256": "23ff6e81eaf060f991f4fb330123a7c854bf6983c918e8b83da8f0cf20a91fdd"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-106-v1",
+      "selectedAssetId": "mday-t6-rgn-106-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-106-v2.png",
+        "sha256": "581e8c86d6c8fce84ac322b89148336082a11de95a64d6615818436ad20d0fda",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-106-v2.txt",
+        "sha256": "602e5732a18f65cde073b417139b3f19b78a12559a3379daeb9608480e954561"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-106-v2.json",
+        "sha256": "0449e9426521c2587c43b04ca55e603450edc97c47c1d05e7f55590029bd6277"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-106-v2.json",
+        "sha256": "43c1192511f442f83ba9e2640d1c0e2da323530196ad83e5ead414a99d333047"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-106-v1.json",
+        "sha256": "d952c77663e12c63b7272946700158f1dd0859ba1e15df06f3dcc505c3764c82"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-107-v1",
+      "selectedAssetId": "mday-t6-rgn-107-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-107-v2.png",
+        "sha256": "5e27f80cd983810dbb2b2bec54be4cdf8daed717d9cb7a592747031334de8f82",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-107-v2.txt",
+        "sha256": "a6ffbc898d05c48579b289ff5323fb562b7e2139765339a8048bac732843b2fa"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-107-v2.json",
+        "sha256": "ad4b2010f1aaaf0b564cfee50fd9564ba50c5efeef1670fa8dccbdab92569c79"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-107-v2.json",
+        "sha256": "7a29349b5c2ef8ecb9cf62234bd78c6f2938f0b1dce8b558f42e6ed8a253e6cd"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-107-v1.json",
+        "sha256": "883ec48bbb871f91aefea36b45e5e029b352324abeaa2195bae3c9e8925b3511"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-109-v1",
+      "selectedAssetId": "mday-t6-rgn-109-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-109-v3.png",
+        "sha256": "edd03b8c22490c074b056919ea0721c19ded2734d9787905d7c467b2d1b12789",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-109-v3.txt",
+        "sha256": "1ec02784f9f5ff9f70ee669c4bf6bcba0a9ea4a00db9f4228d4a7d30ecf07c0d"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-109-v3.json",
+        "sha256": "2ecf5f1907adfd7345f47eb5a78598bae50530fe0f4e591e6773838a3c5b59bb"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-109-v3.json",
+        "sha256": "f4ea674a7e935a8d111c2d1d88df812b1e98591572c69d5d27c820ec251e2926"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-109-v1.json",
+        "sha256": "11047eecbb5e833115f8d0e9a95fa99f2b57ed34489caec01a7c03a42b4ebf98"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-114-v1",
+      "selectedAssetId": "mday-t6-rgn-114-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_FORBIDDEN_BED_OR_DAYBED_BACKGROUND",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-114-v2.png",
+        "sha256": "74becd6cab0244d9cfd4c76af346c1c10720f07e41dde573973623bf9ea8298b",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-114-v2.txt",
+        "sha256": "389752709f401e6327b7ec00a9fedf30efd078f8f6510fa2a9884cae02f1a093"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-114-v2.json",
+        "sha256": "b3dc6fff46818bc282eee236ede943807f48d57dd3a1ca8238d853bb81974eee"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-114-v2.json",
+        "sha256": "ee33a6a73d709ecbbb139e8f5c620736d5fbe33f290c7042cb46e06eaa6dee92"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-114-v1.json",
+        "sha256": "68d98eb5cd41eb6140a32bd36a251141b3fd03a171bdd6409ed279fdcaf22da8"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-117-v1",
+      "selectedAssetId": "mday-t6-rgn-117-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-117-v2.png",
+        "sha256": "75ce5390266a4f606f0ba86dd24648cb2829ae932c2b5895bbfbce3eab1b8236",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-117-v2.txt",
+        "sha256": "77355808a552d95c0e0bc6f5e713feb408120239e0b2c1c063096c856563ec83"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-117-v2.json",
+        "sha256": "72b02fc02fe4f83f729d0680bca9f145d9efe7d1663f08ab2a7643d4704c92cf"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-117-v2.json",
+        "sha256": "c10c3238bc5580fc12198644b7f5cc86f392f095f34119ce2a7768dc1c7cb1f5"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-117-v1.json",
+        "sha256": "e780735b43d473bcc5508f1830cd8a83ff0c668acf6ca68be4685242615efcba"
+      },
+      "reviewer": "Codex visual QA via view_image",
+      "reviewedAt": "2026-08-18T03:30:37Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-118-v1",
+      "selectedAssetId": "mday-t6-rgn-118-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-118-v3.png",
+        "sha256": "51f4c8e1f2d9bcce0fe8e1efea18884f529620f4a086ed88827a7c3617eda013",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-118-v3.txt",
+        "sha256": "1fa8ea229273f7119507f8c688d50f522e050f18ea8974bd981e8feb03e2658a"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-118-v3.json",
+        "sha256": "c85c06d5f2fd7001e2395f29f9e5960e1152a7ddf49e6a03e029536c6819b9b3"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-118-v3.json",
+        "sha256": "c8b4f843cba4c9487267f5b8020211df57ef2d8419fa997a8ba2d5e7482891c1"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-118-v1.json",
+        "sha256": "ed72a40c2e98e48e2e70799733601e9de9aef5a3a98181803c53e0274829ef59"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-119-v1",
+      "selectedAssetId": "mday-t6-rgn-119-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-119-v3.png",
+        "sha256": "68a6ac8437ae2ac44fc600a95abd43cc63e1f088d62cb782d117890fa274a962",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-119-v3.txt",
+        "sha256": "168a552dd9cd27f9d213270ab32687849e262aa7c03f7c354f588e7da32decfd"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-119-v3.json",
+        "sha256": "4735735dd7934623238430a505d39dfd4670ffd8228e28698c37760a8ccb184f"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-119-v3.json",
+        "sha256": "900214cf672275fd28e7324208e15f7058635856b88ec53f1426422d13ff02f7"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-119-v1.json",
+        "sha256": "a70845784b9b6abc3f6fa765ee0e771b2734398978cbf634b69774afafb8f54d"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-120-v1",
+      "selectedAssetId": "mday-t6-rgn-120-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/generated/mday-t6-rgn-120-v3.png",
+        "sha256": "8031741c94d376b7d66134765a09529495dc8e42704cb6ffdbf5b1e63afc1531",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-120-v3.txt",
+        "sha256": "6448accb57fe99b164a1b4321cff32000a9b7dc5780c1bcecb8f51f04ae96f10"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-120-v3.json",
+        "sha256": "e015f1efd6361d3fe83d36868204cc75cc48ced38ed4601386b325cc1a92f2e9"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-120-v3.json",
+        "sha256": "55c470c93434d8235c1c9bd8c780b9ea149a76f790f60ff3247dcdd50e13542e"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-120-v1.json",
+        "sha256": "08e433c7b8bf20256e9a4ed4e5970300aa116e038c4ec597c3cb83e7bd87bc62"
+      },
+      "reviewer": "Codex visual QA via full-frame and phone-crop view_image inspection",
+      "reviewedAt": "2026-08-18T03:44:52Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-174-v1",
+      "selectedAssetId": "mday-t6-rgn-174-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_PHONE_OVERLAPPED_FACE_OR_EYE",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-174-v3.png",
+        "sha256": "6b503f07bbb8ff8598df9392749539da035ca0dfb11bbbee0170006c820c55af",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-174-v3.txt",
+        "sha256": "aee94be67d65624ff2f2326cc7b3b92383cc01ff6dfa35bb486553eaf1e45b5c"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-174-v3.json",
+        "sha256": "a6116d7f75db6f6fe3f817062ce424452770210ca72fd2d720118ea1486ad8c7"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-174-v3.json",
+        "sha256": "a2ece035f948cfae12763e651deb2d4989e8c005d6329c124d929d45af4aedd4"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-174-v1.json",
+        "sha256": "cb0aa2ae07af2254352856a971041cc80e4af17eb1dd105876632ede31e96761"
+      },
+      "reviewer": "codex-image-qa",
+      "reviewedAt": "2026-08-18T03:31:43Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-179-v1",
+      "selectedAssetId": "mday-t6-rgn-179-v4",
+      "decision": "ACCEPT",
+      "reason": "V1_PHONE_OVERLAPPED_FACE_OR_EYE",
+      "source": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v4/generated/mday-t6-rgn-179-v4.png",
+        "sha256": "3617e8feeec99bf5016684c5d68f929c436bd4d2e09f274cccd1ff31fc198a78",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v4/prompts/mday-t6-rgn-179-v4.txt",
+        "sha256": "aef9e4c36c9402bce300195c3df472fe93c8d113005f9b568a6468c20c33508f"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v4/jobs/mday-t6-rgn-179-v4.json",
+        "sha256": "7b370f1904776419cb722716c7bb57a88b7d920e2180956489ece9e5925f6cb7"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v4/receipts/mday-t6-rgn-179-v4.json",
+        "sha256": "1313c38f764165a8f5b3b17bbc6938a9150b1188a3515765e51366f2e59abb46"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-179-v1.json",
+        "sha256": "af5cc759b049c7c4e4154548b172332f054641c3707e25dc0a7ad93f22eeed40"
+      },
+      "reviewer": "codex-image-qa",
+      "reviewedAt": "2026-08-18T03:36:42Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-191-v1",
+      "selectedAssetId": "mday-t6-rgn-191-v2",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-191-v2.png",
+        "sha256": "80657647aca7cdf65c697c96fdaa0c3b44dd0c74c4da523dfde0566dcd5cb7f5",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/prompts/mday-t6-rgn-191-v2.txt",
+        "sha256": "be1a552262dffc85172605da52958308345f2a8f6cd27201f516a15d350839f1"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/jobs/mday-t6-rgn-191-v2.json",
+        "sha256": "b8b514307515735d2afcf2020293a7ea64b8f02a3081450e5878004a795a05ab"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/receipts/mday-t6-rgn-191-v2.json",
+        "sha256": "dd3a51392fe3adbc4c7921198a1bb675ac0b4e804d6ec1e49c1342aae3c8c20e"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-191-v1.json",
+        "sha256": "004a679bb5416fa0f52957da3f44b8b5d68a3dc8fd7061f4839f322ec9d20833"
+      },
+      "reviewer": "codex-image-qa",
+      "reviewedAt": "2026-08-18T03:21:39Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-200-v1",
+      "selectedAssetId": "mday-t6-rgn-200-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-200-v3.png",
+        "sha256": "a79b770a66c4e3bfa72d6a827f6e91a9adc9ed7fcd99218f71deca4d20aa2282",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-200-v3.txt",
+        "sha256": "ffb924041863f115a785060322cbcaffb67d1f84f652005ca1b5e7581e97da52"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-200-v3.json",
+        "sha256": "314f4d42a66ab505e0bbdbd2ced5c02ec0e0d6525c8cd9b57f28b20ab29d36e0"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-200-v3.json",
+        "sha256": "4d09e7f0edcc45222e781958cf243ae25c39456610b66d39e6198aa8c657842b"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-200-v1.json",
+        "sha256": "37686e3ae5d6bc3a2b014697da67fbad58d9d2949d8730937d67ef7e34b6f692"
+      },
+      "reviewer": "codex-image-qa",
+      "reviewedAt": "2026-08-18T03:31:43Z"
+    },
+    {
+      "logicalAssetId": "mday-t6-rgn-211-v1",
+      "selectedAssetId": "mday-t6-rgn-211-v3",
+      "decision": "ACCEPT",
+      "reason": "V1_VISIBLE_PHONE_LOGO_OR_BRAND_MARK",
+      "source": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/replacements/mday-t6-rgn-211-v3.png",
+        "sha256": "73ed0ddf7ee932aed7fbcc08fa5137b37b735d7054818755930d939f7511a10c",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "prompt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/prompts/mday-t6-rgn-211-v3.txt",
+        "sha256": "cb30d38d1b35aff7ae15d3cd1ce7c231d439abd6ecd28dec62b446db3f58918a"
+      },
+      "job": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/jobs/mday-t6-rgn-211-v3.json",
+        "sha256": "67351c506a1843f5ceb69c91e8620908f23ad7b223b33d458c98c0f3fe6565c7"
+      },
+      "receipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v3/receipts/mday-t6-rgn-211-v3.json",
+        "sha256": "c63c8d4ee8c938f198cbd5f683ea1e5f78fbe8c278918461cfeadc2585e48b1b"
+      },
+      "originalReceipt": {
+        "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/receipts/generated/mday-t6-rgn-211-v1.json",
+        "sha256": "2f790ec4b92941dfc7fa28a8087b38698c27ef3aefcd5ec9d09e60bf8580a661"
+      },
+      "reviewer": "codex-image-qa",
+      "reviewedAt": "2026-08-18T03:31:43Z"
+    }
+  ]
+}

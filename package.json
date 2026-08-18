@@ -1,0 +1,38 @@
+{
+  "name": "massage-day",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "test": "vitest run",
+    "images:t6:campaign": "node scripts/create-massage-day-image-campaign.mjs",
+    "images:t6:contact-sheets": "node scripts/create-massage-day-contact-sheets.mjs",
+    "images:t6:review-input": "node scripts/create-massage-day-root-review-input.mjs",
+    "images:t6:approve": "node scripts/create-massage-day-root-review.mjs --approve-reviewed-assets",
+    "images:t6:release": "node --import tsx scripts/release-template6-regional-images.mjs",
+    "audit:copy": "node --import tsx scripts/audit-copy-duplication.mjs",
+    "audit:build": "node scripts/audit-built-output.mjs",
+    "typecheck": "next typegen && tsc --noEmit",
+    "lint": "eslint .",
+    "build": "next build",
+    "verify": "pnpm test && pnpm audit:copy && pnpm typecheck && pnpm lint && pnpm build && pnpm audit:build"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "sharp": "0.34.5",
+    "tsx": "^4.23.12",
+    "typescript": "^5",
+    "vitest": "^4.1.10"
+  },
+  "packageManager": "pnpm@10.29.3"
+}

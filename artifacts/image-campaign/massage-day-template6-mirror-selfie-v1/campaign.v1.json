@@ -1,0 +1,1394 @@
+{
+  "schemaVersion": "massage-day-template6-image-campaign/v1",
+  "campaignKey": "massage-day-template6-mirror-selfie-v1",
+  "status": "SCAFFOLDED_AWAITING_144_REGIONAL_AND_3_EDITORIAL_GENERATIONS",
+  "platform": {
+    "name": "마사지데이",
+    "platformKey": "massage-day",
+    "template": "Template6"
+  },
+  "counts": {
+    "regionalMasters": 216,
+    "reusedRegionalMasters": 72,
+    "newRegionalMasters": 144,
+    "editorialMasters": 3,
+    "generationJobs": 147
+  },
+  "reuseProvenance": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/reused-assets.v1.json",
+    "sha256": "3eccd31c3f7acffb9408cc65087b65855770945511ec886fbd65a75bd14cf4cd"
+  },
+  "assignmentPlan": {
+    "relativePath": "src/data/regional-image-assignments.template6.generated.json",
+    "seed": 0,
+    "distribution": {
+      "routes": 1291,
+      "broadRoutes": 41,
+      "compactRoutes": 1250,
+      "assets": 216,
+      "reusedAssets": 72,
+      "newAssets": 144,
+      "reusedRoutes": 430,
+      "newRoutes": 861,
+      "maxUses": 6,
+      "reusedUsage": {
+        "assetsAtSix": 71,
+        "assetsAtFour": 1
+      },
+      "newUsage": {
+        "assetsAtSix": 143,
+        "assetsAtThree": 1
+      },
+      "parentChildCollisions": 0,
+      "siblingCollisions": 0
+    }
+  },
+  "focalPlan": {
+    "relativePath": "src/data/regional-image-focal-points.template6.json",
+    "sha256": "4b9e488f76500a531e0066385bf8e4d9dfc7f9f48cfc11698480b8223428385f",
+    "status": "PROPOSED_AWAITING_ROOT_VISUAL_REVIEW"
+  },
+  "generationPolicy": {
+    "mode": "built-in-imagegen",
+    "callsPerNewMaster": 1,
+    "regionalCalls": 144,
+    "editorialCalls": 3,
+    "totalCalls": 147,
+    "currentCallsSubmitted": 0,
+    "cliFallbackAuthorized": false,
+    "preserveRejectedAndFailedAttempts": true
+  },
+  "visualContract": {
+    "useCase": "photorealistic-natural",
+    "setting": "bright daytime urban dressing lounge",
+    "subject": "one clearly adult Korean woman age 26-34",
+    "phoneAndFace": "phone beside the face; both eyes, nose, and mouth visible",
+    "safety": "fully opaque clothing, nonsexual pose, no minor-looking subject, text, logo, watermark, malformed anatomy, extra person, or duplicate reflection",
+    "crop": "desktop 1600x900, tablet 1200x675, mobile 768x600 after root-approved focal review"
+  },
+  "jobs": [
+    {
+      "id": "mday-t6-rgn-073-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-073-v1.txt",
+      "promptSha256": "c6e8da60d9c24d85f47fb2362990b992f32269e9ae7781e7672bd072cfeeb101",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-073-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-073-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-074-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-074-v1.txt",
+      "promptSha256": "9be45f46a3e4ee08e9d28f75fff034925a785088349ea0e77891a94ffd3e168a",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-074-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-074-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-075-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-075-v1.txt",
+      "promptSha256": "57f8b581acaa645a9cb5085694fd2478d0a6d7b2882c65e47d515c437a15f6f2",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-075-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-075-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-076-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-076-v1.txt",
+      "promptSha256": "4cca9b4d231b721b3eedced2da48f6f23b8df6795ef02bcbb35dc746ab5ca3d5",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-076-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-076-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-077-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-077-v1.txt",
+      "promptSha256": "95e1db283d1ab27fe264789ae8deef120fad5bd83cfdf3fb1a9735e70e197867",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-077-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-077-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-078-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-078-v1.txt",
+      "promptSha256": "f453a7bda875da69c7ba221acb06a18a5365b17c2197c317ccad66cb5a86de86",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-078-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-078-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-079-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-079-v1.txt",
+      "promptSha256": "bd39375fa70d31f388196b0b6cdb895eb18129d6c163ad6f5cb5d22dca9b0cdf",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-079-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-079-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-080-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-080-v1.txt",
+      "promptSha256": "b5b348dc65ed215a88c5a670934ac72fa829c9cddce7748a9cb19376eff09bb4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-080-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-080-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-081-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-081-v1.txt",
+      "promptSha256": "a90194584ff8f723c9ff6807d6718a19f36038f8c9f0d8d1b630db90ed1bd5b6",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-081-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-081-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-082-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-082-v1.txt",
+      "promptSha256": "26a36479848071086f4200f7f498d3dd16a094100c3607ca05bb9f7818dc670c",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-082-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-082-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-083-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-083-v1.txt",
+      "promptSha256": "5b3f687f7ee706e10541ccd2ce296482277579cbad19b2d88df36dc7315ee688",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-083-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-083-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-084-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-084-v1.txt",
+      "promptSha256": "e1c1cc402711a7770171f9124023f9a8efb7dae6130beb712abe7d30028ad50a",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-084-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-084-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-085-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-085-v1.txt",
+      "promptSha256": "8bd48391fdd35fbc8d843ebe4e95f0e62f06635373378a81c4e9a57da39f3cb5",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-085-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-085-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-086-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-086-v1.txt",
+      "promptSha256": "ca8f23e43c7bc25408c9f0c5791f38b43b78635b5dcc01206402e8ac245561e4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-086-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-086-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-087-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-087-v1.txt",
+      "promptSha256": "024fcb3c57bc3841a0fb2c7f92fab61c21849ea4ea979fab7b9ff4fea87a0885",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-087-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-087-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-088-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-088-v1.txt",
+      "promptSha256": "68561addb3ab9b1a0306f8860bf4f679871f83498c0c9a8ff24ac32327d9661b",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-088-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-088-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-089-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-089-v1.txt",
+      "promptSha256": "5e2f8c8ebc98508609aac1f7736305d26fd786b76355d2e5fd09b66172d7793c",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-089-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-089-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-090-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-090-v1.txt",
+      "promptSha256": "b177e509bd79ef5656d480fa7a524ff8a7fc69104f0fa6f1f68b38c958c468ae",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-090-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-090-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-091-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-091-v1.txt",
+      "promptSha256": "a5d3d5e19b31e118a075a22afc221ceed6760759c30d1644f91bef2b471e0f91",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-091-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-091-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-092-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-092-v1.txt",
+      "promptSha256": "509470c72a57bbb6ae8b08415f5c2796d61183e1109ab457fa35bd149283a1f4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-092-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-092-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-093-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-093-v1.txt",
+      "promptSha256": "f80b336c56d4492cae637be22328d4276aa25e82ea4854ea0f06db9c90a90d6b",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-093-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-093-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-094-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-094-v1.txt",
+      "promptSha256": "e37b251ac6dcc9a5ad29a6c0104636ef1f9c43889c7e9b7ba004f2de110b0fcc",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-094-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-094-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-095-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-095-v1.txt",
+      "promptSha256": "b0c89e909b499fc6a7a4043d1b90ff757fbf1bb30faf8b32832020a3aa8748d4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-095-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-095-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-096-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-096-v1.txt",
+      "promptSha256": "61551608c869978247931700e5b03b19cb6ea91e37caa9815477be1cbf410626",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-096-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-096-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-097-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-097-v1.txt",
+      "promptSha256": "4aa91d34068353cf31eb85180e0731d0692df93831c6a0dab8fa37622fd03b80",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-097-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-097-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-098-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-098-v1.txt",
+      "promptSha256": "3a0e03a8b5441f01ab66a1d6da08bd583736bd8fdd2699d01adbce54cd67a265",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-098-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-098-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-099-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-099-v1.txt",
+      "promptSha256": "419eced4d47d11f6c4da1e61db28326e01e9d02300d5c48552ff60a1d583f6bd",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-099-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-099-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-100-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-100-v1.txt",
+      "promptSha256": "51fde055b084e90feecdbffd6ec5d6aa44342c4e268cb7bb566f953ea343ca7e",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-100-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-100-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-101-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-101-v1.txt",
+      "promptSha256": "fa604e418117e286b96ed11dc1b780db011261c90d546dc6ca9a9c331dba80b1",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-101-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-101-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-102-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-102-v1.txt",
+      "promptSha256": "6c2e298eb2dc18f363c1594f4a147de91b7b9ca8e04af004ae6054804a9d2973",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-102-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-102-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-103-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-103-v1.txt",
+      "promptSha256": "fae687280c008ab65112b667421343fe6caca58f1b97e6a51df4592ea0273c0d",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-103-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-103-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-104-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-104-v1.txt",
+      "promptSha256": "b489ec3d591a3cc4afc9a79b042419ee6dd24d53fc0edb7f5c71c12eecfaa4d1",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-104-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-104-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-105-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-105-v1.txt",
+      "promptSha256": "4306a94c85eff2c8ae2f064e887dae266141586c27b3ebedb6c6f160c5696be3",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-105-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-105-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-106-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-106-v1.txt",
+      "promptSha256": "e825baddf26c1de31e635291861b3a74367b58c34ddccee0a640c658b336f15a",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-106-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-106-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-107-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-107-v1.txt",
+      "promptSha256": "588039309bcb9ff5a23abd2a562c97d887ff6e159a08071c99bb6e021fc206b4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-107-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-107-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-108-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-108-v1.txt",
+      "promptSha256": "e23a854d5d7bac322da97687fafd77ed6243ca607e5d6041887492dd648c7a31",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-108-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-108-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-109-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-109-v1.txt",
+      "promptSha256": "89795eba16daea78aa63c398156f918c672d0704975569b2f342c04d45c65bed",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-109-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-109-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-110-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-110-v1.txt",
+      "promptSha256": "520fdd3f8b42d2bd4bb18531d273f32ba0096118611a256a9396a180840298a5",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-110-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-110-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-111-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-111-v1.txt",
+      "promptSha256": "7d1bc6f76bdfe2ec5783f5fea7859e329ca266f8ec6320ba9b10b5e25f9ce1dd",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-111-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-111-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-112-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-112-v1.txt",
+      "promptSha256": "5ebeaf65edc1b2d49cb920fae00b5457e0d316450ceb2f882d230bcec3979930",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-112-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-112-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-113-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-113-v1.txt",
+      "promptSha256": "fe37572a8c86d1c8c691ea83edcc55a607acd0969ed03e4df96faf9942cdfe86",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-113-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-113-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-114-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-114-v1.txt",
+      "promptSha256": "ebc35b8679c2f335543abeb849af78ae542535b4171e658fa2aae3f679289548",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-114-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-114-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-115-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-115-v1.txt",
+      "promptSha256": "8c72b38591b951c53054417e377f6c7909ffa51bae20a4b4db52967ae5778717",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-115-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-115-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-116-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-116-v1.txt",
+      "promptSha256": "8efcd5be8037d24a192b6cbd3c3c19d3bea48b9df177f15f836d43a17b738c15",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-116-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-116-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-117-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-117-v1.txt",
+      "promptSha256": "da1d304b7a3a8c87e0bce64332cebc022effba3f1019a80839f603047493e6d1",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-117-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-117-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-118-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-118-v1.txt",
+      "promptSha256": "cd35e86cf99fa520f7ae96c24d6209915cd8334249e7a8d4a76a2cd7f56507c5",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-118-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-118-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-119-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-119-v1.txt",
+      "promptSha256": "cac246b9a48be69a4fc0ae636fa676720a762f5d84c492b52fbb7a26b2e72579",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-119-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-119-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-120-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-120-v1.txt",
+      "promptSha256": "31bf32e1a4a2b4068fcd782dbc1f8cdd31f4882ba123dc34a7b0a11c0b6a1cfa",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-120-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-120-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-121-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-121-v1.txt",
+      "promptSha256": "b86691e136f2e4ad8c8dbdc3801fa22b815e27d52cbc816d66f9763183a9f2a2",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-121-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-121-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-122-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-122-v1.txt",
+      "promptSha256": "f58e109f4534860a376cec72e0f526d384e12aabf276a0431b0d4153c4a64223",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-122-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-122-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-123-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-123-v1.txt",
+      "promptSha256": "d42ce58007e581e4a786a503934890fa02570e3c0b17cf235fdfccb6bfdbb542",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-123-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-123-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-124-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-124-v1.txt",
+      "promptSha256": "5450f6d35b62c581b0a642ead6573c80abfa4d9928e266344ef9175e21d8b1ca",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-124-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-124-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-125-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-125-v1.txt",
+      "promptSha256": "579dc491983f5e4db163802bef218fc912bac652a610fc2ad1bf614e05a82ab5",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-125-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-125-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-126-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-126-v1.txt",
+      "promptSha256": "494497c63ee6347044fe4e37d36912cdefe95dab23e30a8d3754d69b767f5f9b",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-126-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-126-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-127-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-127-v1.txt",
+      "promptSha256": "bfab4c42007aa35088d55ea70d77977ac792cf6a9ad46e3a46d34f6aac433505",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-127-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-127-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-128-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-128-v1.txt",
+      "promptSha256": "aecfcf156e44ce28a26d924eb311bd94bc9a26bc53217809c1d2f5ad131901f0",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-128-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-128-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-129-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-129-v1.txt",
+      "promptSha256": "c44978e78629302be6b3eb67db4ffe62ab822673670f4665c9d7ae9fbd67ae83",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-129-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-129-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-130-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-130-v1.txt",
+      "promptSha256": "ad33dec2247289cfaeead9c46eed33b3a3055910ce619f61957ee53aa39aa25f",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-130-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-130-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-131-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-131-v1.txt",
+      "promptSha256": "6398ad6495ea55330a64cb10a5a98f0445746a41930ccf5484adca01f678ef51",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-131-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-131-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-132-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-132-v1.txt",
+      "promptSha256": "ce2bcdb9448d209fc1fe4367426e001aa289a20b1dec5fef0b2dbfca8b8504e6",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-132-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-132-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-133-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-133-v1.txt",
+      "promptSha256": "6985d258ccc9ad96ec80b24fab7f57518acb2ddc1ff2dd0ad4eb585b56e34b66",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-133-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-133-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-134-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-134-v1.txt",
+      "promptSha256": "91e66eebe819945d447766b8b713808dcc2699a7b8fc001f3d30bffef426e5e8",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-134-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-134-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-135-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-135-v1.txt",
+      "promptSha256": "682984f750ce50187b5a5d8d254bbe37bbf478d61386261c48074e9aafa04209",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-135-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-135-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-136-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-136-v1.txt",
+      "promptSha256": "0864667f394ef9ffc325fc860f5794dc35528e3f58df031549bf0e69d16497fa",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-136-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-136-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-137-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-137-v1.txt",
+      "promptSha256": "f94f472f8e15e8d7f4b61624c630a04bd70c2496de993a061ace8efb330169ad",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-137-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-137-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-138-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-138-v1.txt",
+      "promptSha256": "457cab96a8ff103944a4ecb4fa9c93f9e55c3b2ad41ca1f1f244fce69b2c1d41",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-138-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-138-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-139-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-139-v1.txt",
+      "promptSha256": "89419826e84a2bb85c1278175fe37d70804e2614f7bcd0cf2e784b9336c873f4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-139-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-139-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-140-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-140-v1.txt",
+      "promptSha256": "5df2d180fa8e05a1d58cafa30da517f25758ca743a6e0aaad8d40a4eb2b78329",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-140-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-140-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-141-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-141-v1.txt",
+      "promptSha256": "59b6b3b73bddd71a5f2052f187e7481c112847360afdc7ea9af49e4352d4aa11",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-141-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-141-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-142-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-142-v1.txt",
+      "promptSha256": "da45aa2589b15b35382a63476fee7c4dac495431e677fba1fb4331226d497bdb",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-142-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-142-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-143-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-143-v1.txt",
+      "promptSha256": "ef107240cfacd844d7a25f279b9ce2820d20bb08217b73f593ba4262e4b09086",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-143-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-143-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-144-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-144-v1.txt",
+      "promptSha256": "a1450d2916759faf9643d9dff22b074cb92f89abcf738176908e83fb64773986",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-144-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-144-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-145-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-145-v1.txt",
+      "promptSha256": "bac625dd51aac6e089354e57818c86679350afccd2761bd446efe160b469b6a3",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-145-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-145-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-146-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-146-v1.txt",
+      "promptSha256": "090a7048f1f56e4499f8b3cb6fefafceb4493ff403b9c3bba4d16357a281043b",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-146-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-146-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-147-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-147-v1.txt",
+      "promptSha256": "d6f3d2f29dabb8f304aeecfc1d088305716e4ab45e96c97752949df422bb2c17",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-147-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-147-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-148-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-148-v1.txt",
+      "promptSha256": "54a124288613d2aab56852859700dab2cc146e591575bd8fba26b2faec774a32",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-148-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-148-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-149-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-149-v1.txt",
+      "promptSha256": "f1b9c3a5f3e2167c7ffcb5f147ac6736c0a393a705ebf782121b8004a0172f45",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-149-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-149-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-150-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-150-v1.txt",
+      "promptSha256": "7ef8f39553ecbabc97c36d568aecc0a4307a64af01b2aff02e8e53c2e47755a8",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-150-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-150-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-151-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-151-v1.txt",
+      "promptSha256": "c3dee45f203af2cb34a00c4375ded08d2dd16aedb904e3bdde2ad255ce60c45f",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-151-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-151-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-152-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-152-v1.txt",
+      "promptSha256": "cba42b173026e1011b44dc972a78e015e20d44d6b6c63416bb195c16722f8fc5",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-152-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-152-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-153-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-153-v1.txt",
+      "promptSha256": "d724ff5d659b76e22de810c6a7e2a5b69ab6591e71f3e416ea0db963dd861042",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-153-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-153-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-154-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-154-v1.txt",
+      "promptSha256": "1919543532e3c9522cd6ba02a0679de2220935d49140772bde952164341eee87",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-154-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-154-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-155-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-155-v1.txt",
+      "promptSha256": "05fa4ab0f5bab9f6f06c02f7f15c49b5562dccdbe26879141d853c0b3127ae5b",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-155-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-155-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-156-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-156-v1.txt",
+      "promptSha256": "80eec1dd1a2c0fed0e4149e267ddd2988169e0f1590d713b71c234668c8eaf26",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-156-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-156-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-157-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-157-v1.txt",
+      "promptSha256": "cc5beae7cb18abd5183d9b639a315172adaf51475c5c179e69f8a4901ca30648",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-157-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-157-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-158-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-158-v1.txt",
+      "promptSha256": "22778b10104c7c809a522739a2ed7c2096e0a862ce1ce16d7ebd7556022e4aba",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-158-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-158-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-159-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-159-v1.txt",
+      "promptSha256": "e85641f70d645b8b3bc8822124ebe9b2c0170a5fd7859469027fca4bf918a2ef",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-159-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-159-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-160-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-160-v1.txt",
+      "promptSha256": "6d555fa2dbe4e591c7de8ec6ae7400da9b2025b242917e43014c736e00de14e2",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-160-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-160-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-161-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-161-v1.txt",
+      "promptSha256": "d291f1d99d13b01237ec9ab0c05b40ab56b5e79e794181c805f9361d2cd638f4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-161-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-161-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-162-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-162-v1.txt",
+      "promptSha256": "eee9349ac3ef9fd89082ac79303d1b661cbbb844e03c106ea5c9c1126d7eedc3",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-162-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-162-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-163-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-163-v1.txt",
+      "promptSha256": "6128296e1aa39c5593fb2ebdb00bc1c4e3c59773c9bb4501483b4a15e6ef7f85",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-163-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-163-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-164-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-164-v1.txt",
+      "promptSha256": "9db221872e78166676ff6f6d4f6b4097f781548af83492549cce00cffc2d1bb5",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-164-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-164-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-165-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-165-v1.txt",
+      "promptSha256": "414bf6d28550ccaa79536a1d8a86182ee4680ce41644f2421551a240e049cafa",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-165-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-165-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-166-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-166-v1.txt",
+      "promptSha256": "3efee8196368961bc3accf265cd03247a5de23abf6f85fee031758f6bd212c8f",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-166-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-166-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-167-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-167-v1.txt",
+      "promptSha256": "4ad47e74ca2ebc6705cda38237031f2bb39b1e82e31259f891aeadea19c62ba0",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-167-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-167-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-168-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-168-v1.txt",
+      "promptSha256": "3a0bbd6d5ce7c35b63e101ce8572317b04b95ea7ca324f1af01f20265a4b1916",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-168-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-168-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-169-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-169-v1.txt",
+      "promptSha256": "39bbf67290de2542f14662b2e331043f58aa1b5fdf28ee0ae16020fd73980ac7",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-169-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-169-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-170-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-170-v1.txt",
+      "promptSha256": "9923e86b2c799bab587a10e83208a01d54f79b996bc5232dffc8cd89b3dec632",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-170-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-170-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-171-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-171-v1.txt",
+      "promptSha256": "569d0a92b94e8e6e165b4eb17ff998f0a6dfa1eb5747e9f2cadbb2c4b2192b8e",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-171-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-171-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-172-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-172-v1.txt",
+      "promptSha256": "74e836ead54b35ad7f18b3eb6c7848455fe8ee75c6655413c5dc75c15d35ba85",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-172-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-172-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-173-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-173-v1.txt",
+      "promptSha256": "69b28ad72164d33936311c9df545456637ce7c4b46de24c8820f01705405e20d",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-173-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-173-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-174-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-174-v1.txt",
+      "promptSha256": "ff6b95b6413cae1ca360185d47e9e9728400f81f156a26bfaa2ccd59e596a1cb",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-174-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-174-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-175-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-175-v1.txt",
+      "promptSha256": "1505ffe082a172150f6245673384089d2a3df6a34d66c134bcd37812ea5830fc",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-175-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-175-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-176-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-176-v1.txt",
+      "promptSha256": "44035b6d1d94470bcc5ff5ee1515d5e805cd5c43103381a3d7c26e93e543b8e3",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-176-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-176-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-177-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-177-v1.txt",
+      "promptSha256": "71acd6891f327fa1d0e88e8ffdbfbf6abf6a0f8c030ef1421b68921309672423",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-177-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-177-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-178-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-178-v1.txt",
+      "promptSha256": "face2acc2219048236459449168076b5154241a2abc03db107280f0d9319098e",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-178-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-178-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-179-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-179-v1.txt",
+      "promptSha256": "c7c6b97670c258bff4487f58d045db1479c1e6afcdbae7a4bd94051176cc568c",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-179-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-179-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-180-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-180-v1.txt",
+      "promptSha256": "f345c54e32be659e0772add89d608a5fa96ba1b7944a91df92fd3b81a857c7af",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-180-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-180-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-181-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-181-v1.txt",
+      "promptSha256": "829b03942f8fe9396ec13aaa957790190dd6523ea914a7b63463b2ed5e3713f6",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-181-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-181-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-182-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-182-v1.txt",
+      "promptSha256": "591d8ae10bf757527de23ebf2ef815fb816cf021f4d9273f5ad0ba36347ddc6c",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-182-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-182-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-183-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-183-v1.txt",
+      "promptSha256": "aab0a1f47e1ec3e44b88c0ed4bd9dc67edda55fa6c48d9c05d640ab79c6a1f35",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-183-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-183-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-184-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-184-v1.txt",
+      "promptSha256": "0c398175e39117000179abd8a6ac63a1cf0dde4f593b267e2840e9b1bfef3d59",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-184-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-184-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-185-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-185-v1.txt",
+      "promptSha256": "283b9be71436acd24185608d495208c4ac8aa43e55b677d0ca75a5c54360f529",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-185-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-185-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-186-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-186-v1.txt",
+      "promptSha256": "5f4b723ae82e1b8e1b95e969c024e7d5302737d06b6d498a3217d75070243d17",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-186-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-186-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-187-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-187-v1.txt",
+      "promptSha256": "57aee66541b8ebd5bd30059e5905551e6cc58f64d466d0d942ee6d2e6a832e77",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-187-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-187-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-188-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-188-v1.txt",
+      "promptSha256": "40c5a47b262f20e500743e5fd055a44e5221a0949b5bd646232726bea8ebfcd7",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-188-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-188-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-189-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-189-v1.txt",
+      "promptSha256": "e3ac1f072ab6882c773e80b76109d973efbed21d3996410d88cf19a96b2d3682",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-189-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-189-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-190-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-190-v1.txt",
+      "promptSha256": "735b1006c655e9cfd2178e2929317d0ecf77d6c2bb6f9e4d8b2626622499c0a8",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-190-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-190-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-191-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-191-v1.txt",
+      "promptSha256": "8265c6eeb9e6c8ec69dd48c013e986d1c3a2632b44bc20a5af4d7079464739d3",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-191-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-191-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-192-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-192-v1.txt",
+      "promptSha256": "764f489d2ece085042b9f8578dd578b37822961868ec26ad720bc4a7e0ebc161",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-192-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-192-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-193-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-193-v1.txt",
+      "promptSha256": "7acd8eca68e6c6fe124077986fe747f24480e7e3ccc2c59ebf5c1d9c52230543",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-193-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-193-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-194-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-194-v1.txt",
+      "promptSha256": "dd56acbe5c9e4d752e86276ac092d103e01a1ff5a02231f88ee195d72cec2fe4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-194-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-194-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-195-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-195-v1.txt",
+      "promptSha256": "5dec852eed7d6dc9bf04bfb7a0b8a28386b055f990b64fbdd4acfefb05fe8cbe",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-195-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-195-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-196-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-196-v1.txt",
+      "promptSha256": "69942166fb654cd9ae5e77244412c241d42c8fead52cf62719d445f0fee22d72",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-196-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-196-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-197-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-197-v1.txt",
+      "promptSha256": "331c406c2bb5965459d58fd08a364ac5df77378b92ad93fe02c4438f4d35da11",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-197-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-197-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-198-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-198-v1.txt",
+      "promptSha256": "e3a3409772090aed6d380881d3bd24fd4a0de0573201a73494824d83b8a9d78e",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-198-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-198-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-199-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-199-v1.txt",
+      "promptSha256": "7632ba123aed0d96c8dbda4a4ce7d37efa591185b33ffdd5eb9097a10862c46d",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-199-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-199-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-200-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-200-v1.txt",
+      "promptSha256": "6c9039fa72cc8e87a5ec7ec4749b6966e3320e92a9c2654f66717c4d0114a31d",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-200-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-200-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-201-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-201-v1.txt",
+      "promptSha256": "bbe14a9e0d11f5539998dace26ffd3e0043ccf943fb59e2fc96fc06e8abb3ed1",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-201-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-201-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-202-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-202-v1.txt",
+      "promptSha256": "e12b8c1a7331133422d68fafe9b40d53953265d0ce5b7facb95aa31c42b671d4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-202-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-202-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-203-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-203-v1.txt",
+      "promptSha256": "41d83f66019f18ecc7933e49e4916bd33a205f584a05e042098d9456a5e281b6",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-203-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-203-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-204-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-204-v1.txt",
+      "promptSha256": "7bc48d8a3af77a7417d8462616951b9720e01491bd121031060d6588c1e307a4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-204-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-204-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-205-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-205-v1.txt",
+      "promptSha256": "c05e630eecbcb23bd574d3f924e6c878e1706a76ec38f6921b8d069347fbae55",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-205-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-205-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-206-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-206-v1.txt",
+      "promptSha256": "deaf93878e9c0a6e5f2d197a723e2f4c7a53e15848bd2f4f9ce97fe13938ed81",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-206-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-206-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-207-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-207-v1.txt",
+      "promptSha256": "d9404380c3ddbcf436afcf0ea520ab0f89392585d8aeaf450b970ba95f355763",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-207-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-207-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-208-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-208-v1.txt",
+      "promptSha256": "3c7515e512df179bb9928f682a11d7fb0eb5d017ef15ce8fb238ee4ef6f3a0e6",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-208-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-208-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-209-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-209-v1.txt",
+      "promptSha256": "6172285f98926178dc62b215a1a9be5981e247d6fe8df1194208fe0619051bac",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-209-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-209-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-210-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-210-v1.txt",
+      "promptSha256": "2859e5b1bc0b2063d24ce48ecf1839ad90684b201e1143585039ba17c0ba69be",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-210-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-210-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-211-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-211-v1.txt",
+      "promptSha256": "df2ce8b57b8b8cd4b37c72cdc2f67790c6d3b6c1a7468f1169c7022a2bba9c33",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-211-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-211-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-212-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-212-v1.txt",
+      "promptSha256": "20d143bd76c0c391fd044c0abb9b033145ead15e1b1aedebe7b1f67dcc23eda6",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-212-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-212-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-213-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-213-v1.txt",
+      "promptSha256": "6e497359f982c14d0830c6646990e0b965a2feb3ecce8df4592b49309d7ad9c4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-213-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-213-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-214-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-214-v1.txt",
+      "promptSha256": "978a40e602b9cc18e3fc7d2bf50150621290d2a11649c3d685dbab2262a03062",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-214-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-214-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-215-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-215-v1.txt",
+      "promptSha256": "719aa1cb10ebb4de7f275a44caf881b2c30a83958c0b1984a223f917b84208ee",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-215-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-215-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-rgn-216-v1",
+      "jobClass": "regional",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-rgn-216-v1.txt",
+      "promptSha256": "8f2b4221fadf0dbf26bff3a36613399c7ed2766e65662ed389aded7284e588c0",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-rgn-216-v1.json",
+      "outputFile": "public/images/massage-day-template6/regional-masters/generated/mday-t6-rgn-216-v1.png",
+      "activeOutput": null
+    },
+    {
+      "id": "mday-t6-editorial-home-hero-v1",
+      "jobClass": "editorial",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-editorial-home-hero-v1.txt",
+      "promptSha256": "02ab987df6f9a3794d909bd6c910b0d1b3a83c7b6b09bba2fb78534b852430cc",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-editorial-home-hero-v1.json",
+      "outputFile": "public/images/massage-day-template6/editorial-masters/generated/mday-t6-editorial-home-hero-v1.png",
+      "activeOutput": "public/images/massage-day-template6/home/hero.webp"
+    },
+    {
+      "id": "mday-t6-editorial-blog-01-v1",
+      "jobClass": "editorial",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-editorial-blog-01-v1.txt",
+      "promptSha256": "76f29f75d9f14f7811543ad197819d9b1d9219182a006ba2fe2372cd885f5008",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-editorial-blog-01-v1.json",
+      "outputFile": "public/images/massage-day-template6/editorial-masters/generated/mday-t6-editorial-blog-01-v1.png",
+      "activeOutput": "public/images/massage-day-template6/blog/note-01.webp"
+    },
+    {
+      "id": "mday-t6-editorial-blog-02-v1",
+      "jobClass": "editorial",
+      "promptFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/prompts/mday-t6-editorial-blog-02-v1.txt",
+      "promptSha256": "1beb57e0635584f9353ae8885e1212cd9e6b59b6db2aa3790de42bd2266b02b4",
+      "jobFile": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/jobs/mday-t6-editorial-blog-02-v1.json",
+      "outputFile": "public/images/massage-day-template6/editorial-masters/generated/mday-t6-editorial-blog-02-v1.png",
+      "activeOutput": "public/images/massage-day-template6/blog/note-02.webp"
+    }
+  ]
+}

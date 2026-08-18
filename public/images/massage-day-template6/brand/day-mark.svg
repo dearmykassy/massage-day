@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">마사지데이 낮 해 심볼</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 7v6M13.6 14.6l4.3 4.3M50.4 14.6l-4.3 4.3M6 33h6M52 33h6" stroke="#F4B73B" stroke-width="4"/>
+    <path d="M19 37a13 13 0 0 1 26 0" fill="#FF695C" stroke="#FF695C" stroke-width="4"/>
+    <path d="M10 39h44" stroke="#17384A" stroke-width="4"/>
+    <path d="M16 48c4-2.7 8-2.7 12 0s8 2.7 12 0 8-2.7 12 0" stroke="#3B8E9D" stroke-width="4"/>
+    <path d="M21 55h22" stroke="#17384A" stroke-width="4"/>
+  </g>
+</svg>

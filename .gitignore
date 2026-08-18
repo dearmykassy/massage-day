@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+.DS_Store
+tsconfig.tsbuildinfo
+.env*
+!.env.example
+qa/browser/*.png
+/public/images/massage-day-template6/regional-originals/
+/public/images/massage-day-template6/regional-masters/
+/public/images/massage-day-template6/editorial-masters/
+/artifacts/

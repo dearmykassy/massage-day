@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "massage-day-template6-contact-sheets/v1",
+  "status": "READY_FOR_ROOT_VISUAL_REVIEW",
+  "platformKey": "massage-day",
+  "campaign": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/campaign.v1.json",
+    "sha256": "2cf8705049bd4856b2ac60f0509615cd1d7f43227e390abb4e62798d25bff160"
+  },
+  "inventory": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/inventory.v1.json",
+    "sha256": "b484f3218df01bc649c14f3e5b0dc7e80247f8ebd22a1dd279de7f1ffa24ea8c"
+  },
+  "focalPoints": {
+    "relativePath": "src/data/regional-image-focal-points.template6.json",
+    "sha256": "5fb69d5679502bed1018c8d789ffe16912fce3d6827cc5a22c69acf9718f12ae"
+  },
+  "counts": {
+    "regionalSheets": 18,
+    "regionalAssetsPerSheet": 12,
+    "editorialSheets": 1,
+    "eachRegionalAssetIncludesActual320x300And390x300MobileRenderInsets": true
+  },
+  "sheets": [
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-01.png",
+      "sha256": "068ffda893790517bcf741ba91595a28216349e6671912a0f25d89d6f37fe82c",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-001-v1",
+        "mday-t6-rgn-002-v1",
+        "mday-t6-rgn-003-v1",
+        "mday-t6-rgn-004-v1",
+        "mday-t6-rgn-005-v1",
+        "mday-t6-rgn-006-v1",
+        "mday-t6-rgn-007-v1",
+        "mday-t6-rgn-008-v1",
+        "mday-t6-rgn-009-v1",
+        "mday-t6-rgn-010-v1",
+        "mday-t6-rgn-011-v1",
+        "mday-t6-rgn-012-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-02.png",
+      "sha256": "be86ae05d9b3cffc5fa5774e40baf77ad91dfc7a1f94d5c126c4f656786509fe",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-013-v1",
+        "mday-t6-rgn-014-v1",
+        "mday-t6-rgn-015-v1",
+        "mday-t6-rgn-016-v1",
+        "mday-t6-rgn-017-v1",
+        "mday-t6-rgn-018-v1",
+        "mday-t6-rgn-019-v1",
+        "mday-t6-rgn-020-v1",
+        "mday-t6-rgn-021-v1",
+        "mday-t6-rgn-022-v1",
+        "mday-t6-rgn-023-v1",
+        "mday-t6-rgn-024-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-03.png",
+      "sha256": "358698391f4fb4639199b326b5a290d033046272e0ee555309e55655f7f58693",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-025-v1",
+        "mday-t6-rgn-026-v1",
+        "mday-t6-rgn-027-v1",
+        "mday-t6-rgn-028-v1",
+        "mday-t6-rgn-029-v1",
+        "mday-t6-rgn-030-v1",
+        "mday-t6-rgn-031-v1",
+        "mday-t6-rgn-032-v1",
+        "mday-t6-rgn-033-v1",
+        "mday-t6-rgn-034-v1",
+        "mday-t6-rgn-035-v1",
+        "mday-t6-rgn-036-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-04.png",
+      "sha256": "b28a7d41df2accd71402c5d8e68a6956e58d86ed873e2abbf44d900695d6705b",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-037-v1",
+        "mday-t6-rgn-038-v1",
+        "mday-t6-rgn-039-v1",
+        "mday-t6-rgn-040-v1",
+        "mday-t6-rgn-041-v1",
+        "mday-t6-rgn-042-v1",
+        "mday-t6-rgn-043-v1",
+        "mday-t6-rgn-044-v1",
+        "mday-t6-rgn-045-v1",
+        "mday-t6-rgn-046-v1",
+        "mday-t6-rgn-047-v1",
+        "mday-t6-rgn-048-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-05.png",
+      "sha256": "eae3b1ad24a1520b35eacd85b4d9885d97c7030832c5489ba2f1ddd4cf8e1843",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-049-v1",
+        "mday-t6-rgn-050-v1",
+        "mday-t6-rgn-051-v1",
+        "mday-t6-rgn-052-v1",
+        "mday-t6-rgn-053-v1",
+        "mday-t6-rgn-054-v1",
+        "mday-t6-rgn-055-v1",
+        "mday-t6-rgn-056-v1",
+        "mday-t6-rgn-057-v1",
+        "mday-t6-rgn-058-v1",
+        "mday-t6-rgn-059-v1",
+        "mday-t6-rgn-060-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-06.png",
+      "sha256": "0868848a0cdde714ef56497d6df3b207fc488b0f15b3ba7646a5836cfc0871ad",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-061-v1",
+        "mday-t6-rgn-062-v1",
+        "mday-t6-rgn-063-v1",
+        "mday-t6-rgn-064-v1",
+        "mday-t6-rgn-065-v1",
+        "mday-t6-rgn-066-v1",
+        "mday-t6-rgn-067-v1",
+        "mday-t6-rgn-068-v1",
+        "mday-t6-rgn-069-v1",
+        "mday-t6-rgn-070-v1",
+        "mday-t6-rgn-071-v1",
+        "mday-t6-rgn-072-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-07.png",
+      "sha256": "da44770b262c357aef77ecf7cdebb3f794c2fefd9dd8f9fcf14acac82bf45ad1",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-073-v1",
+        "mday-t6-rgn-074-v1",
+        "mday-t6-rgn-075-v1",
+        "mday-t6-rgn-076-v1",
+        "mday-t6-rgn-077-v1",
+        "mday-t6-rgn-078-v1",
+        "mday-t6-rgn-079-v1",
+        "mday-t6-rgn-080-v1",
+        "mday-t6-rgn-081-v1",
+        "mday-t6-rgn-082-v1",
+        "mday-t6-rgn-083-v1",
+        "mday-t6-rgn-084-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-08.png",
+      "sha256": "6cb15f35b24504291937b9af42b6098ff0bd3f6c3e2e1f39e355b5e7d65cac1a",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-085-v1",
+        "mday-t6-rgn-086-v1",
+        "mday-t6-rgn-087-v1",
+        "mday-t6-rgn-088-v1",
+        "mday-t6-rgn-089-v1",
+        "mday-t6-rgn-090-v1",
+        "mday-t6-rgn-091-v1",
+        "mday-t6-rgn-092-v1",
+        "mday-t6-rgn-093-v1",
+        "mday-t6-rgn-094-v1",
+        "mday-t6-rgn-095-v1",
+        "mday-t6-rgn-096-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-09.png",
+      "sha256": "6840954e8472ec62fd82040154338cea565540f921b1bc9f07e9e52e997ad7cc",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-097-v1",
+        "mday-t6-rgn-098-v1",
+        "mday-t6-rgn-099-v1",
+        "mday-t6-rgn-100-v1",
+        "mday-t6-rgn-101-v1",
+        "mday-t6-rgn-102-v1",
+        "mday-t6-rgn-103-v1",
+        "mday-t6-rgn-104-v1",
+        "mday-t6-rgn-105-v1",
+        "mday-t6-rgn-106-v1",
+        "mday-t6-rgn-107-v1",
+        "mday-t6-rgn-108-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-10.png",
+      "sha256": "53ccd428d95906f772b75b48e3c619a90e8001343c9b6ed09903c1183315c7e0",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-109-v1",
+        "mday-t6-rgn-110-v1",
+        "mday-t6-rgn-111-v1",
+        "mday-t6-rgn-112-v1",
+        "mday-t6-rgn-113-v1",
+        "mday-t6-rgn-114-v1",
+        "mday-t6-rgn-115-v1",
+        "mday-t6-rgn-116-v1",
+        "mday-t6-rgn-117-v1",
+        "mday-t6-rgn-118-v1",
+        "mday-t6-rgn-119-v1",
+        "mday-t6-rgn-120-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-11.png",
+      "sha256": "bed050c6423d3fe301184ae04888336f2f0f83b3876930c6aaa8b433d95e10f6",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-121-v1",
+        "mday-t6-rgn-122-v1",
+        "mday-t6-rgn-123-v1",
+        "mday-t6-rgn-124-v1",
+        "mday-t6-rgn-125-v1",
+        "mday-t6-rgn-126-v1",
+        "mday-t6-rgn-127-v1",
+        "mday-t6-rgn-128-v1",
+        "mday-t6-rgn-129-v1",
+        "mday-t6-rgn-130-v1",
+        "mday-t6-rgn-131-v1",
+        "mday-t6-rgn-132-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-12.png",
+      "sha256": "b00ea401cd310e631b5adb596274e20b0aa6a115760c176a50de9c43486d0a16",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-133-v1",
+        "mday-t6-rgn-134-v1",
+        "mday-t6-rgn-135-v1",
+        "mday-t6-rgn-136-v1",
+        "mday-t6-rgn-137-v1",
+        "mday-t6-rgn-138-v1",
+        "mday-t6-rgn-139-v1",
+        "mday-t6-rgn-140-v1",
+        "mday-t6-rgn-141-v1",
+        "mday-t6-rgn-142-v1",
+        "mday-t6-rgn-143-v1",
+        "mday-t6-rgn-144-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-13.png",
+      "sha256": "a0b50d32af3cc3713bb5f32b6a4742d9327717f3de6663294d2427855e279f1f",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-145-v1",
+        "mday-t6-rgn-146-v1",
+        "mday-t6-rgn-147-v1",
+        "mday-t6-rgn-148-v1",
+        "mday-t6-rgn-149-v1",
+        "mday-t6-rgn-150-v1",
+        "mday-t6-rgn-151-v1",
+        "mday-t6-rgn-152-v1",
+        "mday-t6-rgn-153-v1",
+        "mday-t6-rgn-154-v1",
+        "mday-t6-rgn-155-v1",
+        "mday-t6-rgn-156-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-14.png",
+      "sha256": "26749fc3ad88c34501b4f326e827d17a7b7cc24b735b6bcf69537591761407d0",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-157-v1",
+        "mday-t6-rgn-158-v1",
+        "mday-t6-rgn-159-v1",
+        "mday-t6-rgn-160-v1",
+        "mday-t6-rgn-161-v1",
+        "mday-t6-rgn-162-v1",
+        "mday-t6-rgn-163-v1",
+        "mday-t6-rgn-164-v1",
+        "mday-t6-rgn-165-v1",
+        "mday-t6-rgn-166-v1",
+        "mday-t6-rgn-167-v1",
+        "mday-t6-rgn-168-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-15.png",
+      "sha256": "b2ecd38dcb3804299235f08c2eb3d6e7b30d010e7b063ad18fdee21b725bfbd7",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-169-v1",
+        "mday-t6-rgn-170-v1",
+        "mday-t6-rgn-171-v1",
+        "mday-t6-rgn-172-v1",
+        "mday-t6-rgn-173-v1",
+        "mday-t6-rgn-174-v1",
+        "mday-t6-rgn-175-v1",
+        "mday-t6-rgn-176-v1",
+        "mday-t6-rgn-177-v1",
+        "mday-t6-rgn-178-v1",
+        "mday-t6-rgn-179-v1",
+        "mday-t6-rgn-180-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-16.png",
+      "sha256": "edd7c6b5ac831101b80a065e3ff2a8f70d07cb7f88acd4c9ea191c0909225756",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-181-v1",
+        "mday-t6-rgn-182-v1",
+        "mday-t6-rgn-183-v1",
+        "mday-t6-rgn-184-v1",
+        "mday-t6-rgn-185-v1",
+        "mday-t6-rgn-186-v1",
+        "mday-t6-rgn-187-v1",
+        "mday-t6-rgn-188-v1",
+        "mday-t6-rgn-189-v1",
+        "mday-t6-rgn-190-v1",
+        "mday-t6-rgn-191-v1",
+        "mday-t6-rgn-192-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-17.png",
+      "sha256": "05efdfa768b187d907b6f2e47e63ca00b1e7aa08bc44e9d11d0030e671b21e48",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-193-v1",
+        "mday-t6-rgn-194-v1",
+        "mday-t6-rgn-195-v1",
+        "mday-t6-rgn-196-v1",
+        "mday-t6-rgn-197-v1",
+        "mday-t6-rgn-198-v1",
+        "mday-t6-rgn-199-v1",
+        "mday-t6-rgn-200-v1",
+        "mday-t6-rgn-201-v1",
+        "mday-t6-rgn-202-v1",
+        "mday-t6-rgn-203-v1",
+        "mday-t6-rgn-204-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/regional-18.png",
+      "sha256": "c1cd870169adbdf742b753ac04318a158661e2ea53365a29c3378c9742694228",
+      "width": 1128,
+      "height": 1004,
+      "assets": [
+        "mday-t6-rgn-205-v1",
+        "mday-t6-rgn-206-v1",
+        "mday-t6-rgn-207-v1",
+        "mday-t6-rgn-208-v1",
+        "mday-t6-rgn-209-v1",
+        "mday-t6-rgn-210-v1",
+        "mday-t6-rgn-211-v1",
+        "mday-t6-rgn-212-v1",
+        "mday-t6-rgn-213-v1",
+        "mday-t6-rgn-214-v1",
+        "mday-t6-rgn-215-v1",
+        "mday-t6-rgn-216-v1"
+      ]
+    },
+    {
+      "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/editorial-01.png",
+      "sha256": "2629a0ecd4c93050578e364664abe7800a5c0616ba83142eee53b673ac25c401",
+      "width": 1128,
+      "height": 260,
+      "assets": [
+        "mday-t6-editorial-blog-01-v1",
+        "mday-t6-editorial-blog-02-v1",
+        "mday-t6-editorial-home-hero-v1"
+      ]
+    }
+  ]
+}

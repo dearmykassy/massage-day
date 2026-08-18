@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "massage-day-template6-root-review-receipt/v1",
+  "status": "ROOT_APPROVED",
+  "platformKey": "massage-day",
+  "reviewer": "root",
+  "campaign": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/campaign.v1.json",
+    "sha256": "2cf8705049bd4856b2ac60f0509615cd1d7f43227e390abb4e62798d25bff160"
+  },
+  "inventory": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/inventory.v1.json",
+    "sha256": "b484f3218df01bc649c14f3e5b0dc7e80247f8ebd22a1dd279de7f1ffa24ea8c"
+  },
+  "replacementSelection": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/replacements/v2/selection.v1.json",
+    "sha256": "6fafe6ff3d1e6ad40c9062db6cb0e4cb8303ab4f6c646548648412d071f754f8",
+    "count": 27
+  },
+  "reuseSubstitution": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/reuse-substitutions/v2/selection.v2.json",
+    "sha256": "10d7d9e4bba3e691bddae3b5d1c706ac0fab582e29649c7ee59d1f7b0838dbea",
+    "count": 24
+  },
+  "contactSheets": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/contact-sheets/round-01/contact-sheets.v1.json",
+    "sha256": "5ce4bd95e6e9b31549b9ae8e48aac1d31bed6c21db1038afd45dc90a4d716177"
+  },
+  "focalPoints": {
+    "relativePath": "src/data/regional-image-focal-points.template6.json",
+    "sha256": "5fb69d5679502bed1018c8d789ffe16912fce3d6827cc5a22c69acf9718f12ae",
+    "responsiveCropsAuthorized": true
+  },
+  "rootReviewInput": {
+    "relativePath": "artifacts/image-campaign/massage-day-template6-mirror-selfie-v1/reviews/root-review.input.v1.json",
+    "sha256": "88f006f677344b3e8fa0ea82484d213eaef20c3cfff744b7d4c125d4da5cb558"
+  },
+  "decisions": {
+    "regionalAccepted": 216,
+    "editorialAccepted": 3,
+    "rejected": 0,
+    "routeAssignmentAuthorized": true
+  },
+  "signedAt": "2026-08-18T04:11:29.000Z"
+}

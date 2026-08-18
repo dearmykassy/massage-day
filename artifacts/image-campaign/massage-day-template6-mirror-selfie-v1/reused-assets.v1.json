@@ -1,0 +1,2106 @@
+{
+  "schemaVersion": "massage-day-template6-reused-assets/v1",
+  "status": "COPIED_BYTE_EXACT_AWAITING_MASSAGE_DAY_ROOT_REVIEW",
+  "platformKey": "massage-day",
+  "reuseAuthority": {
+    "type": "explicit-owner-authorization",
+    "grantedDateKst": "2026-08-18",
+    "scope": "Approximately one third of the 마사지데이 regional image assignments may reuse previously approved platform photographs."
+  },
+  "distribution": {
+    "rangTherapy": 24,
+    "geonmaeBanhada": 24,
+    "honhyeolReplacementNew": 24,
+    "total": 72
+  },
+  "assets": [
+    {
+      "assetId": "mday-t6-rgn-001-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-001-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-001-c01/desktop.webp",
+      "sourceSha256": "045af1e652070a8a0a309ade27c96b0aca2ad7c325a742300189ba84dae1ec07",
+      "originalSourceSha256": "8ba3ff71ec539f8c0fde47d2a59d077917f5443a31ce3262b415b9b175f89969",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-001-v1.webp",
+        "sha256": "045af1e652070a8a0a309ade27c96b0aca2ad7c325a742300189ba84dae1ec07",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-001-c01/provenance.json",
+          "sha256": "55cc234ee7406b4c9b016ec767c115f1976a37911270a837fd3fb47db7d5e35c"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-002-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-002-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-002-c01/desktop.webp",
+      "sourceSha256": "299c2121460ace605cf89542ec04ea5b26b71dce6439abc1cd2ba80d1c8f2abb",
+      "originalSourceSha256": "36ebf4c297a1a3fed88cd2c66bf986e005f94f76370630775d2b759d6e8709f6",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-002-v1.webp",
+        "sha256": "299c2121460ace605cf89542ec04ea5b26b71dce6439abc1cd2ba80d1c8f2abb",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-002-c01/provenance.json",
+          "sha256": "00d20885a62c00dbd3edcafaf0b139a3a2f437f411d0bc9330bc9ef59c54fa1d"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-003-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-003-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-003-c01/desktop.webp",
+      "sourceSha256": "b999524a266d7913cbdb5ac7793bd9a7a75201152147b8e7e3d1d395d405cdb5",
+      "originalSourceSha256": "320aa68273b138753705c1eeb4fb1471ea1cb6dee715f0e6de7e6f3270848324",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-003-v1.webp",
+        "sha256": "b999524a266d7913cbdb5ac7793bd9a7a75201152147b8e7e3d1d395d405cdb5",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-003-c01/provenance.json",
+          "sha256": "c39d01a4f2164b4d92b09183499f74b41164b8a4a791ded19d38af63d288579f"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-004-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-004-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-004-c01/desktop.webp",
+      "sourceSha256": "c53616bfc68401b2a34726177cff3925475b74348a4956293468191d2e3dce20",
+      "originalSourceSha256": "85ddac1bbd67d5b85bb6457a3232a49f10ced416f2e621fa73852c5c776ef016",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-004-v1.webp",
+        "sha256": "c53616bfc68401b2a34726177cff3925475b74348a4956293468191d2e3dce20",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-004-c01/provenance.json",
+          "sha256": "e444380a1b319ca79fa1ffb1aa11a7cdd4624429693fe446faf9f8b8b65d7f7b"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-005-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-005-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-005-c01/desktop.webp",
+      "sourceSha256": "393a8b5cd4d1f6f932d37e946596d2eff52988e2d23b7db035e301c285584cb0",
+      "originalSourceSha256": "e545547895ff296fb0bc53f9c3b5285c3ac6f95caf8fb4a60a3ef14ce9bd7623",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-005-v1.webp",
+        "sha256": "393a8b5cd4d1f6f932d37e946596d2eff52988e2d23b7db035e301c285584cb0",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-005-c01/provenance.json",
+          "sha256": "6614d0a5fb3f7567a9b8bd8f779c9252bc9567ce6f0008ce5a942894b8e9e230"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-006-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-006-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-006-c01/desktop.webp",
+      "sourceSha256": "d5ad23e114761785a68f24e214ba7e25a6686ea004fe8c13f6a124caf4763182",
+      "originalSourceSha256": "de1474af188dcf42a03fc7020c0031a83583c0f2bb93c6d81148bd3a915a077f",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-006-v1.webp",
+        "sha256": "d5ad23e114761785a68f24e214ba7e25a6686ea004fe8c13f6a124caf4763182",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-006-c01/provenance.json",
+          "sha256": "938c142704caf1266ebbf6395a99eec91be47046c2fec63762f3f1d98672b6b3"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-007-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-007-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-007-c01/desktop.webp",
+      "sourceSha256": "2bf245381bc3e3f5d465f836584f8c5bd386e76224e29770c5027ea32f8be83a",
+      "originalSourceSha256": "5433371f394af8908c2d5b235b712eb82e09b47f435518cbf81d2d3ff21b44d3",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-007-v1.webp",
+        "sha256": "2bf245381bc3e3f5d465f836584f8c5bd386e76224e29770c5027ea32f8be83a",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-007-c01/provenance.json",
+          "sha256": "63475873a6f9bd7e6a8cfc1ed89c3c0f4b7ba32018e03162ad0ff23df7a78158"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-008-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-008-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-008-c01/desktop.webp",
+      "sourceSha256": "f7b23118f26eadbace2319d787aabe02750a8dca728952089d5c66a5ccaf36d6",
+      "originalSourceSha256": "2e90834ffa463ddd80df66f4a8430fea041f8b58e2304ddd2c8d9e0b3535e062",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-008-v1.webp",
+        "sha256": "f7b23118f26eadbace2319d787aabe02750a8dca728952089d5c66a5ccaf36d6",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-008-c01/provenance.json",
+          "sha256": "c96ba1bda77ea7bf7664ac4363d6183a07d4be0b6d02c409f862e32ab03d6ad0"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-009-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-009-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-009-c01/desktop.webp",
+      "sourceSha256": "c42bcb149df8fa08ffa1bf2e42732db727809741b755a090272b4559d63ec544",
+      "originalSourceSha256": "fbbcf666e0406f1541dfa0b49fd9370b3253df09f077edcd2bff37bf94105fc9",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-009-v1.webp",
+        "sha256": "c42bcb149df8fa08ffa1bf2e42732db727809741b755a090272b4559d63ec544",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-009-c01/provenance.json",
+          "sha256": "1f29960875b3639567657c85dfca05a88c443f21097ac2006cf9fc2cac026f9c"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-010-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-010-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-010-c01/desktop.webp",
+      "sourceSha256": "66dc2aec58e5de8e75b8068403155d0c1f73e8752a3fc4b41905e19b492af808",
+      "originalSourceSha256": "3ae355e810591fda9f2d9c45fdd44f7fcf322cd8df699ff2bbe30c071ad251ee",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-010-v1.webp",
+        "sha256": "66dc2aec58e5de8e75b8068403155d0c1f73e8752a3fc4b41905e19b492af808",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-010-c01/provenance.json",
+          "sha256": "ce42fd5170c590210f349ca0f6307947036f2850d31bed7e41d7f312375fafa1"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-011-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-011-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-011-c01/desktop.webp",
+      "sourceSha256": "72181f9da714b78a8549ed62966e4d6fe9c83d2d2cd5de1bb1a9d56400c20647",
+      "originalSourceSha256": "ce223cbce21acdaf2fd5087905da0595a903cac6c841d5ef73b770766fa6bc1d",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-011-v1.webp",
+        "sha256": "72181f9da714b78a8549ed62966e4d6fe9c83d2d2cd5de1bb1a9d56400c20647",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-011-c01/provenance.json",
+          "sha256": "45d647f330f5f7be14d427b7205144379988beb0bf307c3d57aff6a3333e6991"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-012-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-012-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-012-c01/desktop.webp",
+      "sourceSha256": "eb48a90f51cbf2ae83224f7adbb055eb5213cec1a20f28c66238122197ffb98d",
+      "originalSourceSha256": "dbc4e4511e5f98c34251d22bfa0c410d6632ca50dd4bb9680294bedd6047ae4a",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-012-v1.webp",
+        "sha256": "eb48a90f51cbf2ae83224f7adbb055eb5213cec1a20f28c66238122197ffb98d",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-012-c01/provenance.json",
+          "sha256": "ee0f6dbb4cea5d84aa13a875f1ac03b6cd81ce4bdd759b712dab18d3fecb15f8"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-013-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-013-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-013-c01/desktop.webp",
+      "sourceSha256": "9578007b67b84b922d365947359ea4201ed96eb33db5362f35d4b5924d910233",
+      "originalSourceSha256": "98a1c2b92f094cf44c9d7bc25a30041410b6038192f918d935c3bd3542a48c60",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-013-v1.webp",
+        "sha256": "9578007b67b84b922d365947359ea4201ed96eb33db5362f35d4b5924d910233",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-013-c01/provenance.json",
+          "sha256": "2b674cefefce06c9039fdbc116e2a8868e2ca7cce5b7cfb01e2feea8d1a3f6c8"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-014-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-014-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-014-c01/desktop.webp",
+      "sourceSha256": "1f1e4952fd29fe6d774b1d3dbf4a170d80d58e9ac24fd2724e9da95f1343ac24",
+      "originalSourceSha256": "2884e3f388d104909214ab5ab5dd3e9986d80d765b2485f60becbfac539bee38",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-014-v1.webp",
+        "sha256": "1f1e4952fd29fe6d774b1d3dbf4a170d80d58e9ac24fd2724e9da95f1343ac24",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-014-c01/provenance.json",
+          "sha256": "0d3d2ec9fefb0b938aa1f9228206999c33ff4affbed869753874d817247669e3"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-015-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-015-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-015-c01/desktop.webp",
+      "sourceSha256": "ad189e86b1a6d5a35722a855f7104638721fac16f596b46d6659ca7c37c983ea",
+      "originalSourceSha256": "0349a5af1e72cae6c6f4c88e65f21d98a92a43f7d6010a0710fad100497db040",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-015-v1.webp",
+        "sha256": "ad189e86b1a6d5a35722a855f7104638721fac16f596b46d6659ca7c37c983ea",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-015-c01/provenance.json",
+          "sha256": "e88e69c104e5182a0881c955808dedb0f0d906327e316f24cd7f9b5b14f524eb"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-016-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-016-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-016-c01/desktop.webp",
+      "sourceSha256": "a4b9f949e63eb1a38f21aa4e3e56c0a62a2309f71a53eecd6a6e370135c55b71",
+      "originalSourceSha256": "9b5a3499884b6062a7694b674dfdd66ca0603e823b9f2a84edf0b5124b32486e",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-016-v1.webp",
+        "sha256": "a4b9f949e63eb1a38f21aa4e3e56c0a62a2309f71a53eecd6a6e370135c55b71",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-016-c01/provenance.json",
+          "sha256": "faf8be431ff8f1abe71d62a92e244cc02818c09e5638b741c65118aee89b72b1"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-017-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-017-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-017-c01/desktop.webp",
+      "sourceSha256": "e1df1376f22e01895a8f1a90ac8feffcb29a01a36de0680c2974fa37e13bbb67",
+      "originalSourceSha256": "c2c660700657c81dbcf37f8aa85ab4f077ab66b54adfa3060e5dbef9a898087c",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-017-v1.webp",
+        "sha256": "e1df1376f22e01895a8f1a90ac8feffcb29a01a36de0680c2974fa37e13bbb67",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-017-c01/provenance.json",
+          "sha256": "62551be7d19a870cc0850bf2e05bc0c10d2343c70b23e00343b4f1a02a39075a"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-018-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-018-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-018-c01/desktop.webp",
+      "sourceSha256": "d7655655b6a463541700429db43ead6bfbcae91837e2c9e6c641f1806f2c2d46",
+      "originalSourceSha256": "70d9bd203736d38ea092a42ea1d494d8db54837bf8dedc830b7511dd5937ac84",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-018-v1.webp",
+        "sha256": "d7655655b6a463541700429db43ead6bfbcae91837e2c9e6c641f1806f2c2d46",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-018-c01/provenance.json",
+          "sha256": "310240f2890865b008a48cf806652c91cb84f890e5df98396950515b3394a31f"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-019-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-019-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-019-c01/desktop.webp",
+      "sourceSha256": "eaea102d63f42d6b383892a1c6da5be898221794377372b5b7f7bd00710cdd04",
+      "originalSourceSha256": "fa6ea20595e8aa92df14067a42a04f84902f373a6202ac042c8d760c99ce5b81",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-019-v1.webp",
+        "sha256": "eaea102d63f42d6b383892a1c6da5be898221794377372b5b7f7bd00710cdd04",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-019-c01/provenance.json",
+          "sha256": "0e1cb3533cd3678d19c36402eccee028547508e12d9e190129c83a6d9f9dda40"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-020-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-020-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-020-c01/desktop.webp",
+      "sourceSha256": "f4c47f91bdb730cd4df94f9dcf0f9998ec8a569f9de79c530f3fce9360e6f73e",
+      "originalSourceSha256": "06d77c15247760fc612e47ba6865e445a9553e513898b63338546cdd691f05cc",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-020-v1.webp",
+        "sha256": "f4c47f91bdb730cd4df94f9dcf0f9998ec8a569f9de79c530f3fce9360e6f73e",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-020-c01/provenance.json",
+          "sha256": "c76d1f49bce762decd31b3fbae0e95b4d5a73bd840cd009b00242bd61b5f0a9c"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-021-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-021-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-021-c01/desktop.webp",
+      "sourceSha256": "133072b13a4a08a451924fd94329ae30f5afeafc0662f65481e46bb6ed2675ed",
+      "originalSourceSha256": "7eede8bff2c3d43750d85830ab91b43ac247a89701ba9792c7c8d570c45e24b1",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-021-v1.webp",
+        "sha256": "133072b13a4a08a451924fd94329ae30f5afeafc0662f65481e46bb6ed2675ed",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-021-c01/provenance.json",
+          "sha256": "9431639b9a9e8a4c0e5f2a4364b0733e2eed7474602988c0f0654f3e95c7697c"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-022-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-022-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-022-c01/desktop.webp",
+      "sourceSha256": "269e63805c9d8b1052ec6a8464c01442b50555fbf0330999c6a6209fe8a2f11f",
+      "originalSourceSha256": "0c566a10b6c53e504b84722f53343ca9ea8092d2719198855085beeceabced14",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-022-v1.webp",
+        "sha256": "269e63805c9d8b1052ec6a8464c01442b50555fbf0330999c6a6209fe8a2f11f",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-022-c01/provenance.json",
+          "sha256": "40ca8edc0eba7321207f4c769151ced3947a94b77dc613ceb8ece43ea6d92dc9"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-023-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-023-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-023-c01/desktop.webp",
+      "sourceSha256": "6846eaf159ace9db4dc666abf39448f993e6ca509381ed2bf741ff18f03fa558",
+      "originalSourceSha256": "289e2373dfa82968d11a7dfe1fd292babe5abf9c1a8e32270ef81b8f32de279c",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-023-v1.webp",
+        "sha256": "6846eaf159ace9db4dc666abf39448f993e6ca509381ed2bf741ff18f03fa558",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-023-c01/provenance.json",
+          "sha256": "b641db098195dcf62c6bfd1c8048b262acc9e3b7266bbae45656e5c2fbe48c0b"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-024-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "rang-therapy",
+      "sourceAssetId": "rng-rgn-024-c01",
+      "sourceRepository": "dearmykassy/rang-therapy",
+      "sourceRelative": "public/assets/rang-therapy/regional/rng-rgn-024-c01/desktop.webp",
+      "sourceSha256": "534fc0c3393a32ec2286a0c051e9d65a267e4ee5b03857f14adef0e3e9e9bf3a",
+      "originalSourceSha256": "0d8a72fa3256b1e2939456ee1092da51077dcb5f8dc233bfb1953667fac7e897",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-024-v1.webp",
+        "sha256": "534fc0c3393a32ec2286a0c051e9d65a267e4ee5b03857f14adef0e3e9e9bf3a",
+        "width": 1600,
+        "height": 900,
+        "format": "webp"
+      },
+      "authority": {
+        "releaseReceipt": {
+          "relativePath": "artifacts/image-release/rang-therapy-regional-release.v1.json",
+          "sha256": "9b9983db32643dffdcc64ca26bb7410c99f90a54df93e764aba2481019bd4fd1"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/rang-therapy/regional/rng-rgn-024-c01/provenance.json",
+          "sha256": "6666453ba3b6a145743aa1fcb55f10a1252d20d5e6e5bde21114309169d46a18"
+        },
+        "note": "The source campaign originals are not required here; the existing released derivative and ROOT_APPROVED_RELEASED receipt are the reuse authority."
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-025-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-001-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-001-v1.png",
+      "sourceSha256": "034e88103ddd429143b9ad498ff3b7e5da7e6eb2554598217679a6da10f6884a",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-025-v1.png",
+        "sha256": "034e88103ddd429143b9ad498ff3b7e5da7e6eb2554598217679a6da10f6884a",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-001-v1/provenance.json",
+          "sha256": "2068b81313a43ada7c303f5200deac72697ccbdb25598e8fd852c6f3f25ad58e"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-026-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-002-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-002-v1.png",
+      "sourceSha256": "995bb2bfef5844758200b57001f9075dc28fa7b23c2a567a46f45467b81b3875",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-026-v1.png",
+        "sha256": "995bb2bfef5844758200b57001f9075dc28fa7b23c2a567a46f45467b81b3875",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-002-v1/provenance.json",
+          "sha256": "2f26eb0517c7bbd60d8a38195997c5d67f2b358a9d2e85d9a0eef6c56b6db323"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-027-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-003-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-003-v1.png",
+      "sourceSha256": "a1c28f07cc0431db33b9240c73d45c82c703f38fa357789caf394e653ca83d00",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-027-v1.png",
+        "sha256": "a1c28f07cc0431db33b9240c73d45c82c703f38fa357789caf394e653ca83d00",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-003-v1/provenance.json",
+          "sha256": "7961fb3968b26be54e1d1ae9981e4c3f00164437c2d37a896b3cfbfdc648f786"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-028-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-004-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-004-v1.png",
+      "sourceSha256": "1ca78032b69d0b8dbee956b53ee9196b3a25365c3df55198b8a50816cb9eb738",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-028-v1.png",
+        "sha256": "1ca78032b69d0b8dbee956b53ee9196b3a25365c3df55198b8a50816cb9eb738",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-004-v1/provenance.json",
+          "sha256": "37b10c7b1d6257ca7ab7ed536ca6968a01536c91bd19bc5c30f49d42e38f4f09"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-029-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-005-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-005-v1.png",
+      "sourceSha256": "cb0ed8cd960e3c8ec5e592d62a649d3f4213a8f4aa2436be295d3920c088f234",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-029-v1.png",
+        "sha256": "cb0ed8cd960e3c8ec5e592d62a649d3f4213a8f4aa2436be295d3920c088f234",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-005-v1/provenance.json",
+          "sha256": "efa49945d14af6ee1dc13878366c7759fd1387b84a4908ddaa44f2757a57f7b0"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-030-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-006-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-006-v1.png",
+      "sourceSha256": "48a344b16a38968cded65f657caf367f3f57cf9c87e3ef5c69f539f13aa96427",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-030-v1.png",
+        "sha256": "48a344b16a38968cded65f657caf367f3f57cf9c87e3ef5c69f539f13aa96427",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-006-v1/provenance.json",
+          "sha256": "aa634ae2ef8a6959dd0ed6823549ce721e051b555230e3cf1df336eadefb78d6"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-031-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-007-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-007-v1.png",
+      "sourceSha256": "5b13af10bd5d7345eb69c0c041cbca278378e7b25b3433b2083dd6c5784904a3",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-031-v1.png",
+        "sha256": "5b13af10bd5d7345eb69c0c041cbca278378e7b25b3433b2083dd6c5784904a3",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-007-v1/provenance.json",
+          "sha256": "dc72a9b0565b9cbf8126158adcf2df80968a214e5e71837cc871372d52b9f8b8"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-032-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-008-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-008-v1.png",
+      "sourceSha256": "285b3fedb3c006b9a7ae4531309292f99db7f5f956fd787fe356067febeeac70",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-032-v1.png",
+        "sha256": "285b3fedb3c006b9a7ae4531309292f99db7f5f956fd787fe356067febeeac70",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-008-v1/provenance.json",
+          "sha256": "c286ef974af31dedf3cabcaf9d41889b36fb57aa978be256694055f638e6a30e"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-033-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-009-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-009-v1.png",
+      "sourceSha256": "c15d147d5de24171387de7db33b6a7bf8cb36cde775a7688be506316ff52bf73",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-033-v1.png",
+        "sha256": "c15d147d5de24171387de7db33b6a7bf8cb36cde775a7688be506316ff52bf73",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-009-v1/provenance.json",
+          "sha256": "8c880529b697a082802ee7b0d2469ee203166d3961b5b2d94cdd087ef1eb1975"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-034-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-010-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-010-v1.png",
+      "sourceSha256": "8a5967029d98403539bb544cab94583109481059f85738b4dd6753ee69da16fb",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-034-v1.png",
+        "sha256": "8a5967029d98403539bb544cab94583109481059f85738b4dd6753ee69da16fb",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-010-v1/provenance.json",
+          "sha256": "3e1ac07288ee65f68bcbdf8c033f424d06378ca535505b71c10776184fb8ac8b"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-035-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-011-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-011-v1.png",
+      "sourceSha256": "2e17983d753089912380e5c10acc49d8cb540e11c1620e93c8612bbd87b4cd06",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-035-v1.png",
+        "sha256": "2e17983d753089912380e5c10acc49d8cb540e11c1620e93c8612bbd87b4cd06",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-011-v1/provenance.json",
+          "sha256": "cff3e5dfe025b62f096f6fbd57662ca1546ff6c367ded8aa849a85b07b925c6e"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-036-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-012-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-012-v1.png",
+      "sourceSha256": "3a05f2ff29fde4ca28a2151b55e83ca6a7cbb33cd2114f496c945f67dcffa16c",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-036-v1.png",
+        "sha256": "3a05f2ff29fde4ca28a2151b55e83ca6a7cbb33cd2114f496c945f67dcffa16c",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-012-v1/provenance.json",
+          "sha256": "426fef5f929ed7f428f8c25b7c18870bb5ac6ec7569781dd69e79d665ddd7842"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-037-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-013-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-a/gmb-t4-rgn-013-v1.png",
+      "sourceSha256": "487f76e1461bb4906393f9dcadbd638719d223c667d664d79612e48d864bae37",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-037-v1.png",
+        "sha256": "487f76e1461bb4906393f9dcadbd638719d223c667d664d79612e48d864bae37",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-013-v1/provenance.json",
+          "sha256": "66c1082cd4620564c60e26d1ce3d79d35a6babdca60bec440f35172a2da40b4f"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-038-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-014-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-014-v1.png",
+      "sourceSha256": "9905a4bbcaccfe45753a71e10eace2c2a47b2e3d558acd4384c16e8c785ca284",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-038-v1.png",
+        "sha256": "9905a4bbcaccfe45753a71e10eace2c2a47b2e3d558acd4384c16e8c785ca284",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-014-v1/provenance.json",
+          "sha256": "979e9e816a44e17621d38cca62baada78f7341b1fc615c71b68553805ff46962"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-039-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-015-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-015-v1.png",
+      "sourceSha256": "9d3062abfb85cdb183ee2e41580e16bc28dc5f970bfc9d20ebfcef65ff32a491",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-039-v1.png",
+        "sha256": "9d3062abfb85cdb183ee2e41580e16bc28dc5f970bfc9d20ebfcef65ff32a491",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-015-v1/provenance.json",
+          "sha256": "50372cacd9ba42080fe8cc3ff83024dcdab0e557093af0da7d17341707fbb6c7"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-040-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-016-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-016-v1.png",
+      "sourceSha256": "e50f4d011c8c148b4a96130fe705f0c236946d47d3e5f0de92479d08d5a5b752",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-040-v1.png",
+        "sha256": "e50f4d011c8c148b4a96130fe705f0c236946d47d3e5f0de92479d08d5a5b752",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-016-v1/provenance.json",
+          "sha256": "2f4a4dc5b811d69fe42dc5fa40a3d59bf1b4f4afbb937dcb9d6c51ef2b122a86"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-041-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-017-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-017-v1.png",
+      "sourceSha256": "830a7c2f9c1658be9c87d701277b811f8a868f252b6876fd840f6922fabeb6ac",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-041-v1.png",
+        "sha256": "830a7c2f9c1658be9c87d701277b811f8a868f252b6876fd840f6922fabeb6ac",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-017-v1/provenance.json",
+          "sha256": "17e2d6f73a9ee3b624a2c827363da9aa553d7ae6d242f1085ff2b34d31912b15"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-042-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-018-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-018-v1.png",
+      "sourceSha256": "638fba717fb4aa3cc060f26a107609fdb3486a2774da7c55fca011d5827901b1",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-042-v1.png",
+        "sha256": "638fba717fb4aa3cc060f26a107609fdb3486a2774da7c55fca011d5827901b1",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-018-v1/provenance.json",
+          "sha256": "b6554286c07fc8be452dcc72399ae884c679d163e52380c83891f3613054d919"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-043-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-019-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-019-v1.png",
+      "sourceSha256": "436eaaa5daadb13b89172bc941465d2c315b98de5f57e49a626d2993ea0c420e",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-043-v1.png",
+        "sha256": "436eaaa5daadb13b89172bc941465d2c315b98de5f57e49a626d2993ea0c420e",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-019-v1/provenance.json",
+          "sha256": "ef65a8977108914f30958637fc04ad4a93568ac352ddbe5e6c084f60bb62f650"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-044-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-020-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-020-v1.png",
+      "sourceSha256": "403ca8123aed85b49b47bd0c93daf1c98eb5eff26b105397ce831dcc149e88ad",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-044-v1.png",
+        "sha256": "403ca8123aed85b49b47bd0c93daf1c98eb5eff26b105397ce831dcc149e88ad",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-020-v1/provenance.json",
+          "sha256": "913af53d7a9915c92987b714aa2dac04f25426487371c760b3a403fe7ecbc349"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-045-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-021-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-021-v1.png",
+      "sourceSha256": "6c2c1230d4f1e4718a2d77d05b7084f073a169a2758e63e23367b35d7dbef8f5",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-045-v1.png",
+        "sha256": "6c2c1230d4f1e4718a2d77d05b7084f073a169a2758e63e23367b35d7dbef8f5",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-021-v1/provenance.json",
+          "sha256": "4ba6c74c36122ed19719febf3eb55b0c154b7ec720fae6065c8fc111495d2f38"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-046-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-022-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-022-v1.png",
+      "sourceSha256": "f364083e1f6bf3811e38f50dc76e5c327e967e3c11bdd2082768bc55b130a9fb",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-046-v1.png",
+        "sha256": "f364083e1f6bf3811e38f50dc76e5c327e967e3c11bdd2082768bc55b130a9fb",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-022-v1/provenance.json",
+          "sha256": "3ae142266b6eeb8a911ceb5d78144fd56167d8c22d418c625ac83771eab756a4"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-047-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-023-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-023-v1.png",
+      "sourceSha256": "1667c9066bd152b84bf1a741162b2c540f001b2f100e35f62cb5ebe125b230bb",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-047-v1.png",
+        "sha256": "1667c9066bd152b84bf1a741162b2c540f001b2f100e35f62cb5ebe125b230bb",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-023-v1/provenance.json",
+          "sha256": "fa284a07f530b53ad75aa32e28e15c001291edb179a521396e762f7accbde4ee"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-048-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "geonmae-banhada",
+      "sourceAssetId": "gmb-t4-rgn-024-v1",
+      "sourceRepository": "dearmykassy/geonmae-banhada",
+      "sourceRelative": "public/images/geonma-template4/regional-originals/lane-b/gmb-t4-rgn-024-v1.png",
+      "sourceSha256": "47b462ab37768bbeef4409ed235028027be9d134ecfff4e7f816d0ae6793aeae",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-048-v1.png",
+        "sha256": "47b462ab37768bbeef4409ed235028027be9d134ecfff4e7f816d0ae6793aeae",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "campaign": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/campaign.v1.json",
+          "sha256": "cc70a16a108c6b12c512e444c46659652e083ef9b5f7ccc7dfd5a3d54373c6b8"
+        },
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/geonma-template4-mirror-selfie-v1/contact-sheets/round-01/review.v1.json",
+          "sha256": "96f69a5e79d64abdf709663a2f4ae44d63513cde7f32ff77d5c0b7fa58b52954",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/geonmae-banhada/template4-regional/gmb-t4-rgn-024-v1/provenance.json",
+          "sha256": "7f2992926d175e15a18fda8f3957ff94788978175738a570edc770746d0f1d53"
+        }
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-049-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-044-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-d/hym-t4-rgn-044-v2.png",
+      "sourceSha256": "b7fb2603bc5712863ac02314a7785cf8d7bba3bf764e15b38d51daa173f21010",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-049-v1.png",
+        "sha256": "b7fb2603bc5712863ac02314a7785cf8d7bba3bf764e15b38d51daa173f21010",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-044-v1/provenance.json",
+          "sha256": "bb53cf3f14f3f943dd087bd7029109655705770276c1ec782fda0fa21975067e"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-050-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-066-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-066-v2.png",
+      "sourceSha256": "2d62374e52002257536587f1cb0881154a7c7d916ae76704aadd712e520fda6f",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-050-v1.png",
+        "sha256": "2d62374e52002257536587f1cb0881154a7c7d916ae76704aadd712e520fda6f",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-066-v1/provenance.json",
+          "sha256": "053c25b930beb3b0cd315954725d3f40f8f848f54dc24ddac1204a777f50f9fa"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-051-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-067-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-067-v2.png",
+      "sourceSha256": "fcb25bddc74758763b42336460c227586fa5bbd2d8a5c66172f83b7a09ae7243",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-051-v1.png",
+        "sha256": "fcb25bddc74758763b42336460c227586fa5bbd2d8a5c66172f83b7a09ae7243",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-067-v1/provenance.json",
+          "sha256": "ce9c0e4573c7079a71f150f2a383756e62ad66bf6feceba40828793c1a237dd0"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-052-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-068-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-068-v2.png",
+      "sourceSha256": "b0b0566fc034abdfc4f85d2518f7e0a2988e13c1c30e7973d806b12b43d9ebec",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-052-v1.png",
+        "sha256": "b0b0566fc034abdfc4f85d2518f7e0a2988e13c1c30e7973d806b12b43d9ebec",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-068-v1/provenance.json",
+          "sha256": "f4fe3f9b090852f775d91c039a0c61f2403d6a5bb2a08e8489616ea49b095365"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-053-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-069-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-069-v2.png",
+      "sourceSha256": "5106ec07caa83ba5eca8c0fca15a4886d1bc17beb79d26849faa90131a05d731",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-053-v1.png",
+        "sha256": "5106ec07caa83ba5eca8c0fca15a4886d1bc17beb79d26849faa90131a05d731",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-069-v1/provenance.json",
+          "sha256": "9c97ccde8cfd30eab7d414045783b516ba061bb2ff63c5c3e7c788b5cbf0b096"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-054-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-070-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-070-v2.png",
+      "sourceSha256": "8d277823258a9b5b0e83ece11a21f5e1d3b77009b494b9b9f46dddc8d03c1e54",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-054-v1.png",
+        "sha256": "8d277823258a9b5b0e83ece11a21f5e1d3b77009b494b9b9f46dddc8d03c1e54",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-070-v1/provenance.json",
+          "sha256": "a0670ea44dd020bd5ca542557dccf5d48b9493341eabcb09b57f80b676fbca8d"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-055-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-071-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-071-v2.png",
+      "sourceSha256": "934ec15977d83409e51b98256ffec67cdcb892a8d50a4944c3c43e7cb2cf1f2e",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-055-v1.png",
+        "sha256": "934ec15977d83409e51b98256ffec67cdcb892a8d50a4944c3c43e7cb2cf1f2e",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-071-v1/provenance.json",
+          "sha256": "3a2b238fc4e06bdba8eb9cd7f78453d636e8a05aa27886e2a75d0af6ddc208e8"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-056-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-072-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-072-v2.png",
+      "sourceSha256": "f074dba234ec4db1a1fd7660a8bcd4957bc926b11945c043465bcaab0bef1471",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-056-v1.png",
+        "sha256": "f074dba234ec4db1a1fd7660a8bcd4957bc926b11945c043465bcaab0bef1471",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-072-v1/provenance.json",
+          "sha256": "91831974ec37809fb6c532342e77726524a327fd29560771c824163ba201260e"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-057-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-073-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-073-v2.png",
+      "sourceSha256": "895bc6ee02c69d8058b6e169021f24cd05a160caff66dc671b33c14fb70aea70",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-057-v1.png",
+        "sha256": "895bc6ee02c69d8058b6e169021f24cd05a160caff66dc671b33c14fb70aea70",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-073-v1/provenance.json",
+          "sha256": "8ecfb39f9b853b0ed5bf94b59a111ea2eb9620f87bf3c286952b0c05c6f32364"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-058-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-074-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-074-v2.png",
+      "sourceSha256": "cc1de9b3766a6e20993a59a81c30aac84d9ae32cc76ade2c38401a335750bf24",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-058-v1.png",
+        "sha256": "cc1de9b3766a6e20993a59a81c30aac84d9ae32cc76ade2c38401a335750bf24",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-074-v1/provenance.json",
+          "sha256": "e6800cc177638e9101661e9ff04971722e776782dbf7cde7d8d112a8c32bf8b5"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-059-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-075-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-075-v2.png",
+      "sourceSha256": "68edb49249caa034bcca892f4a832a63eccea57110e1ac9b149dee03dc093930",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-059-v1.png",
+        "sha256": "68edb49249caa034bcca892f4a832a63eccea57110e1ac9b149dee03dc093930",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-075-v1/provenance.json",
+          "sha256": "8b3f575ced80f165da621da46a5bd19ffefbc8c3afa7e9597a743978c981361c"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-060-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-076-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-076-v2.png",
+      "sourceSha256": "ab4d782c9416da30103eba51e337f86675ac148cced5b7282fcbfb670817f8f4",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-060-v1.png",
+        "sha256": "ab4d782c9416da30103eba51e337f86675ac148cced5b7282fcbfb670817f8f4",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-076-v1/provenance.json",
+          "sha256": "1631939b7cfb5d2f3a92aef2738e83678640b31d917af704c2becb6b21a5e981"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-061-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-077-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-077-v2.png",
+      "sourceSha256": "99f67d3559df54d9a005e9c3e2c1b122885ccc6980238f915c8abed109e8bfe6",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-061-v1.png",
+        "sha256": "99f67d3559df54d9a005e9c3e2c1b122885ccc6980238f915c8abed109e8bfe6",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-077-v1/provenance.json",
+          "sha256": "a7c233a03810360130a44901c1296a5a9e58f03e2a92bff2093d3d850cbe05b0"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-062-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-078-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-f/hym-t4-rgn-078-v2.png",
+      "sourceSha256": "dfa7991f3634d99ef927af2107384ff244aa611f2ff1dec545ccf5c00b7606c9",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-062-v1.png",
+        "sha256": "dfa7991f3634d99ef927af2107384ff244aa611f2ff1dec545ccf5c00b7606c9",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-078-v1/provenance.json",
+          "sha256": "e637d2cdb2b8eccf28e2d4aae38f9e7cd054b7dd272d305e3abb778590299b59"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-063-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-079-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-079-v2.png",
+      "sourceSha256": "b9af85408e5b999b93a5e0cdf2d731335f677122133019e8223fd1e101c6eca0",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-063-v1.png",
+        "sha256": "b9af85408e5b999b93a5e0cdf2d731335f677122133019e8223fd1e101c6eca0",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-079-v1/provenance.json",
+          "sha256": "6a3cf6e6ac463e187a8a2115222601902b3353a1fd777caf90d62376903d272b"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-064-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-080-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-080-v2.png",
+      "sourceSha256": "62520ca37fd5fe6e5e588927f70fc5c7fbf7df04c601e9fc32b022a65e4fd86b",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-064-v1.png",
+        "sha256": "62520ca37fd5fe6e5e588927f70fc5c7fbf7df04c601e9fc32b022a65e4fd86b",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-080-v1/provenance.json",
+          "sha256": "4460d1e15cbad95e55e33466be829e23f4c2720db92708e06a8d21d07e33708e"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-065-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-081-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-081-v2.png",
+      "sourceSha256": "6d0c453d95ba0448e54d8fe88235056ef5fb14e56293e0bca4ac7d1d7d9a421e",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-065-v1.png",
+        "sha256": "6d0c453d95ba0448e54d8fe88235056ef5fb14e56293e0bca4ac7d1d7d9a421e",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-081-v1/provenance.json",
+          "sha256": "4257956a3b506cc55573d41a960900fe72912b3572263511a877a9b89a36120a"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-066-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-082-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-082-v2.png",
+      "sourceSha256": "722fdd4ccd0bb374b5e55ab42bba8cee542a7244cf676e358a3488ab3f99343f",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-066-v1.png",
+        "sha256": "722fdd4ccd0bb374b5e55ab42bba8cee542a7244cf676e358a3488ab3f99343f",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-082-v1/provenance.json",
+          "sha256": "5cc3e97707e316f196f0e458371a6f3454cb3e71921b169004c22b35e2b558fc"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-067-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-083-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-083-v3.png",
+      "sourceSha256": "841f7beb588776e3b309dbd59361162941e4e112546ac9b8ee5ee749b1c359d3",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-067-v1.png",
+        "sha256": "841f7beb588776e3b309dbd59361162941e4e112546ac9b8ee5ee749b1c359d3",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-083-v1/provenance.json",
+          "sha256": "775de9af83504c0e76d4110a8fbd1e96234885ff0fe87565eb32fa7aa5e8af26"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-068-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-084-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-084-v2.png",
+      "sourceSha256": "b5e2f3d479e19e5bcfbc022194ddf43ad38b32e4cf89b1892afca9a26d60e246",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-068-v1.png",
+        "sha256": "b5e2f3d479e19e5bcfbc022194ddf43ad38b32e4cf89b1892afca9a26d60e246",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-084-v1/provenance.json",
+          "sha256": "405228e8974821fec4b2b45ac8233d467109c510fae08f8e5cffd9d7b5a0fbe6"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-069-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-085-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-085-v3.png",
+      "sourceSha256": "460d2e510b4f1910f4cea33f2cc8482a9388cd9d01adee26f67980974cd416d8",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-069-v1.png",
+        "sha256": "460d2e510b4f1910f4cea33f2cc8482a9388cd9d01adee26f67980974cd416d8",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-085-v1/provenance.json",
+          "sha256": "430446af58a8af44e16e05188ce04e02ae12c81d2649cf7cec3b52bddfa3c5e9"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-070-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-086-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-086-v2.png",
+      "sourceSha256": "04211232aee5c9cd33d2e420e665cdc6c136e09083d19f54c977bd7510939cbf",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-070-v1.png",
+        "sha256": "04211232aee5c9cd33d2e420e665cdc6c136e09083d19f54c977bd7510939cbf",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-086-v1/provenance.json",
+          "sha256": "1bbc10c97c08a593d5b7a9639163dfab534c3979f8ae425bc583b119cecf523a"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-071-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-087-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-087-v2.png",
+      "sourceSha256": "c777c76ac42e42ae6a806ed411e73f3504131756f16f9c7cc18144bcd9245d03",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-071-v1.png",
+        "sha256": "c777c76ac42e42ae6a806ed411e73f3504131756f16f9c7cc18144bcd9245d03",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-087-v1/provenance.json",
+          "sha256": "f30bdc31e606aeddc8848b0da92dec542f041b57c12172aba65e6b1e1c2458b3"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    },
+    {
+      "assetId": "mday-t6-rgn-072-v1",
+      "sourceClass": "reused",
+      "sourcePlatform": "honhyeol-massage",
+      "sourceAssetId": "hym-t4-rgn-088-v1",
+      "sourceRepository": "dearmykassy/honhyeol-massage",
+      "sourceRelative": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/replacements/korean-art-direction-v2/generated/lane-g/hym-t4-rgn-088-v2.png",
+      "sourceSha256": "1b84c66d88608a712a9ba7a7d33c51c3db32dcb89b6d54db474fcbee411a2f0b",
+      "copiedMaster": {
+        "relativePath": "public/images/massage-day-template6/regional-masters/reused/mday-t6-rgn-072-v1.png",
+        "sha256": "1b84c66d88608a712a9ba7a7d33c51c3db32dcb89b6d54db474fcbee411a2f0b",
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "authority": {
+        "rootReview": {
+          "relativePath": "artifacts/image-campaign/honhyeol-template4-mirror-selfie-v1/contact-sheets/round-02/review.v2.json",
+          "sha256": "92ed8e09051bac486ecd2b5cbe6648606aea74b6dd8ad73f826ce12afbb08b00",
+          "reviewer": "root"
+        },
+        "sourceProvenance": {
+          "relativePath": "public/assets/honhyeol-massage/template4-regional/hym-t4-rgn-088-v1/provenance.json",
+          "sha256": "9448af88c9972eecb7d2ee29f30bc26d3a307accd0057ccd325b254f5de86aaa"
+        },
+        "sourceClassRequired": "replacement-new"
+      }
+    }
+  ]
+}

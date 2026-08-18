@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "massage-day-code-authored-brand-mark/v1",
+  "status": "CODE_AUTHORED_DERIVED",
+  "platformKey": "massage-day",
+  "motif": "daytime sunrise above a horizon",
+  "distinction": "No heart and no orbit motif; transparent background; simple flat vector geometry.",
+  "generation": {
+    "mode": "code-authored-svg",
+    "imageGenerationCalls": 0
+  },
+  "source": {
+    "relativePath": "public/images/massage-day-template6/brand/day-mark.svg",
+    "sha256": "6967f5d2ae2e711608af9fa98d8f1690be8fe4f2f690e65a894344aab036e708",
+    "viewBox": "0 0 64 64"
+  },
+  "outputs": [
+    {
+      "relativePath": "public/images/massage-day-template6/brand/day-mark-32.png",
+      "sha256": "b89b89e6ef8e91b8b134e4d38e2b92b088047c828d02c1302db9a7bd1942b446",
+      "width": 32,
+      "height": 32,
+      "format": "png",
+      "hasAlpha": true
+    },
+    {
+      "relativePath": "public/images/massage-day-template6/brand/day-mark-192.png",
+      "sha256": "c28f22577adf94d28052dd8c14f8d8c04fa9b3eac7be558ffa5800d9d22c9e2c",
+      "width": 192,
+      "height": 192,
+      "format": "png",
+      "hasAlpha": true
+    },
+    {
+      "relativePath": "public/images/massage-day-template6/brand/day-mark-512.png",
+      "sha256": "22eab97cc000cebe3cafba871a382027a686966a74a441a809fbf0694c272aaf",
+      "width": 512,
+      "height": 512,
+      "format": "png",
+      "hasAlpha": true
+    }
+  ]
+}
