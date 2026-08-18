@@ -17,6 +17,7 @@ import {
 import {
   ACTIVE_REGION_NODES,
   getKeywordRegionLabel,
+  getSearchRegionLabel,
 } from "../src/lib/regions.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -106,6 +107,7 @@ const ALL_REGION_LABELS = [
     ACTIVE_REGION_NODES.flatMap((node) => [
       node.qualifiedName,
       node.displayName,
+      getSearchRegionLabel(node),
       getKeywordRegionLabel(node),
       ...(node.representative?.sourceNames ?? []),
     ]).filter((value) => value.length >= 2),
@@ -134,6 +136,7 @@ function normalizeRegional(value, node) {
   const labels = [
     node.qualifiedName,
     node.displayName,
+    getSearchRegionLabel(node),
     getKeywordRegionLabel(node),
   ]
     .filter(
@@ -256,13 +259,16 @@ function genericRuntimeCode() {
   return [
     'import { createHash } from "node:crypto";',
     'import { createRegionContent } from "./src/lib/content.ts";',
-    'import { ACTIVE_REGION_NODES, getKeywordRegionLabel } from "./src/lib/regions.ts";',
+    'import * as regionLibrary from "./src/lib/regions.ts";',
+    'const { ACTIVE_REGION_NODES } = regionLibrary;',
     'const brands = /마사지데이|마사지봄|마사지러브|콜미토닥이|랑테라피|필링홈타이|건마에반하다|혼혈마사지|GEONMAE BANHADA|HONHYEOL/giu;',
     'const digest = (value) => createHash("sha256").update(value).digest("hex");',
     'const clean = (value) => value.replace(/\\s+/gu, " ").trim();',
     'const substantive = (value) => (value.match(/[가-힣]/gu) ?? []).length >= 12;',
     'function normalize(value, node) {',
-    '  const labels = [node.qualifiedName, node.displayName, getKeywordRegionLabel(node)]',
+    '  const labels = [node.qualifiedName, node.displayName,',
+    '    typeof regionLibrary.getSearchRegionLabel === "function" ? regionLibrary.getSearchRegionLabel(node) : "",',
+    '    typeof regionLibrary.getKeywordRegionLabel === "function" ? regionLibrary.getKeywordRegionLabel(node) : ""]',
     '    .filter((label, index, all) => label && all.indexOf(label) === index)',
     '    .sort((left, right) => right.length - left.length);',
     '  return labels.reduce((copy, label) => copy.replaceAll(label, "{지역}"), clean(value)).replace(brands, "{브랜드}");',

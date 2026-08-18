@@ -3,6 +3,8 @@ import {
   getKeywordRegionLabel,
   getParentNode,
   getRegionOrdinal,
+  getSearchRegionLabel,
+  shortenRegionSearchName,
   type RegionChild,
   type RegionNode,
 } from "@/lib/regions";
@@ -229,24 +231,30 @@ function homonymFact(node: RegionNode): string {
 function metadataGeographyFact(node: RegionNode): string {
   const children = getDirectChildren(node);
   if (children.length > 0) {
-    const names = children.slice(0, 4).map((child) => child.name).join("·");
-    return `직계 하위 주소 ${children.length}개 중 ${names}${children.length > 4 ? " 외 항목" : ""}이 연결됩니다.`;
+    const names = children
+      .slice(0, 4)
+      .map((child) => shortenRegionSearchName(child.name))
+      .join("·");
+    return `직계 하위 주소 ${children.length}개를 확인할 수 있습니다. 목록에는 ${names}${children.length > 4 ? " 외 항목도" : ""} 표시됩니다.`;
   }
 
   const aliases = (node.representative?.sourceNames ?? []).filter(
     (name) => name !== node.displayName,
   );
   if (aliases.length > 0) {
-    return `같은 페이지에서 확인하는 주소 명칭은 ${aliases.slice(0, 5).join("·")}입니다.`;
+    return `같은 페이지에서 확인하는 주소 명칭은 ${aliases
+      .slice(0, 5)
+      .map(shortenRegionSearchName)
+      .join("·")}입니다.`;
   }
 
   const { parent, siblings, index } = siblingContext(node);
   if (!parent || siblings.length <= 1) {
-    return `현재 경로는 ${parent?.qualifiedName ?? node.displayName} 아래의 단일 주소 단계입니다.`;
+    return `현재 경로는 ${shortenRegionSearchName(parent?.qualifiedName ?? node.displayName)} 아래의 단일 주소 단계입니다.`;
   }
   const previous = siblings[(index - 1 + siblings.length) % siblings.length];
   const next = siblings[(index + 1) % siblings.length];
-  return `상위 주소 ${parent.qualifiedName}의 같은 단계에는 ${previous.name}·${next.name} 항목도 있습니다.`;
+  return `상위 주소 ${shortenRegionSearchName(parent.qualifiedName)}의 같은 단계에는 ${shortenRegionSearchName(previous.name)}·${shortenRegionSearchName(next.name)} 항목도 있습니다.`;
 }
 
 function broadSections(node: RegionNode): ContentSection[] {
@@ -390,17 +398,18 @@ function compactSections(node: RegionNode): ContentSection[] {
 export function createRegionContent(node: RegionNode): RegionContent {
   const ordinal = getRegionOrdinal(node);
   const keywordLabel = getKeywordRegionLabel(node);
-  const name = node.qualifiedName;
+  const searchName = getSearchRegionLabel(node);
+  const officialName = node.qualifiedName;
   const broad = isBroadDetailRegion(node);
   const geography = metadataGeographyFact(node);
 
   return {
-    title: TITLE_PATTERNS[(ordinal * 7 + 3) % TITLE_PATTERNS.length](name),
+    title: TITLE_PATTERNS[(ordinal * 7 + 3) % TITLE_PATTERNS.length](searchName),
     description: DESCRIPTION_PATTERNS[
       (ordinal * 5 + 2) % DESCRIPTION_PATTERNS.length
-    ](name, geography),
+    ](searchName, geography),
     keywords: REGION_KEYWORD_SUFFIXES.map((suffix) => `${keywordLabel}${suffix}`),
-    h1: H1_PATTERNS[(ordinal * 11 + 5) % H1_PATTERNS.length](name),
+    h1: H1_PATTERNS[(ordinal * 11 + 5) % H1_PATTERNS.length](officialName),
     eyebrow: "마사지데이 · 주소 확인",
     hooks: [
       `${addressContext(node, 30)} 받을 도로명과 건물명, 날짜·시각, 인원, 코스를 전화 전에 준비합니다.`,

@@ -15,6 +15,8 @@ import {
   ACTIVE_ROOT_KEYS,
   getDirectChildren,
   getKeywordRegionLabel,
+  getSearchRegionLabel,
+  shortenRegionSearchName,
 } from "@/lib/regions";
 
 const FORBIDDEN_BRANDS = [
@@ -77,6 +79,7 @@ function normalizeRegionalCopy(
   const labels = [
     node.qualifiedName,
     node.displayName,
+    getSearchRegionLabel(node),
     getKeywordRegionLabel(node),
   ]
     .filter(
@@ -224,6 +227,54 @@ describe("Massage Day regional copy", () => {
         REGION_KEYWORD_SUFFIXES.map((suffix) => label + suffix),
       );
       expect(new Set(content.keywords).size).toBe(8);
+    }
+  });
+
+  it("uses concise customer search names in all regional meta fields", () => {
+    const expectedExamples = new Map([
+      ["서울특별시", "서울"],
+      ["인천광역시", "인천"],
+      ["경기도", "경기"],
+      ["제주특별자치도", "제주"],
+      ["수원시", "수원"],
+      ["천안시", "천안"],
+    ]);
+    for (const [official, concise] of expectedExamples) {
+      expect(shortenRegionSearchName(official)).toBe(concise);
+    }
+
+    const forbiddenBeforeService =
+      /(?:특별자치도|특별자치시|특별시|광역시|도|시)\s*(?=출장마사지|출장안마|타이마사지|아로마마사지|2인마사지)/u;
+
+    const conciseDisplayFrequency = ACTIVE_REGION_NODES.reduce((counts, node) => {
+      const concise = shortenRegionSearchName(node.displayName);
+      counts.set(concise, (counts.get(concise) ?? 0) + 1);
+      return counts;
+    }, new Map<string, number>());
+
+    for (const { node, content } of records) {
+      const searchLabel = getSearchRegionLabel(node);
+      const keywordLabel = getKeywordRegionLabel(node);
+      const metaSurface = [
+        content.title,
+        content.description,
+        ...content.keywords,
+      ].join("\n");
+
+      const conciseDisplayName = shortenRegionSearchName(node.displayName);
+      expect(searchLabel).toBe(
+        (conciseDisplayFrequency.get(conciseDisplayName) ?? 0) > 1 &&
+          node.qualifiedName !== node.displayName
+          ? shortenRegionSearchName(node.qualifiedName)
+          : conciseDisplayName,
+      );
+      expect(content.title).toContain(searchLabel);
+      expect(content.description).toContain(searchLabel);
+      expect(
+        content.keywords.every((keyword) => keyword.startsWith(keywordLabel)),
+      ).toBe(true);
+      expect(metaSurface).not.toMatch(forbiddenBeforeService);
+      expect(content.h1).toContain(node.qualifiedName);
     }
   });
 

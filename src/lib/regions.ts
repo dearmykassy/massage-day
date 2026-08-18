@@ -253,15 +253,34 @@ export function getRegionOrdinal(node: RegionNode): number {
   return ordinal;
 }
 
-const DISPLAY_NAME_FREQUENCY = ACTIVE_REGION_NODES.reduce(
-  (counts, node) => counts.set(node.displayName, (counts.get(node.displayName) ?? 0) + 1),
-  new Map<string, number>(),
-);
+const SEARCH_ADMIN_SUFFIX =
+  /(특별자치도|특별자치시|특별시|광역시|도|시)$/u;
+
+export function shortenRegionSearchName(value: string): string {
+  return value
+    .trim()
+    .split(/\s+/u)
+    .map((token) => token.replace(SEARCH_ADMIN_SUFFIX, ""))
+    .filter(Boolean)
+    .join(" ");
+}
+
+const SEARCH_NAME_FREQUENCY = ACTIVE_REGION_NODES.reduce((counts, node) => {
+  const label = shortenRegionSearchName(node.displayName);
+  counts.set(label, (counts.get(label) ?? 0) + 1);
+  return counts;
+}, new Map<string, number>());
+
+export function getSearchRegionLabel(node: RegionNode): string {
+  const conciseDisplayName = shortenRegionSearchName(node.displayName);
+  return (SEARCH_NAME_FREQUENCY.get(conciseDisplayName) ?? 0) > 1 &&
+    node.qualifiedName !== node.displayName
+    ? shortenRegionSearchName(node.qualifiedName)
+    : conciseDisplayName;
+}
 
 export function getKeywordRegionLabel(node: RegionNode): string {
-  return (DISPLAY_NAME_FREQUENCY.get(node.displayName) ?? 0) > 1
-    ? node.qualifiedName.replace(/\s+/g, "")
-    : node.displayName;
+  return getSearchRegionLabel(node).replace(/\s+/gu, "");
 }
 
 export function getDirectChildren(node: RegionNode): RegionChild[] {
