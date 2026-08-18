@@ -9,6 +9,15 @@ vi.mock("next/navigation", () => ({
 }));
 
 describe("customer-facing root region cards", () => {
+  it("uses the approved Massage Day homepage headline", () => {
+    const homeHtml = renderToStaticMarkup(<Home />);
+
+    expect(homeHtml).toContain(
+      '<h1 id="home-hero-title">하루의 마지막은 <span class="nowrap">마사지데이</span></h1>',
+    );
+    expect(homeHtml).not.toContain("주소와 이용 항목을 먼저 확인하는");
+  });
+
   it("uses concise labels on the home and full region directory cards", () => {
     const homeHtml = renderToStaticMarkup(<Home />);
     const areasHtml = renderToStaticMarkup(<AreasPage />);

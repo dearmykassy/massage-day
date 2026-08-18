@@ -43,7 +43,7 @@ export default function Home() {
         <section className="home-hero" aria-labelledby="home-hero-title">
           <div className="home-hero-copy">
             <span className="eyebrow">REGION · COURSE · PHONE</span>
-            <h1 id="home-hero-title">주소와 이용 항목을 먼저 확인하는 <span className="nowrap">마사지데이</span></h1>
+            <h1 id="home-hero-title">하루의 마지막은 <span className="nowrap">마사지데이</span></h1>
             <p>
               받을 주소의 지역 페이지를 찾고 날짜와 시각, 인원, 코스와 이용 시간을 정리해 전화로 현재 일정을 확인합니다.
             </p>
