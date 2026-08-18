@@ -23,13 +23,6 @@ export const metadataContract = createRouteMetadataContract(
 );
 export const metadata: Metadata = toNextMetadata(metadataContract);
 
-const UTILITY_CARDS = [
-  ["/areas/", "전체 지역", "1,291개 주소 경로에서 받을 지역을 찾습니다.", "AREA"],
-  ["/pricing/", "코스·가격", "5개 코스의 14개 시간별 금액을 확인합니다.", "PRICE"],
-  ["/guide/", "이용 방법", "전화 전 준비부터 현장 결제까지 순서대로 봅니다.", "GUIDE"],
-  ["/blog/", "안내 글", "주소와 일정 준비를 상황별로 나눠 확인합니다.", "NOTE"],
-] as const;
-
 export default function Home() {
   const roots = ACTIVE_ROOT_KEYS.map((key) => {
     const node = getRootNode(key);
@@ -80,8 +73,8 @@ export default function Home() {
           <header className="section-heading">
             <div>
               <span className="eyebrow">START HERE</span>
-              <h2 id="featured-title">지역과 이용 안내 바로가기</h2>
-              <p>주요 권역 8개와 지역·가격·이용·안내 글 경로를 모았습니다.</p>
+              <h2 id="featured-title">주요 지역 바로가기</h2>
+              <p>서울부터 구미까지 8개 권역의 지역 페이지를 모았습니다.</p>
             </div>
             <Link href="/areas/">전체 지역 →</Link>
           </header>
@@ -97,17 +90,6 @@ export default function Home() {
                   <p>{root.scope}에서 세부 주소 단계로 이동합니다.</p>
                   <strong>연결 지역 {root.count}개</strong>
                   <Link href={root.path}>지역 열기</Link>
-                </div>
-              </article>
-            ))}
-            {UTILITY_CARDS.map(([href, title, copy, label], index) => (
-              <article className="area-card utility-card" key={href}>
-                <Link className="area-media utility-media" href={href}>
-                  <b>{String(index + 9).padStart(2, "0")}</b><em>{label}</em>
-                  <span aria-hidden="true">{label.slice(0, 1)}</span>
-                </Link>
-                <div className="area-info">
-                  <h3>{title}</h3><p>{copy}</p><strong>운영 안내</strong><Link href={href}>내용 보기</Link>
                 </div>
               </article>
             ))}

@@ -105,9 +105,6 @@ h1, h2, h3 { letter-spacing: -0.045em; }
 .area-media b, .area-media em { background: rgba(255,255,255,0.94); border-radius: 999px; color: var(--primary); font-size: 9px; font-style: normal; padding: 6px 9px; position: absolute; top: 10px; z-index: 2; }
 .area-media b { left: 10px; }
 .area-media em { right: 10px; }
-.utility-media { align-items: center; background: linear-gradient(145deg, #fff1f2, #fecdd3); display: flex; justify-content: center; }
-.utility-media::after { background: radial-gradient(circle, rgba(225, 29, 72, 0.08), transparent 62%); }
-.utility-media > span { color: var(--primary); font-size: 48px; font-weight: 950; position: relative; z-index: 1; }
 .area-info { padding: 12px 12px 14px; }
 .area-info h3 { font-size: 16px; margin: 0 0 5px; }
 .area-info p { color: var(--muted); display: -webkit-box; font-size: 12px; line-height: 1.65; margin: 0 0 6px; min-height: 40px; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
@@ -238,7 +235,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .area-info p { font-size: 10px; min-height: 34px; }
   .area-info strong { font-size: 9px; }
   .area-info > a { font-size: 9px; min-height: 32px; padding-inline: 8px; }
-  .utility-media > span { font-size: 35px; }
   .info-grid, .course-grid, .blog-preview-grid, .blog-grid { grid-template-columns: 1fr; }
   .blog-preview-card, .blog-card { grid-template-columns: 42% minmax(0, 1fr); }
   .blog-preview-media, .blog-card-media { min-height: 215px; }
