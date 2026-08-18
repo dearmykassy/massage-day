@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import { RegionGallery } from "@/components/RegionGallery";
 import styles from "@/components/RegionTemplate6.module.css";
 import { PHONE_HREF } from "@/lib/business";

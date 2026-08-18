@@ -2,6 +2,12 @@
 
 > 새 활동과 검증 결과를 최신순으로 기록한다. 비밀값·로그인 정보는 기록하지 않는다.
 
+## 2026-08-19 KST — 운영 링크 prefetch 차단·sitemap revision 정교화
+
+- 내부 `next/link` 사용 12곳을 단일 `SiteLink`로 모으고 운영 환경에서는 전달값과 관계없이 `prefetch=false`를 강제했다. 링크는 계속 Next Link의 실제 `<a href>`와 이동·핸들러·ARIA 속성을 유지하며, wrapper 밖 직접 import를 회귀 테스트로 차단한다.
+- sitemap 1,299개 URL의 `lastmod`를 실제 Git author 시각 기준으로 분리했다. 홈·전체 지역·광역 41개는 짧은 고객 노출 지역명 변경 커밋, 고정 4개·세부 1,250개는 `msgday.kr` 공개 커밋, 블로그 2개는 각 실제 `modifiedAt`을 사용한다. 기존의 임의 00:00 출시 시각과 `changefreq`·`priority`는 제거했다.
+- 전체 Vitest 48개, 7개 정본 copy audit, TypeScript, ESLint, production build 1,304개 route와 built-output 감사를 통과했다. 산출물 sitemap은 `43 + 1,254 + 1 + 1 = 1,299`개의 정확한 revision 그룹, `changefreq`·`priority` 0개이며 홈 HTML은 실제 anchor 70개와 `_rsc` query literal 0개다.
+
 ## 2026-08-19 KST — 광역·시 고객 노출 지역명 축약
 
 - 홈과 전체 지역의 시작 권역 카드는 `서울특별시`, `인천광역시`, `천안시` 대신 `서울`, `인천`, `천안`처럼 짧게 표시한다.

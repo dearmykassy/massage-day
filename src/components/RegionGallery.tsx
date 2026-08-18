@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import styles from "@/components/RegionTemplate6.module.css";
 import type { RegionPageModel } from "@/lib/region-page-model";
 import type { RegionChild } from "@/lib/regions";

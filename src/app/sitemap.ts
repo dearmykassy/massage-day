@@ -1,7 +1,11 @@
 import type { MetadataRoute } from "next";
 import { BLOG_POSTS, getBlogPostPath } from "@/data/blog-posts";
-import { SITE_ORIGIN, SITE_RELEASED_AT } from "@/lib/metadata";
-import { ACTIVE_REGION_NODES } from "@/lib/regions";
+import { SITE_ORIGIN } from "@/lib/metadata";
+import { ACTIVE_REGION_NODES, usesConciseRegionHeading } from "@/lib/regions";
+import {
+  FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
+  HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT,
+} from "@/lib/site-revisions";
 
 export const dynamic = "force-static";
 
@@ -9,15 +13,24 @@ export const FIXED_SITEMAP_PATHS = ["/", "/areas/", "/pricing/", "/guide/", "/no
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const records = [
-    ...FIXED_SITEMAP_PATHS.map((path) => ({ path, lastModified: SITE_RELEASED_AT })),
+    ...FIXED_SITEMAP_PATHS.map((path) => ({
+      path,
+      lastModified:
+        path === "/" || path === "/areas/"
+          ? HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT
+          : FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
+    })),
     ...BLOG_POSTS.map((post) => ({ path: getBlogPostPath(post), lastModified: post.modifiedAt })),
-    ...ACTIVE_REGION_NODES.map((node) => ({ path: `${node.path}/`, lastModified: SITE_RELEASED_AT })),
+    ...ACTIVE_REGION_NODES.map((node) => ({
+      path: `${node.path}/`,
+      lastModified: usesConciseRegionHeading(node)
+        ? HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT
+        : FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
+    })),
   ];
 
   return records.map(({ path, lastModified }) => ({
     url: new URL(path, SITE_ORIGIN).href,
     lastModified: new Date(lastModified),
-    changeFrequency: path.startsWith("/blog/") ? "monthly" as const : "weekly" as const,
-    priority: path === "/" ? 1 : path.startsWith("/areas/") ? 0.8 : path.startsWith("/blog/") ? 0.65 : 0.6,
   }));
 }

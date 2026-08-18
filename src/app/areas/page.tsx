@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import { RegionSearch } from "@/components/RegionSearch";
 import { createRouteMetadataContract, toNextMetadata } from "@/lib/metadata";
 import { ACTIVE_ROOT_KEYS, getRootNode, ROOT_LABELS } from "@/lib/regions";

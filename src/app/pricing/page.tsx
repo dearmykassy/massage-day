@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import { PHONE_HREF } from "@/lib/business";
 import { createRouteMetadataContract, toNextMetadata } from "@/lib/metadata";
 import { COURSE_GROUPS } from "@/lib/site-content";

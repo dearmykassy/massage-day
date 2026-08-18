@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const SITE_ORIGIN = "https://msgday.kr";
 export const SITE_NAME = "마사지데이";
-export const SITE_RELEASED_AT = "2026-08-19T00:00:00+09:00";
+export const SITE_RELEASED_AT = "2026-08-19T01:55:47+09:00";
 export const SITEMAP_PATH = "/sitemap.xml";
 export const RSS_PATH = "/rss.xml";
 export const SITE_ROBOTS = {

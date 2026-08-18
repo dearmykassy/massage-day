@@ -31,7 +31,11 @@ import {
   createRegionPageJsonLd,
   serializeRegionPageJsonLd,
 } from "@/lib/region-schema";
-import { ACTIVE_REGION_NODES } from "@/lib/regions";
+import { ACTIVE_REGION_NODES, usesConciseRegionHeading } from "@/lib/regions";
+import {
+  FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
+  HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT,
+} from "@/lib/site-revisions";
 
 const FIXED_CONTRACTS = [
   homeMetadata,
@@ -264,14 +268,49 @@ describe("sitemap", () => {
     expect(new Set(urls)).toEqual(
       new Set(expectedPaths.map((entry) => new URL(entry, SITE_ORIGIN).href)),
     );
-    expect(output.every((entry) => entry.lastModified instanceof Date)).toBe(true);
+
+    expect(SITE_RELEASED_AT).toBe(FIXED_AND_COMPACT_CONTENT_MODIFIED_AT);
+    const byUrl = new Map(output.map((entry) => [entry.url, entry]));
+    for (const path of FIXED_SITEMAP_PATHS) {
+      const expected =
+        path === "/" || path === "/areas/"
+          ? HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT
+          : FIXED_AND_COMPACT_CONTENT_MODIFIED_AT;
+      expect(byUrl.get(new URL(path, SITE_ORIGIN).href)?.lastModified).toEqual(
+        new Date(expected),
+      );
+    }
+    for (const post of BLOG_POSTS) {
+      expect(
+        byUrl.get(new URL(getBlogPostPath(post), SITE_ORIGIN).href)?.lastModified,
+      ).toEqual(new Date(post.modifiedAt));
+    }
+
+    let broadCount = 0;
+    let compactCount = 0;
+    for (const node of ACTIVE_REGION_NODES) {
+      const broad = usesConciseRegionHeading(node);
+      broadCount += Number(broad);
+      compactCount += Number(!broad);
+      const expected = broad
+        ? HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT
+        : FIXED_AND_COMPACT_CONTENT_MODIFIED_AT;
+      expect(
+        byUrl.get(new URL(`${node.path}/`, SITE_ORIGIN).href)?.lastModified,
+      ).toEqual(new Date(expected));
+    }
+    expect({ broadCount, compactCount }).toEqual({
+      broadCount: 41,
+      compactCount: 1250,
+    });
     expect(
       output.every(
-        (entry) => entry.lastModified instanceof Date && !Number.isNaN(entry.lastModified.getTime()),
+        (entry) =>
+          entry.lastModified instanceof Date &&
+          !Number.isNaN(entry.lastModified.getTime()) &&
+          !("changeFrequency" in entry) &&
+          !("priority" in entry),
       ),
     ).toBe(true);
-    expect(output.find((entry) => entry.url === `${SITE_ORIGIN}/`)?.lastModified).toEqual(
-      new Date(SITE_RELEASED_AT),
-    );
   });
 });

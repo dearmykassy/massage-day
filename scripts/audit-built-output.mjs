@@ -102,6 +102,7 @@ if (
   sitemapLastModified.length !== EXPECTED_PUBLIC_PAGES ||
   sitemapLastModified.some((value) => Number.isNaN(Date.parse(value)))
 ) fail(`SITEMAP_LASTMOD:${sitemapLastModified.length}`);
+if (/<(?:changefreq|priority)>/u.test(sitemap)) fail("SITEMAP_IGNORED_HINTS");
 if (sitemapUrls.some((url) => url !== `${PRODUCTION_ORIGIN}/` && !url.endsWith("/"))) {
   fail("SITEMAP_TRAILING_SLASH");
 }
