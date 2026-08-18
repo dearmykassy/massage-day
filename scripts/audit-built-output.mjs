@@ -3,7 +3,7 @@ import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT = path.join(ROOT, "out");
-const PREVIEW_ORIGIN = "https://preview.massage-day.invalid";
+const PRODUCTION_ORIGIN = "https://msgday.kr";
 const EXPECTED_PUBLIC_PAGES = 1_299;
 const EXPECTED_REGION_PAGES = 1_291;
 const EXPECTED_REGIONAL_ASSETS = 216;
@@ -35,7 +35,7 @@ const regionHtml = publicHtml.filter(
 if (publicHtml.length !== EXPECTED_PUBLIC_PAGES) fail(`PUBLIC_PAGE_COUNT:${publicHtml.length}`);
 if (regionHtml.length !== EXPECTED_REGION_PAGES) fail(`REGION_PAGE_COUNT:${regionHtml.length}`);
 
-const originPattern = PREVIEW_ORIGIN.replaceAll(".", "\\.");
+const originPattern = PRODUCTION_ORIGIN.replaceAll(".", "\\.");
 const metadataChecks = {
   title: /<title>[^<]+<\/title>/u,
   description: /<meta name="description" content="[^"]+"\/>/u,
@@ -46,8 +46,9 @@ const metadataChecks = {
   openGraphUrl: /<meta property="og:url" content="[^"]+"\/>/u,
   twitterTitle: /<meta name="twitter:title" content="[^"]+"\/>/u,
   twitterDescription: /<meta name="twitter:description" content="[^"]+"\/>/u,
-  noindex: /<meta name="robots" content="[^"]*noindex[^"]*"\/>/u,
-  nofollow: /<meta name="robots" content="[^"]*nofollow[^"]*"\/>/u,
+  naverVerification: /<meta name="naver-site-verification" content="e4336b3a46780c9dc349116dc3c43c84c4cae1eb"\/>/u,
+  index: /<meta name="robots" content="[^"]*index[^"]*"\/>/u,
+  follow: /<meta name="robots" content="[^"]*follow[^"]*"\/>/u,
 };
 const forbiddenBrands = /혼혈마사지|건마에반하다|필링홈타이|랑테라피|마사지봄|마사지러브|콜미토닥이|GEONMAE BANHADA|geonmae-banhada|honhyeol-massage|gmb-t4|hym-t4/iu;
 const unsupportedLocalClaims = /위치 지도|세부 매장 권역|이용이 많은 장소|지역별 이용량|도착\s*시간|도착 예정|(?:^|[^\p{L}])이동\s*시간/u;
@@ -58,9 +59,9 @@ const seenCanonicals = new Set();
 
 function expectedCanonicalForHtml(file) {
   const relative = path.relative(OUT, file);
-  if (relative === "index.html") return `${PREVIEW_ORIGIN}/`;
+  if (relative === "index.html") return `${PRODUCTION_ORIGIN}/`;
   const directory = path.dirname(relative).split(path.sep).join("/");
-  return new URL(`/${directory}/`, PREVIEW_ORIGIN).href;
+  return new URL(`/${directory}/`, PRODUCTION_ORIGIN).href;
 }
 
 for (const file of publicHtml) {
@@ -70,6 +71,9 @@ for (const file of publicHtml) {
     if (!pattern.test(html)) fail(`META_${field.toUpperCase()}:${relative}`);
   }
   if (forbiddenBrands.test(html)) fail(`OLD_BRAND:${relative}`);
+  if (html.includes("preview.massage-day.invalid") || /noindex|nofollow/iu.test(html)) {
+    fail(`PREVIEW_RESIDUE:${relative}`);
+  }
   if (unsupportedLocalClaims.test(html)) fail(`UNSUPPORTED_LOCAL_CLAIM:${relative}`);
   if (bannedTone.test(html)) fail(`BANNED_TONE:${relative}`);
   const h1Count = html.match(/<h1(?:\s[^>]*)?>/gu)?.length ?? 0;
@@ -89,11 +93,16 @@ for (const file of publicHtml) {
 
 const sitemap = await readFile(path.join(OUT, "sitemap.xml"), "utf8");
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/gu)].map((match) => match[1]);
+const sitemapLastModified = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/gu)].map((match) => match[1]);
 if (sitemapUrls.length !== EXPECTED_PUBLIC_PAGES || new Set(sitemapUrls).size !== EXPECTED_PUBLIC_PAGES) {
   fail(`SITEMAP_COUNT:${sitemapUrls.length}:${new Set(sitemapUrls).size}`);
 }
-if (sitemapUrls.some((url) => !url.startsWith(`${PREVIEW_ORIGIN}/`))) fail("SITEMAP_HOST");
-if (sitemapUrls.some((url) => url !== `${PREVIEW_ORIGIN}/` && !url.endsWith("/"))) {
+if (sitemapUrls.some((url) => !url.startsWith(`${PRODUCTION_ORIGIN}/`))) fail("SITEMAP_HOST");
+if (
+  sitemapLastModified.length !== EXPECTED_PUBLIC_PAGES ||
+  sitemapLastModified.some((value) => Number.isNaN(Date.parse(value)))
+) fail(`SITEMAP_LASTMOD:${sitemapLastModified.length}`);
+if (sitemapUrls.some((url) => url !== `${PRODUCTION_ORIGIN}/` && !url.endsWith("/"))) {
   fail("SITEMAP_TRAILING_SLASH");
 }
 if (
@@ -103,11 +112,11 @@ if (
 
 const robots = await readFile(path.join(OUT, "robots.txt"), "utf8");
 if (
-  !robots.includes("Disallow: /") ||
-  robots.includes("Allow: /") ||
-  !robots.includes(`Host: ${PREVIEW_ORIGIN}`) ||
-  !robots.includes(`${PREVIEW_ORIGIN}/sitemap.xml`)
-) fail("ROBOTS_PREVIEW_GATE");
+  !robots.includes("Allow: /") ||
+  robots.includes("Disallow: /") ||
+  !robots.includes(`Host: ${PRODUCTION_ORIGIN}`) ||
+  !robots.includes(`${PRODUCTION_ORIGIN}/sitemap.xml`)
+) fail("ROBOTS_PRODUCTION_GATE");
 
 const rss = await readFile(path.join(OUT, "rss.xml"), "utf8");
 if (Buffer.byteLength(rss, "utf8") >= 10 * 1024 * 1024) fail("RSS_SIZE");
@@ -117,12 +126,12 @@ const rssGuids = rssItems.map((item) => item.match(/<guid isPermaLink="true">([^
 if (
   rssItems.length !== EXPECTED_RSS_ITEMS ||
   new Set(rssLinks).size !== EXPECTED_RSS_ITEMS ||
-  rssLinks.some((url) => !url?.startsWith(`${PREVIEW_ORIGIN}/blog/`) || !sitemapUrls.includes(url)) ||
+  rssLinks.some((url) => !url?.startsWith(`${PRODUCTION_ORIGIN}/blog/`) || !sitemapUrls.includes(url)) ||
   JSON.stringify(rssGuids) !== JSON.stringify(rssLinks) ||
   rssItems.some((item) => !/<description>[^<]{40,}<\/description>/u.test(item)) ||
   rssItems.some((item) => !/<content:encoded><!\[CDATA\[[\s\S]{500,}\]\]><\/content:encoded>/u.test(item)) ||
   rssItems.some((item) => !/<pubDate>[^<]+ GMT<\/pubDate>/u.test(item)) ||
-  !rss.includes(`atom:link href="${PREVIEW_ORIGIN}/rss.xml"`) ||
+  !rss.includes(`atom:link href="${PRODUCTION_ORIGIN}/rss.xml"`) ||
   !rss.includes("<language>ko-KR</language>")
 ) fail("RSS");
 

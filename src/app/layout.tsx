@@ -5,7 +5,7 @@ import { Ga4Tracker } from "@/components/Ga4Tracker";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { parseGaMeasurementId } from "@/lib/analytics";
-import { SITE_ORIGIN } from "@/lib/metadata";
+import { SITE_ORIGIN, SITE_ROBOTS } from "@/lib/metadata";
 import "./fixed-pages.css";
 import "./globals.css";
 
@@ -27,7 +27,12 @@ export const metadata: Metadata = {
     "출장아로마마사지",
     "출장홈타이",
   ],
-  robots: { index: false, follow: false, noarchive: true },
+  robots: SITE_ROBOTS,
+  verification: {
+    other: {
+      "naver-site-verification": "e4336b3a46780c9dc349116dc3c43c84c4cae1eb",
+    },
+  },
   icons: {
     icon: [
       { url: "/images/massage-day-template6/brand/day-mark-32.png", sizes: "32x32", type: "image/png" },

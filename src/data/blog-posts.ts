@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PREVIEW_ROBOTS, SITE_NAME, SITE_ORIGIN } from "@/lib/metadata";
+import { SITE_NAME, SITE_ORIGIN, SITE_ROBOTS } from "@/lib/metadata";
 
 export type BlogPost = {
   slug:
@@ -183,6 +183,6 @@ export function createBlogMetadata(post: BlogPost): Metadata {
       title,
       description: post.description,
     },
-    robots: PREVIEW_ROBOTS,
+    robots: SITE_ROBOTS,
   };
 }

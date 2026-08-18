@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
 
-export const SITE_ORIGIN = "https://preview.massage-day.invalid";
+export const SITE_ORIGIN = "https://msgday.kr";
 export const SITE_NAME = "마사지데이";
+export const SITE_RELEASED_AT = "2026-08-19T00:00:00+09:00";
 export const SITEMAP_PATH = "/sitemap.xml";
 export const RSS_PATH = "/rss.xml";
-export const PREVIEW_ROBOTS = {
-  index: false,
-  follow: false,
-  noarchive: true,
-  nocache: true,
+export const SITE_ROBOTS = {
+  index: true,
+  follow: true,
 } as const;
 
 export const DEPLOYMENT_CONTRACT = {
-  deploymentAllowed: false,
-  deploymentBlockers: ["PRODUCTION_DOMAIN_NOT_SET"] as readonly string[],
+  deploymentAllowed: true,
+  deploymentBlockers: [] as readonly string[],
   origin: SITE_ORIGIN,
   sitemapUrl: new URL(SITEMAP_PATH, SITE_ORIGIN).href,
   rssUrl: new URL(RSS_PATH, SITE_ORIGIN).href,
-  robots: "noindex,nofollow,nocache",
+  robots: "index,follow",
 } as const;
 
 export type RouteMetadataContract = {
@@ -84,6 +83,6 @@ export function toNextMetadata(contract: RouteMetadataContract): Metadata {
     alternates: { canonical: contract.canonical },
     openGraph: contract.openGraph,
     twitter: contract.twitter,
-    robots: PREVIEW_ROBOTS,
+    robots: SITE_ROBOTS,
   };
 }

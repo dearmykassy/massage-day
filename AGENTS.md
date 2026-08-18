@@ -3,7 +3,7 @@
 - 새 활동을 시작하기 전에 이 파일과 `DIARY.md`, `$HOME/Documents/Codex/runtome/PLATFORM_PERMANENT_RULES.md`를 끝까지 읽고, 확인된 변경과 검증 결과를 `DIARY.md` 맨 위에 최신순으로 기록한다.
 - 시각·레이아웃 정본은 `$HOME/Documents/Services/Templetes/Template6`다. 90px 브랜드·검색 헤더와 75px 내비게이션, 1300px 본문, 분홍 테두리 카드, 4/3/2열 지역 카드, 모바일 68px 헤더·드로어·하단 CTA를 Next.js 정적 사이트로 옮긴다.
 - 브랜드는 `마사지데이`, 플랫폼 ID는 `massage-day`로 고정한다. 고객 화면·메타·분석 이벤트·이미지 manifest에 다른 플랫폼 브랜드를 남기지 않는다.
-- 운영 도메인은 아직 미정이다. 확정 전에는 `https://preview.massage-day.invalid` self canonical, `noindex,nofollow,nocache`, robots 전체 차단을 유지한다. 임의 실도메인이나 다른 플랫폼 측정 ID를 넣지 않는다.
+- 운영 도메인은 `https://msgday.kr`로 고정한다. 모든 공개 canonical·Open Graph·sitemap·RSS·robots·구조화 데이터는 이 HTTPS origin을 사용하고, 공개 페이지는 `index,follow`, robots는 전체 허용을 유지한다. 다른 플랫폼 도메인이나 측정 ID를 넣지 않는다.
 - 지역 정본은 마사지봄과 byte-identical인 활성 1,291개 경로·계층이다. 없는 지역을 추가하지 않고 지역 페이지와 sitemap은 같은 `ACTIVE_REGION_NODES`를 사용하며 `generateStaticParams()`와 `dynamicParams = false`를 유지한다.
 - 마사지봄의 공개 전화번호, 확정 가격표, 24시간 전화상담, 선입금 없는 현장 후불, 현장 카드 결제, 2인 프로그램, 일회용 비품·관리 전후 소독처럼 검증된 운영 사실만 공유한다. 고객 문장·섹션명·메타 문장은 복사하지 않는다.
 - 모든 공개 대상 페이지는 meta title, meta keywords, meta description, self canonical, Open Graph와 Twitter 계약을 가진다. owner 계약상 keywords를 제공하되 검색 순위 보장으로 설명하지 않는다.

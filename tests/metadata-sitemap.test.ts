@@ -4,6 +4,7 @@ import { metadataContract as blogMetadata } from "@/app/blog/page";
 import { metadataContract as guideMetadata } from "@/app/guide/page";
 import { metadataContract as noticeMetadata } from "@/app/notice/page";
 import { metadataContract as homeMetadata } from "@/app/page";
+import { metadata as rootMetadata } from "@/app/layout";
 import { metadataContract as pricingMetadata } from "@/app/pricing/page";
 import robots from "@/app/robots";
 import sitemap, { FIXED_SITEMAP_PATHS } from "@/app/sitemap";
@@ -17,10 +18,11 @@ import { createRegionContent } from "@/lib/content";
 import {
   createRouteMetadataContract,
   DEPLOYMENT_CONTRACT,
-  PREVIEW_ROBOTS,
   RSS_PATH,
   SITE_NAME,
   SITE_ORIGIN,
+  SITE_RELEASED_AT,
+  SITE_ROBOTS,
   SITEMAP_PATH,
   toNextMetadata,
 } from "@/lib/metadata";
@@ -40,23 +42,29 @@ const FIXED_CONTRACTS = [
   blogMetadata,
 ];
 
-describe("preview metadata contract", () => {
-  it("keeps the invalid preview origin and blocks deployment and indexing", () => {
-    expect(SITE_ORIGIN).toBe("https://preview.massage-day.invalid");
+describe("production metadata contract", () => {
+  it("emits the exact Naver ownership verification value from the root layout", () => {
+    expect(rootMetadata.verification).toEqual({
+      other: {
+        "naver-site-verification": "e4336b3a46780c9dc349116dc3c43c84c4cae1eb",
+      },
+    });
+  });
+
+  it("uses the approved production origin and allows deployment and indexing", () => {
+    expect(SITE_ORIGIN).toBe("https://msgday.kr");
     expect(DEPLOYMENT_CONTRACT).toEqual({
-      deploymentAllowed: false,
-      deploymentBlockers: ["PRODUCTION_DOMAIN_NOT_SET"],
+      deploymentAllowed: true,
+      deploymentBlockers: [],
       origin: SITE_ORIGIN,
       sitemapUrl: new URL(SITEMAP_PATH, SITE_ORIGIN).href,
       rssUrl: new URL(RSS_PATH, SITE_ORIGIN).href,
-      robots: "noindex,nofollow,nocache",
+      robots: "index,follow",
     });
     const robotsValue = robots();
-    expect(robotsValue.rules).toEqual({ userAgent: "*", disallow: "/" });
-    expect(robotsValue.sitemap).toBe(
-      "https://preview.massage-day.invalid/sitemap.xml",
-    );
-    expect(robotsValue.host).toBe("https://preview.massage-day.invalid");
+    expect(robotsValue.rules).toEqual({ userAgent: "*", allow: "/" });
+    expect(robotsValue.sitemap).toBe("https://msgday.kr/sitemap.xml");
+    expect(robotsValue.host).toBe("https://msgday.kr");
   });
 
   it("emits complete self-canonical metadata on all six fixed pages", () => {
@@ -80,11 +88,11 @@ describe("preview metadata contract", () => {
         title: contract.title,
         description: contract.description,
       });
-      expect(emitted.robots).toEqual(PREVIEW_ROBOTS);
+      expect(emitted.robots).toEqual(SITE_ROBOTS);
     }
   });
 
-  it("keeps both blog posts self-canonical and noindex", () => {
+  it("keeps both blog posts self-canonical and indexable", () => {
     for (const post of BLOG_POSTS) {
       const emitted = createBlogMetadata(post);
       expect(emitted.title).toMatchObject({
@@ -104,7 +112,7 @@ describe("preview metadata contract", () => {
         title: expect.stringContaining(SITE_NAME),
         description: post.description,
       });
-      expect(emitted.robots).toEqual(PREVIEW_ROBOTS);
+      expect(emitted.robots).toEqual(SITE_ROBOTS);
 
       const schema = createBlogPostingJsonLd(post);
       expect(schema).toMatchObject({
@@ -143,7 +151,7 @@ describe("preview metadata contract", () => {
       expect(contract.keywords).toHaveLength(8);
       expect(contract.openGraph.title).toBe(contract.title);
       expect(contract.twitter.description).toBe(contract.description);
-      expect(toNextMetadata(contract).robots).toEqual(PREVIEW_ROBOTS);
+      expect(toNextMetadata(contract).robots).toEqual(SITE_ROBOTS);
     }
   });
 
@@ -255,6 +263,15 @@ describe("sitemap", () => {
     ];
     expect(new Set(urls)).toEqual(
       new Set(expectedPaths.map((entry) => new URL(entry, SITE_ORIGIN).href)),
+    );
+    expect(output.every((entry) => entry.lastModified instanceof Date)).toBe(true);
+    expect(
+      output.every(
+        (entry) => entry.lastModified instanceof Date && !Number.isNaN(entry.lastModified.getTime()),
+      ),
+    ).toBe(true);
+    expect(output.find((entry) => entry.url === `${SITE_ORIGIN}/`)?.lastModified).toEqual(
+      new Date(SITE_RELEASED_AT),
     );
   });
 });

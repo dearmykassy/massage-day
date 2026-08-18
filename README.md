@@ -2,7 +2,7 @@
 
 마사지데이는 Template6 화면 구조와 1,291개 지역 그래프를 사용하는 Next.js 16 정적 웹사이트 프로젝트입니다.
 
-운영 도메인은 아직 정해지지 않았습니다. 확정 전 빌드는 `https://preview.massage-day.invalid`를 기준으로 하며 검색엔진 수집을 차단합니다.
+운영 사이트는 [msgday.kr](https://msgday.kr)이며 canonical·sitemap·RSS·구조화 데이터는 이 HTTPS origin을 사용합니다.
 
 ## 공개 문서 계약
 
@@ -11,7 +11,7 @@
 - 지역 구조화 데이터는 사실 기반 `WebPage`와 화면 경로를 그대로 옮긴 `BreadcrumbList`만 발행합니다.
 - sitemap은 고정 페이지 6개, 블로그 글 2개, 지역 페이지 1,291개를 합친 1,299개 URL을 담습니다.
 - RSS 2.0은 실제 게시일과 영구 GUID를 가진 블로그 글 2개의 전체 본문만 제공합니다. 지역 URL 목록은 sitemap에서 관리합니다.
-- 운영 도메인이 정해질 때까지 canonical·sitemap·RSS는 preview origin을 유지하고 모든 페이지는 `noindex,nofollow,nocache`, robots는 전체 차단 상태입니다.
+- canonical·sitemap·RSS는 `https://msgday.kr`을 사용하고 모든 공개 페이지는 `index,follow`, robots는 전체 허용 상태입니다.
 
 ## 이미지 계약
 
@@ -34,4 +34,4 @@ pnpm audit:build
 
 `pnpm audit:copy`는 지정된 기존 플랫폼 정본 7개가 모두 있을 때만 실행되며, 장문 고객 문구의 exact 및 브랜드·지역 정규화 충돌이 하나라도 나오면 실패합니다.
 
-운영 전환 시에는 확정된 HTTPS origin, 전용 GA4 측정 ID, 검색엔진 소유 확인 값을 함께 반영한 뒤 전체 검증을 다시 실행해야 합니다. 네이버 서치어드바이저에는 sitemap과 RSS를 제출하고 수집 주기를 `빠르게`로 설정합니다.
+운영 배포에는 마사지데이 전용 GA4 측정 ID를 연결하고 운영 HTML에서 활성화를 확인해야 합니다. 네이버 서치어드바이저에는 sitemap과 RSS를 제출하고 수집 주기를 `빠르게`로 설정합니다.
