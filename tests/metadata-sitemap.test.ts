@@ -35,8 +35,9 @@ import {
 } from "@/lib/region-schema";
 import { ACTIVE_REGION_NODES, usesConciseRegionHeading } from "@/lib/regions";
 import {
+  AREAS_AND_BROAD_CONTENT_MODIFIED_AT,
   FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
-  HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT,
+  HOME_CONTENT_MODIFIED_AT,
 } from "@/lib/site-revisions";
 
 const FIXED_CONTRACTS = [
@@ -282,8 +283,10 @@ describe("sitemap", () => {
     const byUrl = new Map(output.map((entry) => [entry.url, entry]));
     for (const path of FIXED_SITEMAP_PATHS) {
       const expected =
-        path === "/" || path === "/areas/"
-          ? HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT
+        path === "/"
+          ? HOME_CONTENT_MODIFIED_AT
+          : path === "/areas/"
+            ? AREAS_AND_BROAD_CONTENT_MODIFIED_AT
           : FIXED_AND_COMPACT_CONTENT_MODIFIED_AT;
       expect(byUrl.get(new URL(path, SITE_ORIGIN).href)?.lastModified).toEqual(
         new Date(expected),
@@ -302,7 +305,7 @@ describe("sitemap", () => {
       broadCount += Number(broad);
       compactCount += Number(!broad);
       const expected = broad
-        ? HOME_AREAS_AND_BROAD_CONTENT_MODIFIED_AT
+        ? AREAS_AND_BROAD_CONTENT_MODIFIED_AT
         : FIXED_AND_COMPACT_CONTENT_MODIFIED_AT;
       expect(
         byUrl.get(new URL(`${node.path}/`, SITE_ORIGIN).href)?.lastModified,
