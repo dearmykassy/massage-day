@@ -50,7 +50,7 @@ describe("production metadata contract", () => {
   it("emits the exact Naver ownership verification value from the root layout", () => {
     expect(rootMetadata.verification).toEqual({
       other: {
-        "naver-site-verification": "e4336b3a46780c9dc349116dc3c43c84c4cae1eb",
+        "naver-site-verification": "96effac4a012f26f5aad2616d58c159cdcfc2a87",
       },
     });
   });

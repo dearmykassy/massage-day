@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   robots: SITE_ROBOTS,
   verification: {
     other: {
-      "naver-site-verification": "e4336b3a46780c9dc349116dc3c43c84c4cae1eb",
+      "naver-site-verification": "96effac4a012f26f5aad2616d58c159cdcfc2a87",
     },
   },
   icons: {

@@ -46,7 +46,7 @@ const metadataChecks = {
   openGraphUrl: /<meta property="og:url" content="[^"]+"\/>/u,
   twitterTitle: /<meta name="twitter:title" content="[^"]+"\/>/u,
   twitterDescription: /<meta name="twitter:description" content="[^"]+"\/>/u,
-  naverVerification: /<meta name="naver-site-verification" content="e4336b3a46780c9dc349116dc3c43c84c4cae1eb"\/>/u,
+  naverVerification: /<meta name="naver-site-verification" content="96effac4a012f26f5aad2616d58c159cdcfc2a87"\/>/u,
   index: /<meta name="robots" content="[^"]*index[^"]*"\/>/u,
   follow: /<meta name="robots" content="[^"]*follow[^"]*"\/>/u,
 };
