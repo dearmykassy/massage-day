@@ -9,6 +9,9 @@ const EXPECTED_REGION_PAGES = 1_291;
 const EXPECTED_REGIONAL_ASSETS = 216;
 const EXPECTED_REGIONAL_WEBPS = 648;
 const EXPECTED_RSS_ITEMS = 2;
+const NAVER_HTTPS_TOKEN = "e4336b3a46780c9dc349116dc3c43c84c4cae1eb";
+const NAVER_HTTP_TOKEN = "96effac4a012f26f5aad2616d58c159cdcfc2a87";
+const NAVER_HTTPS_FILE = "naverf76d996ba16d8e0fc251624cf0ebcd0e.html";
 
 function fail(code) {
   throw new Error(`MASSAGE_DAY_BUILT_OUTPUT_${code}`);
@@ -46,7 +49,6 @@ const metadataChecks = {
   openGraphUrl: /<meta property="og:url" content="[^"]+"\/>/u,
   twitterTitle: /<meta name="twitter:title" content="[^"]+"\/>/u,
   twitterDescription: /<meta name="twitter:description" content="[^"]+"\/>/u,
-  naverVerification: /<meta name="naver-site-verification" content="96effac4a012f26f5aad2616d58c159cdcfc2a87"\/>/u,
   index: /<meta name="robots" content="[^"]*index[^"]*"\/>/u,
   follow: /<meta name="robots" content="[^"]*follow[^"]*"\/>/u,
 };
@@ -70,6 +72,13 @@ for (const file of publicHtml) {
   for (const [field, pattern] of Object.entries(metadataChecks)) {
     if (!pattern.test(html)) fail(`META_${field.toUpperCase()}:${relative}`);
   }
+  const naverMetaValues = [
+    ...html.matchAll(/<meta name="naver-site-verification" content="([^"]+)"\/>/gu),
+  ].map((match) => match[1]);
+  if (naverMetaValues.length !== 1 || naverMetaValues[0] !== NAVER_HTTPS_TOKEN) {
+    fail(`META_NAVER_VERIFICATION:${relative}:${naverMetaValues.join(",")}`);
+  }
+  if (html.includes(NAVER_HTTP_TOKEN)) fail(`META_NAVER_HTTP_TOKEN:${relative}`);
   if (forbiddenBrands.test(html)) fail(`OLD_BRAND:${relative}`);
   if (html.includes("preview.massage-day.invalid") || /noindex|nofollow/iu.test(html)) {
     fail(`PREVIEW_RESIDUE:${relative}`);
@@ -118,6 +127,14 @@ if (
   !robots.includes(`Host: ${PRODUCTION_ORIGIN}`) ||
   !robots.includes(`${PRODUCTION_ORIGIN}/sitemap.xml`)
 ) fail("ROBOTS_PRODUCTION_GATE");
+
+const naverHttpsFile = await readFile(path.join(OUT, NAVER_HTTPS_FILE), "utf8");
+if (naverHttpsFile !== `naver-site-verification: ${NAVER_HTTPS_FILE}\n`) {
+  fail("NAVER_HTTPS_FILE");
+}
+if (files.some((file) => path.basename(file) === "naver2539e3fc5e851edfe21409b1ed746c72.html")) {
+  fail("NAVER_HTTP_FILE");
+}
 
 const rss = await readFile(path.join(OUT, "rss.xml"), "utf8");
 if (Buffer.byteLength(rss, "utf8") >= 10 * 1024 * 1024) fail("RSS_SIZE");

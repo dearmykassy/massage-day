@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { metadataContract as areasMetadata } from "@/app/areas/page";
 import { metadataContract as blogMetadata } from "@/app/blog/page";
@@ -47,12 +49,19 @@ const FIXED_CONTRACTS = [
 ];
 
 describe("production metadata contract", () => {
-  it("emits the exact Naver ownership verification value from the root layout", () => {
+  it("emits the exact HTTPS Naver ownership verification value from the root layout", () => {
     expect(rootMetadata.verification).toEqual({
       other: {
-        "naver-site-verification": "96effac4a012f26f5aad2616d58c159cdcfc2a87",
+        "naver-site-verification": "e4336b3a46780c9dc349116dc3c43c84c4cae1eb",
       },
     });
+  });
+
+  it("ships the exact HTTPS Naver HTML ownership fallback", () => {
+    const fileName = "naverf76d996ba16d8e0fc251624cf0ebcd0e.html";
+    expect(readFileSync(path.join(process.cwd(), "public", fileName), "utf8")).toBe(
+      `naver-site-verification: ${fileName}\n`,
+    );
   });
 
   it("uses the approved production origin and allows deployment and indexing", () => {

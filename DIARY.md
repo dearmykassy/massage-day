@@ -2,11 +2,18 @@
 
 > 새 활동과 검증 결과를 최신순으로 기록한다. 비밀값·로그인 정보는 기록하지 않는다.
 
-## 2026-08-19 KST — 네이버 소유확인 토큰 갱신
+## 2026-08-19 KST — HTTPS 네이버 소유확인 정본화
 
-- 네이버가 새로 발급한 마사지데이 소유확인 토큰 `96effac4a012f26f5aad2616d58c159cdcfc2a87`로 루트 메타태그를 갱신했다.
+- 네이버에 등록한 운영 URL은 canonical과 같은 `https://msgday.kr`이며, HTTPS 과제에서 발급된 메타 토큰 `e4336b3a46780c9dc349116dc3c43c84c4cae1eb`을 루트 `<head>`의 단일 소유확인 값으로 고정했다.
+- `http://msgday.kr` 과제에서 별도로 발급됐던 `96effac4a012f26f5aad2616d58c159cdcfc2a87`은 HTTPS 소유확인에 사용할 수 없으므로 활성 HTML에서 제거하고 회귀 감사로 재유입을 차단한다. HTTP 요청은 기존처럼 HTTPS canonical로 이동시킨다.
+- 메타 방식과 별도로 같은 HTTPS 과제의 `naverf76d996ba16d8e0fc251624cf0ebcd0e.html` 확인 파일을 루트에 추가해 네이버 권장 HTML 파일 방식도 지원한다. 빌드와 운영 배포에서 메타 토큰 1개, 확인 파일의 정확한 본문과 HTTP 200을 함께 검증한다.
+- 집중 테스트 10개와 전체 Vitest 49개, 7개 정본 copy audit, TypeScript, 전체 ESLint, production build 1,304개 route와 built-output 감사를 통과했다. 빌드된 루트 `<head>`에는 HTTPS 토큰이 정확히 1개이고 HTTP 과제 토큰은 0개이며, HTTPS 확인 파일의 본문은 네이버 표준 문자열과 일치한다.
+
+## 2026-08-19 KST — 네이버 소유확인 토큰 갱신(폐기된 HTTP 과제)
+
+- 네이버의 `http://msgday.kr` 과제에서 발급된 마사지데이 소유확인 토큰 `96effac4a012f26f5aad2616d58c159cdcfc2a87`로 루트 메타태그를 한때 갱신했다.
 - Metadata API 테스트와 정적 빌드 감사가 새 토큰을 정확히 1개 요구하도록 함께 변경했다. 이전 토큰과 이전 HTML 확인 파일 후보는 활성 배포에서 제거한다.
-- 운영 배포 뒤 일반 브라우저와 Yeti·NaverBot 응답의 `<head>`에서 새 토큰이 정확히 1개 노출되는지 확인한다.
+- 이후 canonical과 동일한 HTTPS 등록이 정본임을 확인해 위 HTTPS 소유확인 기록으로 대체했다.
 
 ## 2026-08-19 KST — 운영 링크 prefetch 차단·sitemap revision 정교화
 
