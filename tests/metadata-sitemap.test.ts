@@ -42,6 +42,7 @@ import {
   AREAS_AND_BROAD_CONTENT_MODIFIED_AT,
   FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
   HOME_CONTENT_MODIFIED_AT,
+  REGIONAL_CONTENT_MODIFIED_AT,
 } from "@/lib/site-revisions";
 
 const FIXED_CONTRACTS = [
@@ -318,12 +319,9 @@ describe("sitemap", () => {
       const broad = usesConciseRegionHeading(node);
       broadCount += Number(broad);
       compactCount += Number(!broad);
-      const expected = broad
-        ? AREAS_AND_BROAD_CONTENT_MODIFIED_AT
-        : FIXED_AND_COMPACT_CONTENT_MODIFIED_AT;
       expect(
         byUrl.get(new URL(`${node.path}/`, SITE_ORIGIN).href)?.lastModified,
-      ).toEqual(new Date(expected));
+      ).toEqual(new Date(REGIONAL_CONTENT_MODIFIED_AT));
     }
     expect({ broadCount, compactCount }).toEqual({
       broadCount: 41,

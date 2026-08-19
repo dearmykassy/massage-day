@@ -12,6 +12,7 @@
 - 독립 자연어 감사에서 공통 운영 문단까지 지역명으로 시작하도록 강제하던 이전 검사를 제거했다. 전화 준비·코스·2인·현장 후불·소독·이용 흐름은 자연스러운 공통 문장으로 두고, 현재 지역명으로 시작하는 hook·본문 문장은 페이지당 4–6개만 남겼다. description은 전부 90–127자로 줄였고, 화면 장식에 노출되던 route depth 숫자는 의미 있는 고정 라벨 `SERVICE AREA`로 교체했다.
 - 저장소에 별도 `.agents/product-marketing.md`가 없어 `AGENTS.md`, `README.md`, `src/lib/business.ts`, `src/lib/site-content.ts`, `/pricing/`, `/guide/` 구현에서 검증한 사실만 사용했다. 지도·업체·인기·후기·평점·현지 이용량·도착 시간·의료 효능·배정 완료 표현은 0개다. 정본/원본 자료·분류·단계 수·profile·seed·hash·ordinal·slot·signature·trigram·Jaccard 같은 기술 감사 문구와 목록 위치를 사실처럼 쓰는 문구는 실제 렌더 본문 0개다.
 - 최종 전수 검증에서 지역 집중 테스트 35개, 전체 Vitest 57개, TypeScript, 변경 소스 ESLint, `pnpm audit:copy`를 통과했다. copy audit는 raw title·description·H1·primary document 각 1,291 unique/충돌 0, brand+현재 target 중립화 primary prose 1,291 unique/충돌 0, 지역 사실 signature 1,291 unique/충돌 0, 지역 사실 문단 최소 4개, 실질 문자 비율 최소 0.283914729, 문맥 non-self 링크 최소 3개, 조사·금지 노출·전체 가격표/FAQ·외부 7개 exact/중립화 충돌 각 0을 확인했다. strong all-related 진단은 832,695쌍 전수이며 릴리스 상태를 바꾸지 않는다.
+- 지역 1,291개 sitemap `lastmod`는 콘텐츠 커밋 `e43ef67d`의 실제 Git author 시각 `2026-08-19T23:36:06+09:00`으로 통일했다. 홈·`/areas/`·가격·가이드·공지·블로그의 기존 revision은 변경하지 않았다.
 - 최종 source handoff 단계에서는 site revision·build·commit·push·deploy를 실행하지 않았다. 최종 커밋 author 시각에 맞춘 lastmod 갱신, production build, push, 운영 확인은 root 마감 단계에서 실행한다.
 
 ## 2026-08-19 KST — 네이버 검색 등록 완료

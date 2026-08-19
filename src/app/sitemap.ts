@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
 import { BLOG_POSTS, getBlogPostPath } from "@/data/blog-posts";
 import { SITE_ORIGIN } from "@/lib/metadata";
-import { ACTIVE_REGION_NODES, usesConciseRegionHeading } from "@/lib/regions";
+import { ACTIVE_REGION_NODES } from "@/lib/regions";
 import {
   AREAS_AND_BROAD_CONTENT_MODIFIED_AT,
   FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
   HOME_CONTENT_MODIFIED_AT,
+  REGIONAL_CONTENT_MODIFIED_AT,
 } from "@/lib/site-revisions";
 
 export const dynamic = "force-static";
@@ -26,9 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...BLOG_POSTS.map((post) => ({ path: getBlogPostPath(post), lastModified: post.modifiedAt })),
     ...ACTIVE_REGION_NODES.map((node) => ({
       path: `${node.path}/`,
-      lastModified: usesConciseRegionHeading(node)
-        ? AREAS_AND_BROAD_CONTENT_MODIFIED_AT
-        : FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
+      lastModified: REGIONAL_CONTENT_MODIFIED_AT,
     })),
   ];
 
