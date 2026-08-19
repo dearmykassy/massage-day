@@ -13,9 +13,12 @@ import { createRegionPageModel } from "@/lib/region-page-model";
 import {
   ACTIVE_REGION_NODES,
   ACTIVE_ROOT_KEYS,
+  getBreadcrumbs,
   getDirectChildren,
-  getRegionHeadingLabel,
   getKeywordRegionLabel,
+  getParentNode,
+  getPrimaryRegionKeyword,
+  getRegionHeadingLabel,
   getSearchRegionLabel,
   shortenRegionSearchName,
   usesConciseRegionHeading,
@@ -71,6 +74,28 @@ const FORBIDDEN_COPY = [
   "주목할 만한",
 ] as const;
 
+const FORBIDDEN_VISIBLE_TECHNICAL_COPY = [
+  "정본",
+  "원본 자료",
+  "자료 분류",
+  "행정 단계 수",
+  "대표 분류",
+  "관할 방식",
+  "원본 행정",
+  "profile",
+  "seed",
+  "hash",
+  "ordinal",
+  "slot",
+  "signature",
+  "trigram",
+  "Jaccard",
+  "목록의 첫",
+  "목록의 마지막",
+  "바로 앞 항목",
+  "바로 다음 항목",
+] as const;
+
 const BROAD_ROUTE_SHA256 =
   "bc78efbc93abacd5dca4aea0e06897343d9858ea8d5efb85c1fd9733fe436771";
 
@@ -107,6 +132,68 @@ function frequencies(values: readonly string[]) {
     unique: counts.size,
     maximum: Math.max(...counts.values()),
   };
+}
+
+function occurrenceCount(value: string, needle: string): number {
+  return value.split(needle).length - 1;
+}
+
+function visibleCharacterCount(value: string): number {
+  return (value.match(/[가-힣A-Za-z0-9]/gu) ?? []).length;
+}
+
+function relatedRegionalFactTokens(
+  node: (typeof ACTIVE_REGION_NODES)[number],
+): string[] {
+  const parent = getParentNode(node);
+  const relatedNodes = [
+    ...(parent ? [parent] : []),
+    ...getDirectChildren(node)
+      .map((child) =>
+        ACTIVE_REGION_NODES.find((candidate) => candidate.path === child.path),
+      )
+      .filter((candidate): candidate is (typeof ACTIVE_REGION_NODES)[number] =>
+        Boolean(candidate),
+      ),
+    ...(parent
+      ? getDirectChildren(parent)
+          .filter((sibling) => sibling.path !== node.path)
+          .map((sibling) =>
+            ACTIVE_REGION_NODES.find(
+              (candidate) => candidate.path === sibling.path,
+            ),
+          )
+          .filter(
+            (candidate): candidate is (typeof ACTIVE_REGION_NODES)[number] =>
+              Boolean(candidate),
+          )
+      : []),
+  ];
+  const currentLabels = new Set([
+    node.qualifiedName,
+    node.displayName,
+    getRegionHeadingLabel(node),
+    getSearchRegionLabel(node),
+    getKeywordRegionLabel(node),
+    getPrimaryRegionKeyword(node),
+    shortenRegionSearchName(node.qualifiedName),
+  ]);
+  return [
+    ...relatedNodes.flatMap((related) => [
+      related.qualifiedName,
+      related.displayName,
+      getRegionHeadingLabel(related),
+      getSearchRegionLabel(related),
+      shortenRegionSearchName(related.qualifiedName),
+    ]),
+    ...(node.representative?.sourceNames ?? []),
+    ...(node.representative?.legalAreas ?? []).map((area) => area.name),
+  ].filter(
+    (token, index, all) =>
+      token.length >= 2 &&
+      !currentLabels.has(token) &&
+      all.indexOf(token) === index,
+  );
 }
 
 function escapeRegExp(value: string): string {
@@ -196,7 +283,7 @@ describe("broad and compact detail contracts", () => {
         BROAD_DETAIL_SECTION_IDS,
       );
       expect(content.sections).toHaveLength(11);
-      expect(content.sections.at(-1)?.id).toBe("child-directory");
+      expect(content.sections.at(-1)?.id).toBe("regional-directory");
       expect(content.sections.every((item) => item.paragraphs.length === 2)).toBe(true);
     }
     for (const node of compact) {
@@ -206,8 +293,75 @@ describe("broad and compact detail contracts", () => {
         COMPACT_DETAIL_SECTION_IDS,
       );
       expect(content.sections).toHaveLength(10);
-      expect(content.sections.at(-1)?.id).toBe("related-address-directory");
+      expect(content.sections.at(-1)?.id).toBe("regional-directory");
       expect(content.sections.every((item) => item.paragraphs.length === 2)).toBe(true);
+    }
+  });
+
+  it("keeps representative province, district and leaf pages on the same service contract", () => {
+    const samples = [
+      {
+        label: "광역",
+        path: "/areas/gyeonggi",
+        detailMode: "broad",
+        sectionCount: 11,
+      },
+      {
+        label: "구",
+        path: `/areas/seoul/${encodeURIComponent("강남구")}`,
+        detailMode: "compact",
+        sectionCount: 10,
+      },
+      {
+        label: "말단",
+        path: `/areas/seoul/${encodeURIComponent("강남구")}/${encodeURIComponent("역삼동")}`,
+        detailMode: "compact",
+        sectionCount: 10,
+      },
+    ] as const;
+
+    for (const sample of samples) {
+      const node = ACTIVE_REGION_NODES.find(
+        (candidate) => candidate.path === sample.path,
+      );
+      expect(node, sample.label).toBeDefined();
+      const content = createRegionContent(node!);
+      const model = createRegionPageModel(node!);
+      const primaryKeyword = getPrimaryRegionKeyword(node!);
+      const firstOneHundredWords = [
+        ...content.hooks,
+        ...content.sections[0].paragraphs,
+      ]
+        .join(" ")
+        .split(/\s+/u)
+        .slice(0, 100)
+        .join(" ");
+
+      expect(content.detailMode, sample.label).toBe(sample.detailMode);
+      expect(content.sections, sample.label).toHaveLength(sample.sectionCount);
+      expect(content.title.startsWith(primaryKeyword), sample.label).toBe(true);
+      expect(content.h1, sample.label).toContain(primaryKeyword);
+      expect(firstOneHundredWords, sample.label).toContain(primaryKeyword);
+      expect(
+        content.sections.filter((section) =>
+          section.heading.includes(primaryKeyword),
+        ),
+        sample.label,
+      ).toHaveLength(2);
+      expect(
+        content.sections.find((section) => section.id === "course-price-link")
+          ?.action?.path,
+        sample.label,
+      ).toBe("/pricing/");
+      expect(
+        content.sections.find((section) => section.id === "use-flow")?.action
+          ?.path,
+        sample.label,
+      ).toBe("/guide/");
+      expect(
+        model.gallery.items.some((item) => item.path === node!.path),
+        sample.label,
+      ).toBe(false);
     }
   });
 });
@@ -228,7 +382,9 @@ describe("Massage Day regional copy", () => {
     for (const { node, content } of records) {
       const label = getKeywordRegionLabel(node);
       expect(content.keywords).toEqual(
-        REGION_KEYWORD_SUFFIXES.map((suffix) => label + suffix),
+        REGION_KEYWORD_SUFFIXES.map((suffix, index) =>
+          index === 0 ? getPrimaryRegionKeyword(node) : label + suffix,
+        ),
       );
       expect(new Set(content.keywords).size).toBe(8);
     }
@@ -277,12 +433,175 @@ describe("Massage Day regional copy", () => {
       );
       expect(content.title).toContain(searchLabel);
       expect(content.description).toContain(searchLabel);
+      expect(content.keywords[0]).toBe(getPrimaryRegionKeyword(node));
       expect(
-        content.keywords.every((keyword) => keyword.startsWith(keywordLabel)),
+        content.keywords.slice(1).every((keyword) => keyword.startsWith(keywordLabel)),
       ).toBe(true);
       expect(metaSurface).not.toMatch(forbiddenBeforeService);
-      expect(content.h1).toContain(getRegionHeadingLabel(node));
+      expect(content.h1).toContain(getPrimaryRegionKeyword(node));
     }
+  });
+
+  it("places the exact spaced primary keyword on every required search surface", () => {
+    const primaryKeywords = records.map(({ node }) =>
+      getPrimaryRegionKeyword(node),
+    );
+    expect(new Set(primaryKeywords).size).toBe(1291);
+
+    const addressCentricH1 =
+      /(?:주소부터 시작|주소와 일정|행정 주소 단계|주소·코스·결제|상세 주소·일정|주소 확인 안내)/u;
+    for (const { node, content } of records) {
+      const primaryKeyword = getPrimaryRegionKeyword(node);
+      const firstServiceSection = content.sections[0];
+      const firstOneHundredWords = [
+        ...content.hooks,
+        ...firstServiceSection.paragraphs,
+      ]
+        .join(" ")
+        .split(/\s+/u)
+        .slice(0, 100)
+        .join(" ");
+      const h2Matches = content.sections.filter((item) =>
+        item.heading.includes(primaryKeyword),
+      );
+      const renderedMainCopy = [
+        content.h1,
+        ...content.hooks,
+        ...content.sections.flatMap((item) => [
+          item.heading,
+          ...item.paragraphs,
+        ]),
+      ].join("\n");
+
+      expect(content.primaryKeyword).toBe(primaryKeyword);
+      expect(content.title.startsWith(primaryKeyword), node.path).toBe(true);
+      expect(occurrenceCount(content.title, primaryKeyword), node.path).toBe(1);
+      expect(occurrenceCount(content.description, primaryKeyword), node.path).toBe(1);
+      expect(occurrenceCount(content.h1, primaryKeyword), node.path).toBe(1);
+      expect(content.h1, node.path).not.toMatch(addressCentricH1);
+      expect(firstOneHundredWords, node.path).toContain(primaryKeyword);
+      expect(firstServiceSection.id, node.path).toBe("service-introduction");
+      expect(firstServiceSection.paragraphs.join(" "), node.path).toContain(
+        primaryKeyword,
+      );
+      expect(firstServiceSection.paragraphs[0], node.path).toContain(
+        "고객이 지정한 장소",
+      );
+      expect(firstServiceSection.paragraphs[0], node.path).toContain(
+        "방문관리 서비스",
+      );
+      expect(h2Matches, node.path).toHaveLength(2);
+      expect(occurrenceCount(renderedMainCopy, primaryKeyword), node.path).toBe(5);
+    }
+  });
+
+  it("keeps 10–11 service-intent sections with canonical price and guide links", () => {
+    const requiredIds = [
+      "service-introduction",
+      "consultation-preparation",
+      "course-price-link",
+      "pair-program",
+      "onsite-payment",
+      "supplies-sanitation",
+      "use-flow",
+      "regional-directory",
+    ];
+    for (const { node, content } of records) {
+      const ids = content.sections.map((item) => item.id);
+      expect(content.sections.length, node.path).toBeGreaterThanOrEqual(10);
+      expect(content.sections.length, node.path).toBeLessThanOrEqual(12);
+      for (const id of requiredIds) expect(ids, node.path).toContain(id);
+      expect(ids.at(-1), node.path).toBe("regional-directory");
+
+      const course = content.sections.find(
+        (item) => item.id === "course-price-link",
+      );
+      const flow = content.sections.find((item) => item.id === "use-flow");
+      expect(course?.action, node.path).toEqual({
+        label: "5개 코스·14개 금액 전체 보기",
+        path: "/pricing/",
+      });
+      expect(flow?.action, node.path).toEqual({
+        label: "마사지데이 이용 순서 전체 보기",
+        path: "/guide/",
+      });
+      const courseSummary = course?.paragraphs.join(" ") ?? "";
+      for (const courseName of [
+        "타이",
+        "아로마",
+        "힐링",
+        "스페셜",
+        "남성전용",
+      ]) {
+        expect(courseSummary, node.path).toContain(courseName);
+      }
+      expect(courseSummary, node.path).toContain("5개");
+      expect(courseSummary, node.path).toContain("14개");
+      expect(courseSummary, node.path).not.toMatch(/80,000원|90,000원|120,000원/u);
+    }
+  });
+
+  it("provides parent, child or sibling region links without self-links", () => {
+    const activePaths = new Set(ACTIVE_REGION_NODES.map((node) => node.path));
+    for (const { node } of records) {
+      const model = createRegionPageModel(node);
+      const children = getDirectChildren(node);
+      const parent = getParentNode(node);
+      const itemPaths = model.gallery.items.map((item) => item.path);
+
+      expect(new Set(itemPaths).size, node.path).toBe(itemPaths.length);
+      expect(itemPaths, node.path).not.toContain(node.path);
+      expect(itemPaths.every((item) => activePaths.has(item)), node.path).toBe(true);
+      if (children.length > 0) {
+        expect(new Set(itemPaths), node.path).toEqual(
+          new Set(children.map((child) => child.path)),
+        );
+      } else if (itemPaths.length > 0) {
+        const siblingPaths = new Set(
+          parent
+            ? getDirectChildren(parent)
+                .filter((candidate) => candidate.path !== node.path)
+                .map((candidate) => candidate.path)
+            : [],
+        );
+        expect(itemPaths.every((item) => siblingPaths.has(item)), node.path).toBe(
+          true,
+        );
+        const displayedNames = model.gallery.items
+          .map((item) => item.name)
+          .join("·");
+        const directoryCopy = model.content.sections
+          .at(-1)
+          ?.paragraphs.join(" ");
+        if (directoryCopy?.includes("화면에 표시되는 관련 지역 링크")) {
+          expect(directoryCopy, node.path).toContain(
+            `화면에 표시되는 관련 지역 링크는 ${displayedNames}입니다.`,
+          );
+        }
+      }
+
+      const contextualDestinations = new Set(
+        [
+          ...getBreadcrumbs(node).map((crumb) => crumb.path),
+          ...itemPaths,
+          model.gallery.guide.actionPath,
+        ].filter((item) => item !== node.path),
+      );
+      expect(contextualDestinations.size, node.path).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it("does not render the common full price ledger or FAQ on every region", () => {
+    const source = readFileSync(
+      path.join(process.cwd(), "src/components/RegionExperience.tsx"),
+      "utf8",
+    );
+    expect(source).not.toContain("COURSE_GROUPS");
+    expect(source).not.toContain("SERVICE_FAQS");
+    expect(source).not.toContain("courseGrid");
+    expect(source).not.toContain("faqList");
+    expect(source).toContain("movement.action");
+    expect((source.match(/<h1\b/gu) ?? [])).toHaveLength(1);
   });
 
   it("uses concise names in every H1/H2 surface for all 41 root and city routes", () => {
@@ -332,9 +651,13 @@ describe("Massage Day regional copy", () => {
         model.gallery.heading,
         ...content.sections.map((item) => item.heading),
       ];
-      expect(headings.every((heading) => heading.startsWith(headingName))).toBe(
-        true,
-      );
+      expect(content.h1.startsWith(headingName)).toBe(true);
+      expect(model.scene.heading.startsWith(headingName)).toBe(true);
+      expect(model.gallery.heading.startsWith(headingName)).toBe(true);
+      expect(
+        content.sections.filter((item) => item.heading.startsWith(headingName))
+          .length,
+      ).toBeGreaterThanOrEqual(4);
       expect(headings.join("\n")).not.toMatch(forbiddenAdministrativeToken);
       if (node.displayName !== headingName) {
         expect(headings.join("\n")).not.toContain(node.displayName);
@@ -404,7 +727,7 @@ describe("Massage Day regional copy", () => {
     }
   });
 
-  it("distributes normalized metadata without pick collapse", () => {
+  it("keeps fact-led metadata and a natural shared H1 grammar", () => {
     const titleStats = frequencies(
       records.map(({ node, content }) =>
         normalizeRegionalCopy(content.title, node),
@@ -422,13 +745,16 @@ describe("Massage Day regional copy", () => {
     );
     expect(titleStats.unique).toBeGreaterThanOrEqual(11);
     expect(titleStats.maximum).toBeLessThanOrEqual(80);
-    expect(descriptionStats.unique).toBeGreaterThanOrEqual(900);
-    expect(descriptionStats.maximum).toBeLessThanOrEqual(7);
-    expect(h1Stats.unique).toBeGreaterThanOrEqual(11);
-    expect(h1Stats.maximum).toBeLessThanOrEqual(70);
+    expect(descriptionStats.unique).toBeGreaterThan(100);
+    expect(descriptionStats.maximum).toBeLessThan(100);
+    expect(
+      Math.max(...records.map(({ content }) => content.description.length)),
+    ).toBeLessThanOrEqual(180);
+    expect(h1Stats.unique).toBe(1);
+    expect(h1Stats.maximum).toBe(1291);
   });
 
-  it("keeps every hook, heading and paragraph route-specific and raw-unique", () => {
+  it("reuses common service facts without flooding prose with region-name prefixes", () => {
     const hooks = records.flatMap(({ content }) => content.hooks);
     const headings = records.flatMap(({ content }) =>
       content.sections.map((item) => item.heading),
@@ -437,43 +763,27 @@ describe("Massage Day regional copy", () => {
       content.sections.flatMap((item) => item.paragraphs),
     );
     expect(hooks).toHaveLength(2582);
-    expect(new Set(hooks).size).toBe(hooks.length);
     expect(headings).toHaveLength(12951);
-    expect(new Set(headings).size).toBe(headings.length);
     expect(paragraphs).toHaveLength(25902);
-    expect(new Set(paragraphs).size).toBe(paragraphs.length);
+    expect(new Set(hooks).size).toBeLessThan(hooks.length);
+    expect(new Set(headings).size).toBeLessThan(headings.length);
+    expect(new Set(paragraphs).size).toBeLessThan(paragraphs.length);
     for (const { node, content } of records) {
-      for (const paragraph of content.sections.flatMap((item) => item.paragraphs)) {
-        expect(paragraph).toContain(
-          usesConciseRegionHeading(node)
-            ? shortenRegionSearchName(node.displayName)
-            : node.displayName,
-        );
-      }
-    }
-  });
-
-  it("keeps normalized paragraph-slot reuse at five or fewer", () => {
-    for (const [broadMode, sectionIds] of [
-      [true, BROAD_DETAIL_SECTION_IDS],
-      [false, COMPACT_DETAIL_SECTION_IDS],
-    ] as const) {
-      const selected = records.filter(
-        ({ node }) => isBroadDetailRegion(node) === broadMode,
-      );
-      for (let sectionIndex = 0; sectionIndex < sectionIds.length; sectionIndex += 1) {
-        for (let paragraphIndex = 0; paragraphIndex < 2; paragraphIndex += 1) {
-          const stats = frequencies(
-            selected.map(({ node, content }) =>
-              normalizeRegionalCopy(
-                content.sections[sectionIndex].paragraphs[paragraphIndex],
-                node,
-              ),
-            ),
-          );
-          expect(stats.maximum).toBeLessThanOrEqual(5);
-        }
-      }
+      const labels = [
+        node.qualifiedName,
+        usesConciseRegionHeading(node)
+          ? shortenRegionSearchName(node.displayName)
+          : node.displayName,
+      ];
+      const prose = [
+        ...content.hooks,
+        ...content.sections.flatMap((item) => item.paragraphs),
+      ];
+      const prefixed = prose.filter((value) =>
+        labels.some((label) => value.startsWith(label)),
+      ).length;
+      expect(prefixed, node.path).toBeGreaterThanOrEqual(4);
+      expect(prefixed, node.path).toBeLessThanOrEqual(8);
     }
   });
 
@@ -491,7 +801,75 @@ describe("Massage Day regional copy", () => {
     expect(new Set(signatures).size).toBe(1291);
   });
 
-  it("keeps compact bodies substantial and includes every operating fact", () => {
+  it("keeps raw and current-target-neutral primary prose documents collision-free", () => {
+    const rawDocuments = records.map(({ content }) =>
+      [
+        content.h1,
+        ...content.hooks,
+        ...content.sections.flatMap((section) => [
+          section.heading,
+          ...section.paragraphs,
+          ...(section.action ? [section.action.label] : []),
+        ]),
+      ].join("\u001f"),
+    );
+    const targetNeutralDocuments = records.map(({ node }, index) =>
+      normalizeRegionalCopy(rawDocuments[index], node),
+    );
+    expect(new Set(rawDocuments).size).toBe(1291);
+    expect(new Set(targetNeutralDocuments).size).toBe(1291);
+  });
+
+  it("keeps three rendered locality facts and a unique target-neutral signature per route", () => {
+    const signatures: string[] = [];
+    let minimumFactShare = 1;
+    for (const { node, content } of records) {
+      const model = createRegionPageModel(node);
+      const factualTokens = relatedRegionalFactTokens(node);
+      const regionalParagraphs = content.sections
+        .filter((section) =>
+          [
+            "regional-coverage",
+            "local-service-scope",
+            "regional-directory",
+          ].includes(section.id),
+        )
+        .flatMap((section) => section.paragraphs);
+      const factualParagraphs = regionalParagraphs.filter((paragraph) =>
+        factualTokens.some((token) => paragraph.includes(token)),
+      );
+
+      expect(factualParagraphs.length, node.path).toBeGreaterThanOrEqual(3);
+      expect(
+        factualParagraphs.every((paragraph) =>
+          model.renderedSurface.some((entry) => entry.value === paragraph),
+        ),
+        node.path,
+      ).toBe(true);
+      signatures.push(
+        normalizeRegionalCopy(factualParagraphs.join("\u001f"), node),
+      );
+
+      const factualCharacters = factualParagraphs.reduce(
+        (total, paragraph) => total + visibleCharacterCount(paragraph),
+        0,
+      );
+      const primaryProseCharacters = [
+        ...content.hooks,
+        ...content.sections.flatMap((section) => section.paragraphs),
+      ].reduce(
+        (total, paragraph) => total + visibleCharacterCount(paragraph),
+        0,
+      );
+      const share = factualCharacters / primaryProseCharacters;
+      minimumFactShare = Math.min(minimumFactShare, share);
+      expect(share, node.path).toBeGreaterThanOrEqual(0.25);
+    }
+    expect(new Set(signatures).size).toBe(1291);
+    expect(minimumFactShare).toBeGreaterThanOrEqual(0.25);
+  });
+
+  it("keeps bodies focused while retaining each verified operating fact", () => {
     for (const { node, content } of records) {
       const body = content.sections.flatMap((item) => item.paragraphs).join(" ");
       for (const fact of [
@@ -507,8 +885,9 @@ describe("Massage Day regional copy", () => {
       ]) {
         expect(body).toContain(fact);
       }
-      if (!isBroadDetailRegion(node)) {
-        expect(body.length).toBeGreaterThanOrEqual(1200);
+      for (const paragraph of content.sections.flatMap((item) => item.paragraphs)) {
+        expect(paragraph.length, node.path).toBeGreaterThanOrEqual(35);
+        expect(paragraph.length, node.path).toBeLessThanOrEqual(260);
       }
     }
   });
@@ -517,6 +896,7 @@ describe("Massage Day regional copy", () => {
     for (const { node, content } of records) {
       const model = createRegionPageModel(node);
       expect(model.gallery.guide.section.id).toBe(content.sections.at(-1)?.id);
+      expect(model.scene.index).toBe("SERVICE AREA");
       expect(model.movements.map((item) => item.section.id)).toEqual(
         content.sections.slice(0, -1).map((item) => item.id),
       );
@@ -533,6 +913,9 @@ describe("Massage Day regional copy", () => {
         rendered: model.renderedSurface,
       });
       for (const phrase of FORBIDDEN_COPY) {
+        expect(customerCopy).not.toContain(phrase);
+      }
+      for (const phrase of FORBIDDEN_VISIBLE_TECHNICAL_COPY) {
         expect(customerCopy).not.toContain(phrase);
       }
     }
@@ -597,5 +980,13 @@ describe("Massage Day regional copy", () => {
         expect(source).not.toContain(phrase);
       }
     }
+  });
+
+  it("does not use ordinal, profile or seed selectors in regional copy", () => {
+    const source = readFileSync(
+      path.join(process.cwd(), "src/lib/content.ts"),
+      "utf8",
+    );
+    expect(source).not.toMatch(/getRegionOrdinal|\bprofile\b|\bseed\b/u);
   });
 });

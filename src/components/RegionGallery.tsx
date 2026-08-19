@@ -21,7 +21,7 @@ export function RegionGallery({ regionModel, items, label = "AREA DIRECTORY", ti
   return (
     <section className={styles.directory} aria-labelledby="region-directory-title">
       <header className={styles.directoryHeading}>
-        <div><p {...(regionModel ? { "data-region-copy-id": regionModel.indexCopyId } : {})}>{regionModel?.index ?? label}</p><h2 id="region-directory-title" {...(regionModel ? { "data-region-copy-id": regionModel.headingCopyId } : {})}>{heading}</h2></div>
+        <div><p {...(regionModel ? { "data-region-copy-id": regionModel.indexCopyId } : {})}>{regionModel?.index ?? label}</p><strong className={styles.directoryTitle} id="region-directory-title" {...(regionModel ? { "data-region-copy-id": regionModel.headingCopyId } : {})}>{heading}</strong></div>
         <span {...(regionModel ? { "data-region-copy-id": regionModel.summaryCopyId } : {})}>{supportingCopy}</span>
       </header>
 

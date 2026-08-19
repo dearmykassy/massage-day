@@ -2,6 +2,18 @@
 
 > 새 활동과 검증 결과를 최신순으로 기록한다. 비밀값·로그인 정보는 기록하지 않는다.
 
+## 2026-08-19 KST — 지역페이지 서비스형 검색 구조 전면 교정
+
+- 활성 지역 1,291개의 primary keyword를 `<짧은 표시 지역명> 출장마사지`로 고정했다. title은 대표어로 시작하고 H1은 `<primary keyword> 방문관리 서비스 안내`로 단순화했다. 대표어는 H1·첫 100어절·서비스 소개·서로 다른 H2 두 곳에 포함되고 주소 중심 H1은 0개다. title·description·H1·대표어는 raw 1,291개 모두 고유하다.
+- 광역 41개는 11개, 세부 1,250개는 10개의 서비스 섹션을 렌더한다. 첫 문단은 출장마사지를 고객이 지정한 장소에서 선택한 코스와 시간으로 이용하는 방문관리로 소개한다. 5개 코스의 짧은 요약·`/pricing/`, 24시간 전화상담 준비, 2인 문의, 현장 후불 현금·카드, 일회용 비품·소독, 이용 흐름·`/guide/`, 관련 지역을 독립 섹션으로 남겼다. 공통 가격표 14행과 FAQ 7개 전체 복제는 제거했다.
+- 상위·하위·형제·행정동 별칭·법정동 관계를 서비스 범위와 지역 링크 문맥에서만 설명했다. 페이지별 실제 지역 사실 문단은 최소 3개이고 모두 실제 렌더 문구와 일치한다. 현재 target·브랜드만 중립화한 지역 사실 signature와 primary prose 전체 signature는 각각 1,291개 고유하다. 지역 사실 문장은 hook+본문 문단 실질 문자의 최소 25%를 넘긴다. 모든 페이지에 self가 아닌 문맥 지역 링크를 3개 이상 유지한다.
+- 2026-08-19에 초기 대표 비교로 마사지봄·마사지러브·건마에반하다의 라이브·로컬 지역페이지를 확인했고, 마감 비교로 마사지봄 `https://msgbom.kr/areas/seoul/%EA%B0%95%EB%82%A8%EA%B5%AC/%EC%97%AD%EC%82%BC%EB%8F%99`, 마사지러브 `https://msglove.kr/areas/seoul/%EA%B0%95%EB%82%A8%EA%B5%AC/%EC%97%AD%EC%82%BC%EB%8F%99/`, 콜미토닥이 `https://callmetodak2.kr/areas/seoul/%EA%B0%95%EB%82%A8%EA%B5%AC/%EC%97%AD%EC%82%BC%EB%8F%99/`, 랑테라피 `https://langtheraphy.kr/areas/seoul/%EA%B0%95%EB%82%A8%EA%B5%AC/%EC%97%AD%EC%82%BC%EB%8F%99/`, 필링홈타이 `https://feelinghometai.kr/areas/seoul/%EA%B0%95%EB%82%A8%EA%B5%AC/%EC%97%AD%EC%82%BC%EB%8F%99/` 5개의 동일 역삼동 페이지가 HTTP 200을 반환하는 것과 정보 구조를 대조했다. target/서비스 의도→방문관리 설명→코스·시간/가격 canonical→24시간 전화 준비→현장 후불/카드→이용 흐름→관련 지역을 채택했다. 콜미의 다중 H1, 랑·필링의 주소 중심 과잉, 전체 가격표·FAQ 복제, 마사지봄·러브의 장문·치환 흔적은 채택하지 않았다. 문장은 복사하지 않았다.
+- 자연성 계약을 최우선으로 두면서 과거의 normalized H1 11문형·문단 slot 재사용 5회 상한을 hard gate에서 제외했다. 이 두 검사는 검증된 공통 운영 사실에 무관한 지역명을 덧붙이거나 ordinal·hash·seed·문형 회전을 유도했다. 대신 raw·target-only 전체 본문 충돌 0, 지역 사실 signature 1,291개, 지역 사실 문자 비율 25% 이상, 외부 7개 충돌 0, 기술·순서·해시 문구 0을 hard gate로 삼았다. 모든 관련 지역명을 지우는 strong exact·Jaccard와 공통 heading·action까지 세는 전체 block 반복률은 진단 receipt로만 남겼다.
+- 독립 자연어 감사에서 공통 운영 문단까지 지역명으로 시작하도록 강제하던 이전 검사를 제거했다. 전화 준비·코스·2인·현장 후불·소독·이용 흐름은 자연스러운 공통 문장으로 두고, 현재 지역명으로 시작하는 hook·본문 문장은 페이지당 4–6개만 남겼다. description은 전부 90–127자로 줄였고, 화면 장식에 노출되던 route depth 숫자는 의미 있는 고정 라벨 `SERVICE AREA`로 교체했다.
+- 저장소에 별도 `.agents/product-marketing.md`가 없어 `AGENTS.md`, `README.md`, `src/lib/business.ts`, `src/lib/site-content.ts`, `/pricing/`, `/guide/` 구현에서 검증한 사실만 사용했다. 지도·업체·인기·후기·평점·현지 이용량·도착 시간·의료 효능·배정 완료 표현은 0개다. 정본/원본 자료·분류·단계 수·profile·seed·hash·ordinal·slot·signature·trigram·Jaccard 같은 기술 감사 문구와 목록 위치를 사실처럼 쓰는 문구는 실제 렌더 본문 0개다.
+- 최종 전수 검증에서 지역 집중 테스트 35개, 전체 Vitest 57개, TypeScript, 변경 소스 ESLint, `pnpm audit:copy`를 통과했다. copy audit는 raw title·description·H1·primary document 각 1,291 unique/충돌 0, brand+현재 target 중립화 primary prose 1,291 unique/충돌 0, 지역 사실 signature 1,291 unique/충돌 0, 지역 사실 문단 최소 4개, 실질 문자 비율 최소 0.283914729, 문맥 non-self 링크 최소 3개, 조사·금지 노출·전체 가격표/FAQ·외부 7개 exact/중립화 충돌 각 0을 확인했다. strong all-related 진단은 832,695쌍 전수이며 릴리스 상태를 바꾸지 않는다.
+- 최종 source handoff 단계에서는 site revision·build·commit·push·deploy를 실행하지 않았다. 최종 커밋 author 시각에 맞춘 lastmod 갱신, production build, push, 운영 확인은 root 마감 단계에서 실행한다.
+
 ## 2026-08-19 KST — 네이버 검색 등록 완료
 
 - 사용자가 canonical과 같은 HTTPS 속성 `https://msgday.kr`의 소유확인을 완료했다.

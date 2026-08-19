@@ -58,6 +58,31 @@ const bannedTone = /최고|완벽|프리미엄|특별한|맞춤|섬세한|여유
 const seenTitles = new Set();
 const seenDescriptions = new Set();
 const seenCanonicals = new Set();
+const seenRegionH1s = new Set();
+const regionFileSet = new Set(regionHtml);
+
+function decodeHtmlText(value) {
+  return value
+    .replaceAll("&amp;", "&")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#x27;", "'")
+    .replaceAll("&nbsp;", " ");
+}
+
+function visibleText(value) {
+  return decodeHtmlText(
+    value
+      .replace(/<script\b[\s\S]*?<\/script>/giu, " ")
+      .replace(/<style\b[\s\S]*?<\/style>/giu, " ")
+      .replace(/<[^>]+>/gu, " "),
+  ).replace(/\s+/gu, " ").trim();
+}
+
+function occurrenceCount(value, needle) {
+  return value.split(needle).length - 1;
+}
 
 function expectedCanonicalForHtml(file) {
   const relative = path.relative(OUT, file);
@@ -85,6 +110,7 @@ for (const file of publicHtml) {
   }
   if (unsupportedLocalClaims.test(html)) fail(`UNSUPPORTED_LOCAL_CLAIM:${relative}`);
   if (bannedTone.test(html)) fail(`BANNED_TONE:${relative}`);
+  if (/SERVICE AREA\s*·\s*\d/iu.test(html)) fail(`REGION_ROUTE_DEPTH_COPY:${relative}`);
   const h1Count = html.match(/<h1(?:\s[^>]*)?>/gu)?.length ?? 0;
   if (h1Count !== 1) fail(`H1_COUNT:${h1Count}:${relative}`);
 
@@ -98,6 +124,71 @@ for (const file of publicHtml) {
   seenTitles.add(title);
   seenDescriptions.add(description);
   seenCanonicals.add(canonical);
+
+  if (regionFileSet.has(file)) {
+    const decodedDescription = decodeHtmlText(description);
+    if (decodedDescription.length < 70 || decodedDescription.length > 180) {
+      fail(`REGION_DESCRIPTION_LENGTH:${decodedDescription.length}:${relative}`);
+    }
+    const keywordMeta = html.match(/<meta name="keywords" content="([^"]+)"\/>/u)?.[1];
+    const primaryKeyword = decodeHtmlText(keywordMeta ?? "").split(",")[0]?.trim();
+    const h1Match = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/u);
+    const h1 = visibleText(h1Match?.[1] ?? "");
+    const h2Values = [...html.matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/gu)]
+      .map((match) => visibleText(match[1]));
+    if (!primaryKeyword || !title.startsWith(primaryKeyword)) {
+      fail(`REGION_PRIMARY_TITLE:${relative}`);
+    }
+    if (occurrenceCount(title, primaryKeyword) !== 1) {
+      fail(`REGION_PRIMARY_TITLE_COUNT:${relative}`);
+    }
+    if (occurrenceCount(h1, primaryKeyword) !== 1) {
+      fail(`REGION_PRIMARY_H1:${relative}`);
+    }
+    if (seenRegionH1s.has(h1)) fail(`REGION_H1_DUPLICATE:${relative}`);
+    seenRegionH1s.add(h1);
+    const h1End = h1Match?.index === undefined
+      ? -1
+      : html.indexOf("</h1>", h1Match.index) + "</h1>".length;
+    const firstOneHundredWords = visibleText(
+      h1End >= 0 ? html.slice(h1End) : "",
+    ).split(/\s+/u).slice(0, 100).join(" ");
+    if (!firstOneHundredWords.includes(primaryKeyword)) {
+      fail(`REGION_PRIMARY_FIRST_100:${relative}`);
+    }
+    if (h2Values.filter((value) => value.includes(primaryKeyword)).length !== 2) {
+      fail(`REGION_PRIMARY_H2:${relative}`);
+    }
+    if (h2Values.length < 10 || h2Values.length > 12) {
+      fail(`REGION_H2_COUNT:${h2Values.length}:${relative}`);
+    }
+    const serviceIntro = html.match(
+      /<article\b[^>]*id="service-introduction"[^>]*>([\s\S]*?)<\/article>/u,
+    )?.[1];
+    if (!serviceIntro || !visibleText(serviceIntro).includes(primaryKeyword)) {
+      fail(`REGION_SERVICE_INTRO:${relative}`);
+    }
+    if (
+      !/<article\b[^>]*id="course-price-link"[^>]*>[\s\S]*?href="\/pricing\/"/u.test(html) ||
+      !/<article\b[^>]*id="use-flow"[^>]*>[\s\S]*?href="\/guide\/"/u.test(html)
+    ) fail(`REGION_CANONICAL_GUIDE_LINK:${relative}`);
+    const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/u)?.[1] ?? "";
+    if (occurrenceCount(visibleText(main), primaryKeyword) !== 5) {
+      fail(`REGION_PRIMARY_DENSITY:${relative}`);
+    }
+    if (/80,000원|90,000원|120,000원|전화는 언제 연결할 수 있나요\?/u.test(main)) {
+      fail(`REGION_COMMON_FULL_BLOCK:${relative}`);
+    }
+    const ownPath = new URL(canonical).pathname.replace(/\/+$/u, "");
+    const regionalLinks = new Set(
+      [...main.matchAll(/href="(\/areas\/[^"]*)"/gu)]
+        .map((match) => match[1].replace(/\/+$/u, ""))
+        .filter((href) => href !== ownPath),
+    );
+    if (regionalLinks.size < 3) {
+      fail(`REGION_CONTEXT_LINKS:${regionalLinks.size}:${relative}`);
+    }
+  }
 }
 
 const sitemap = await readFile(path.join(OUT, "sitemap.xml"), "utf8");
@@ -192,6 +283,7 @@ console.log(JSON.stringify({
   status: "PASS",
   publicPages: publicHtml.length,
   regionPages: regionHtml.length,
+  uniqueRegionH1s: seenRegionH1s.size,
   uniqueTitles: seenTitles.size,
   uniqueDescriptions: seenDescriptions.size,
   sitemapUrls: sitemapUrls.length,

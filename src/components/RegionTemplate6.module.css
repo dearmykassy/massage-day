@@ -65,7 +65,7 @@
 .information, .directory { border-top: 1px solid var(--border); margin-top: 38px; padding-top: 22px; }
 .sectionHeading, .sectionHeadingRow, .directoryHeading { align-items: flex-end; display: flex; justify-content: space-between; }
 .sectionHeading p, .directoryHeading p { color: var(--primary); font-size: 10px; font-weight: 900; letter-spacing: 0.1em; margin: 0 0 5px; }
-.sectionHeading h2, .directoryHeading h2 { font-size: 24px; letter-spacing: -0.045em; margin: 0; }
+.sectionHeading h2, .sectionHeading > div > strong, .directoryHeading h2, .directoryTitle { display: block; font-size: 24px; letter-spacing: -0.045em; margin: 0; }
 .sectionHeading span { color: var(--muted); display: block; font-size: 13px; margin-top: 5px; }
 .sectionHeadingRow > a { color: var(--primary); font-size: 13px; font-weight: 850; }
 
@@ -77,6 +77,7 @@
 .detailCard h2 { font-size: 17px; letter-spacing: -0.04em; margin: 11px 0 7px; }
 .detailCard p { color: var(--muted); font-size: 13px; line-height: 1.72; margin: 0; }
 .detailCard p + p { margin-top: 7px; }
+.detailLink { color: var(--primary); display: inline-flex; font-size: 12px; font-weight: 850; margin-top: 11px; }
 
 .courseGrid { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 17px; }
 .courseCard { background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
@@ -99,7 +100,7 @@
 
 .contact { align-items: center; background: #fff; border: 1px solid var(--primary); border-radius: 16px; display: flex; justify-content: space-between; margin-top: 38px; min-height: 150px; padding: 22px; }
 .contact p { color: var(--primary); font-size: 10px; font-weight: 900; letter-spacing: 0.08em; margin: 0 0 5px; }
-.contact h2 { font-size: 22px; margin: 0 0 6px; }
+.contact h2, .contactHeading { display: block; font-size: 22px; margin: 0 0 6px; }
 .contact strong { font-size: 14px; }
 .contact > a { align-items: center; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 999px; color: #fff; display: flex; font-size: 13px; font-weight: 850; justify-content: center; min-height: 46px; padding-inline: 23px; }
 

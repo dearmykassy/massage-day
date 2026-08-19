@@ -9,6 +9,7 @@ import {
   getBreadcrumbs,
   getDirectChildren,
   getParentNode,
+  getRelatedSiblingItems,
   getRegionHeadingLabel,
   getRootNode,
   shortenRegionSearchName,
@@ -84,6 +85,11 @@ export type RegionPageModel = {
     kickerCopyId: string;
     headingCopyId: string;
     paragraphCopyIds: [string, string];
+    action?: {
+      label: string;
+      path: "/pricing/" | "/guide/";
+      copyId: string;
+    };
   }>;
   finalBeat: {
     label: string;
@@ -143,10 +149,7 @@ function headingActionIds(value: string): string[] {
 export function createRegionPageModel(node: RegionNode): RegionPageModel {
   const content = createRegionContent(node);
   const directory = content.sections.at(-1);
-  if (
-    !directory ||
-    !["child-directory", "related-address-directory"].includes(directory.id)
-  ) {
+  if (!directory || directory.id !== "regional-directory") {
     throw new Error(`MASSAGE_DAY_REGION_DIRECTORY_SECTION_MISSING:${node.path}`);
   }
   if (content.hooks.length !== 2 || content.ctaLabels.length !== 3) {
@@ -155,6 +158,10 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
 
   const children = getDirectChildren(node);
   const parent = getParentNode(node);
+  const relatedSiblings = children.length === 0
+    ? getRelatedSiblingItems(node)
+    : [];
+  const directoryItems = children.length > 0 ? children : relatedSiblings;
   const headingName = getRegionHeadingLabel(node);
   const rawBreadcrumbs = getBreadcrumbs(node);
   const breadcrumbs = rawBreadcrumbs.map((crumb, index) => ({
@@ -169,34 +176,45 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
         : crumb.name,
     copyId: `breadcrumb:${index}`,
   }));
-  const galleryItems = children.map((child, index) => ({
+  const galleryItems = directoryItems.map((child, index) => ({
     path: child.path,
     number: String(index + 1).padStart(2, "0"),
     name:
       content.detailMode === "broad"
         ? shortenRegionSearchName(child.name)
         : child.name,
-    countLabel: `${child.representativeCount}개 안내 지역`,
+    countLabel:
+      children.length > 0
+        ? `${child.representativeCount}개 연결 지역`
+        : `같은 단계 · ${child.representativeCount}개 연결 지역`,
     numberCopyId: `gallery:item:${index}:number`,
     nameCopyId: `gallery:item:${index}:name`,
     countCopyId: `gallery:item:${index}:count`,
   }));
   const galleryHeading =
     children.length > 0
-      ? `${headingName} 다음 주소 단계`
-      : `${headingName} 상세 주소 전화 메모`;
+      ? `${headingName} 하위 지역 안내`
+      : relatedSiblings.length > 0
+        ? `${headingName} 관련 지역 안내`
+        : `${headingName} 상위 지역 안내`;
   const gallerySummary =
     children.length > 0
-      ? `연결된 지역 ${children.length}개`
-      : "상세 주소는 통화에서 이어서 확인";
-  const galleryTerminal = "도로명과 건물명은 지역 목록에 입력하지 않고 날짜·시각과 함께 전화로 전달합니다.";
-  const sceneIndex = `ADDRESS LEVEL · ${node.segments.length
-    .toString()
-    .padStart(2, "0")}`;
-  const sceneCaption = "주소 계층을 고른 뒤 날짜와 희망 시각을 메모합니다.";
-  const sceneHeading = `${headingName} 이용 전 확인 항목`;
+      ? `하위 지역 ${children.length}개`
+      : relatedSiblings.length > 0
+        ? `같은 단계 지역 ${relatedSiblings.length}개`
+        : "상위 지역 링크 제공";
+  const galleryTerminal = "같은 단계의 별도 지역 링크가 없어 상위 지역 안내로 이어집니다.";
+  const sceneIndex = "SERVICE AREA";
+  const sceneCaption = "지역 범위와 코스·전화상담·현장결제 정보를 순서대로 확인합니다.";
+  const sceneHeading = `${headingName} 서비스 이용 정보`;
   const movements = content.sections.slice(0, -1).map((section, index) => {
     const number = String(index + 1).padStart(2, "0");
+    const action = section.action
+      ? {
+          ...section.action,
+          copyId: `movement:${section.id}:action`,
+        }
+      : undefined;
     return {
       section,
       number,
@@ -208,6 +226,7 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
         `movement:${section.id}:paragraph:0`,
         `movement:${section.id}:paragraph:1`,
       ] as [string, string],
+      ...(action ? { action } : {}),
     };
   });
   const guide = {
@@ -290,9 +309,12 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
         movement.section.paragraphs[1],
         "candidate-customer-guidance",
       ),
+      ...(movement.action
+        ? [entry(movement.action.copyId, movement.action.label, "owned-copy")]
+        : []),
     ]),
     entry("final:label", "365일 24시간 전화상담", "verified-operating-fact"),
-    entry("final:heading", "주소·일정·인원·코스 메모를 통화에서 확인해 주세요", "owned-copy"),
+    entry("final:heading", "희망 일정과 코스를 전화상담에서 확인해 주세요", "owned-copy"),
     entry("final:number", PHONE_DISPLAY, "verified-operating-fact"),
     entry("final:phone", "전화상담", "owned-copy"),
   ];
@@ -338,7 +360,7 @@ export function createRegionPageModel(node: RegionNode): RegionPageModel {
     movements,
     finalBeat: {
       label: "365일 24시간 전화상담",
-      heading: "주소·일정·인원·코스 메모를 통화에서 확인해 주세요",
+      heading: "희망 일정과 코스를 전화상담에서 확인해 주세요",
       number: PHONE_DISPLAY,
       phone: "전화상담",
       labelCopyId: "final:label",

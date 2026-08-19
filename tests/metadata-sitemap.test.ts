@@ -33,7 +33,11 @@ import {
   createRegionPageJsonLd,
   serializeRegionPageJsonLd,
 } from "@/lib/region-schema";
-import { ACTIVE_REGION_NODES, usesConciseRegionHeading } from "@/lib/regions";
+import {
+  ACTIVE_REGION_NODES,
+  getPrimaryRegionKeyword,
+  usesConciseRegionHeading,
+} from "@/lib/regions";
 import {
   AREAS_AND_BROAD_CONTENT_MODIFIED_AT,
   FIXED_AND_COMPACT_CONTENT_MODIFIED_AT,
@@ -159,11 +163,21 @@ describe("production metadata contract", () => {
     expect(new Set(contracts.map((item) => item.title)).size).toBe(1291);
     expect(new Set(contracts.map((item) => item.description)).size).toBe(1291);
     expect(new Set(contracts.map((item) => item.canonical)).size).toBe(1291);
-    for (const contract of contracts) {
+    for (const [index, contract] of contracts.entries()) {
+      const node = ACTIVE_REGION_NODES[index];
+      const primaryKeyword = getPrimaryRegionKeyword(node);
       expect(contract.title.length).toBeGreaterThanOrEqual(20);
+      expect(contract.title.startsWith(primaryKeyword), node.path).toBe(true);
       expect(contract.description.length).toBeGreaterThanOrEqual(70);
+      expect(contract.description.length).toBeLessThanOrEqual(180);
+      expect(contract.description, node.path).toContain(primaryKeyword);
       expect(contract.keywords).toHaveLength(8);
+      expect(contract.keywords[0], node.path).toBe(primaryKeyword);
+      expect(contract.canonical, node.path).toBe(
+        new URL(`${node.path}/`, SITE_ORIGIN).href,
+      );
       expect(contract.openGraph.title).toBe(contract.title);
+      expect(contract.openGraph.url).toBe(contract.canonical);
       expect(contract.twitter.description).toBe(contract.description);
       expect(toNextMetadata(contract).robots).toEqual(SITE_ROBOTS);
     }

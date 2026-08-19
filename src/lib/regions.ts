@@ -317,6 +317,15 @@ export function getKeywordRegionLabel(node: RegionNode): string {
   return getSearchRegionLabel(node).replace(/\s+/gu, "");
 }
 
+/**
+ * The indexable regional intent keeps the separator between the customer-facing
+ * region label and the service name. Compact metadata keywords may still use
+ * getKeywordRegionLabel, but titles and visible copy use this exact phrase.
+ */
+export function getPrimaryRegionKeyword(node: RegionNode): string {
+  return `${getSearchRegionLabel(node)} 출장마사지`;
+}
+
 export function getDirectChildren(node: RegionNode): RegionChild[] {
   if (node.kind === "representative") return [];
   const nextLength = node.segments.length + 1;
@@ -355,4 +364,41 @@ export function getRootNode(rootKey: ActiveRootKey): RegionNode {
 export function getParentNode(node: RegionNode): RegionNode | null {
   if (node.segments.length === 1) return null;
   return NODE_BY_KEY.get(keyForSegments(node.segments.slice(0, -1))) ?? null;
+}
+
+/**
+ * Keep the customer-facing related-region copy and the rendered gallery on the
+ * same bounded set. A regional page must never call an unrendered sibling a
+ * link.
+ */
+export function getRelatedSiblingItems(
+  node: RegionNode,
+  maximumItems = 5,
+): RegionChild[] {
+  const parent = getParentNode(node);
+  if (!parent) return [];
+  const siblings = getDirectChildren(parent);
+  const currentIndex = siblings.findIndex(
+    (candidate) => candidate.path === node.path,
+  );
+  if (currentIndex < 0 || maximumItems <= 0) return [];
+
+  const selected = new Set<string>();
+  const targetCount = Math.min(maximumItems, Math.max(0, siblings.length - 1));
+  for (
+    let distance = 1;
+    selected.size < targetCount && distance < siblings.length;
+    distance += 1
+  ) {
+    const before = siblings[
+      (currentIndex - distance + siblings.length) % siblings.length
+    ];
+    const after = siblings[(currentIndex + distance) % siblings.length];
+    if (before.path !== node.path) selected.add(before.path);
+    if (after.path !== node.path && selected.size < targetCount) {
+      selected.add(after.path);
+    }
+  }
+
+  return siblings.filter((candidate) => selected.has(candidate.path));
 }
